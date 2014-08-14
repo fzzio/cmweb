@@ -1,0 +1,268 @@
+<manifest alg="2" build="30" opt="true" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3903791173"/>
+    <file name="social-media.css" crc="4195107991" ref="social-media"/>
+    <file name="iefonts_social-media.css" crc="199391083" ref="social-media"/>
+    <file name="m-goverment.css" crc="243597116" ref="m-goverment"/>
+    <file name="iefonts_m-goverment.css" crc="4062869610" ref="m-goverment"/>
+    <file name="gateway.css" crc="4132224697" ref="gateway"/>
+    <file name="iefonts_gateway.css" crc="3900697038" ref="gateway"/>
+    <file name="mobile-marketing.css" crc="4024558968" ref="mobile-marketing"/>
+    <file name="iefonts_mobile-marketing.css" crc="311867290" ref="mobile-marketing"/>
+    <file name="index.css" crc="108868123" ref="index"/>
+    <file name="iefonts_index.css" crc="191418672" ref="index"/>
+    <file name="proyecto-detalle.css" crc="4185320882" ref="proyecto-detalle"/>
+    <file name="iefonts_proyecto-detalle.css" crc="424022757" ref="proyecto-detalle"/>
+    <file name="noticia-detalle.css" crc="66202878" ref="noticia-detalle"/>
+    <file name="iefonts_noticia-detalle.css" crc="4267141575" ref="noticia-detalle"/>
+    <file name="interactividad.css" crc="10276603" ref="interactividad"/>
+    <file name="iefonts_interactividad.css" crc="3921085542" ref="interactividad"/>
+    <file name="fidelizaci_n.css" crc="3943209468" ref="fidelización"/>
+    <file name="iefonts_fidelizaci_n.css" crc="495634053" ref="fidelización"/>
+    <file name="virtual-graphics.css" crc="433571040" ref="virtual-graphics"/>
+    <file name="iefonts_virtual-graphics.css" crc="3826369477" ref="virtual-graphics"/>
+    <file name="proyectos.css" crc="136980201" ref="proyectos"/>
+    <file name="iefonts_proyectos.css" crc="136969496" ref="proyectos"/>
+    <file name="noticias.css" crc="394010183" ref="noticias"/>
+    <file name="iefonts_noticias.css" crc="4247524337" ref="noticias"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>index:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>proyectos:tablet>noticias:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:tablet>proyecto-detalle:tablet>noticia-detalle:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="museutils.js" crc="4291592202" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>index:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>proyectos:tablet>noticias:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:tablet>proyecto-detalle:tablet>noticia-detalle:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="jquery.tobrowserwidth.js" crc="3842421675" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>index:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media"/>
+    <file name="pie.js" crc="3827607177" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="webpro.js" crc="3903299128" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>index:tablet>contactos:tablet>proyecto-detalle:index:proyectos:noticias:proyecto-detalle"/>
+    <file name="musewpdisclosure.js" crc="4285748861" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>contactos:index:proyectos:noticias"/>
+    <file name="musewpslideshow.js" crc="138381373" ref="phone>index:phone>proyecto-detalle:tablet>index:tablet>proyecto-detalle:index:proyecto-detalle"/>
+    <file name="jquery.museoverlay.js" crc="4250894771" ref="phone>index:phone>proyecto-detalle:tablet>index:tablet>proyecto-detalle:index:proyecto-detalle"/>
+    <file name="touchswipe.js" crc="4156838003" ref="phone>index:phone>proyecto-detalle:tablet>index:tablet>proyecto-detalle:index:proyecto-detalle"/>
+    <file name="jquery.scrolleffects.js" crc="4006931061" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>index:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>proyectos:tablet>noticias:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:tablet>proyecto-detalle:tablet>noticia-detalle:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="jquery.watch.js" crc="4068933136" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>index:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>proyectos:tablet>noticias:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:tablet>proyecto-detalle:tablet>noticia-detalle:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="form_check.php" crc="4225488401" ref="tablet>contactos:index"/>
+    <file name="form_throttle.php" crc="425392939" ref="tablet>contactos:index"/>
+    <file name="form-u60598.php" crc="3811581947" ref="tablet>contactos"/>
+    <file name="museredirect.js" crc="4101519497" ref="index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:virtual-graphics:m-goverment:social-media"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="291134478" ref="index"/>
+    <file name="form-u54747.php" crc="3848555950" ref="index"/>
+    <file name="form-u54872.php" crc="3847383948" ref="index"/>
+    <file name="form-u54929.php" crc="460722540" ref="index"/>
+    <file name="form-u54986.php" crc="3821214792" ref="index"/>
+    <file name="form-u55043.php" crc="3769453565" ref="index"/>
+    <file name="form-u55100.php" crc="528014750" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="celmedia_logo_menu-u55646-6-fr.png" crc="4212044496" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="icono_menu.png" crc="4263840889" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="bg_boton_contactosnormal.jpg" crc="44555511" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="bg_boton_contactosactive.jpg" crc="4177778416" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="icono_direccion.png" crc="4208946952" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="icono_telefonos.png" crc="350069730" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="stroke.png" crc="3964233472" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>contactos"/>
+    <file name="flecha_blanca.png" crc="3773405961" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>contactos:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="bg_boton_contactos2.png" crc="11116597" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="icono_mail_grande.png" crc="3982660468" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="arrow_white.png" crc="4209070090" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>proyectos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:tablet>proyecto-detalle"/>
+    <file name="icono_telefono.png" crc="3843535589" ref="phone>index:phone>proyectos:phone>proyecto-detalle:phone>servicios:phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media"/>
+    <file name="celmedia_slider8998x500.jpg" crc="4092748260" ref="phone>index"/>
+    <file name="blank.gif" crc="4208392903" ref="phone>index:phone>proyecto-detalle:tablet>index:tablet>proyecto-detalle:index:proyecto-detalle"/>
+    <file name="celmedia_slider2998x499.jpg" crc="4099363046" ref="phone>index"/>
+    <file name="celmedia_slider3998x499.jpg" crc="3807855995" ref="phone>index"/>
+    <file name="celmedia_slider4998x499.jpg" crc="304916640" ref="phone>index"/>
+    <file name="loading.gif" crc="3815509949" ref="phone>index:phone>proyecto-detalle:tablet>index:tablet>proyecto-detalle:index:proyecto-detalle"/>
+    <file name="bg_proyectos2750x646.jpg" crc="431048278" ref="phone>proyectos"/>
+    <file name="1-celmedia_caso_club-45-años476x270.jpg" crc="4096864881" ref="phone>proyecto-detalle"/>
+    <file name="2-celmedia_caso_club-45-años476x270.jpg" crc="202956501" ref="phone>proyecto-detalle"/>
+    <file name="4-celmedia_caso_club-45-años476x270.jpg" crc="3939150593" ref="phone>proyecto-detalle"/>
+    <file name="5-celmedia_caso_club-45-años476x270.jpg" crc="285376588" ref="phone>proyecto-detalle"/>
+    <file name="left_arrowblack.png" crc="4150395352" ref="phone>proyecto-detalle:tablet>proyecto-detalle:noticia-detalle:proyecto-detalle"/>
+    <file name="right_arrowblack.png" crc="4222512377" ref="phone>proyecto-detalle:tablet>proyecto-detalle:noticia-detalle:proyecto-detalle"/>
+    <file name="bg_servicios1025x570.jpg" crc="204570027" ref="phone>servicios"/>
+    <file name="bg_servicios.jpg" crc="530547365" ref="phone>mobile-marketing:phone>interactividad:phone>gateway:phone>fidelizacion:phone>virtual-graphics:phone>m-goverment:phone>social-media:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:index"/>
+    <file name="celmedia_logo_menu.png" crc="231369921" ref="tablet>index:tablet>servicios:tablet>mobile-marketing:tablet>interactividad:tablet>gateway:tablet>virtual-graphics:tablet>proyectos:tablet>noticias:tablet>contactos:tablet>fidelizacion:tablet>m-goverment:tablet>social-media:tablet>proyecto-detalle:tablet>noticia-detalle:index:mobile-marketing:proyectos:noticias:noticia-detalle:proyecto-detalle:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="celmedia_slider8.jpg" crc="304523266" ref="tablet>index:index"/>
+    <file name="celmedia_slider2.jpg" crc="4163869983" ref="tablet>index:index"/>
+    <file name="celmedia_slider3.jpg" crc="4078913673" ref="tablet>index:index"/>
+    <file name="celmedia_slider4.jpg" crc="3895679526" ref="tablet>index:index"/>
+    <file name="titulares_bg.png" crc="4084880060" ref="tablet>servicios:index"/>
+    <file name="bg_proyectos21348x1160.jpg" crc="155300582" ref="tablet>proyectos"/>
+    <file name="bg_noticias2.jpg" crc="4003366957" ref="tablet>noticias:tablet>noticia-detalle:noticias:noticia-detalle"/>
+    <file name="scroll_arrowblack3.png" crc="125441886" ref="tablet>noticias:tablet>noticia-detalle:index:noticias:noticia-detalle"/>
+    <file name="bg_contacto.jpg" crc="221580951" ref="tablet>contactos:index"/>
+    <file name="icono_direccion2.png" crc="263568268" ref="tablet>contactos:index"/>
+    <file name="icono_mail.png" crc="4009164696" ref="tablet>contactos:index"/>
+    <file name="icono_telefonos2.png" crc="119593198" ref="tablet>contactos:index"/>
+    <file name="u60599-25.png" crc="369929358" ref="tablet>contactos"/>
+    <file name="u60599-25-r.png" crc="93133721" ref="tablet>contactos"/>
+    <file name="u60599-25-m.png" crc="369929358" ref="tablet>contactos"/>
+    <file name="u60599-25-fs.png" crc="458520687" ref="tablet>contactos"/>
+    <file name="1-celmedia_caso_club-45-años.jpg" crc="309788213" ref="tablet>proyecto-detalle:proyecto-detalle"/>
+    <file name="2-celmedia_caso_club-45-años.jpg" crc="438085401" ref="tablet>proyecto-detalle:proyecto-detalle"/>
+    <file name="4-celmedia_caso_club-45-años.jpg" crc="3791599136" ref="tablet>proyecto-detalle:proyecto-detalle"/>
+    <file name="5-celmedia_caso_club-45-años.jpg" crc="107279913" ref="tablet>proyecto-detalle:proyecto-detalle"/>
+    <file name="favicon.ico" crc="380174083" ref="index"/>
+    <file name="logopepsico.png" crc="4268554895" ref="index"/>
+    <file name="scroll_arrowblack.png" crc="3854207600" ref="index"/>
+    <file name="scroll_arrowblack2.png" crc="3912623187" ref="index"/>
+    <file name="scroll_arrowwhite.png" crc="4254704922" ref="index"/>
+    <file name="scroll_arrowwhite2.png" crc="468154736" ref="index"/>
+    <file name="servicios_mobilemarketing.png" crc="3914632625" ref="index"/>
+    <file name="servicios_gateway.png" crc="3820228116" ref="index"/>
+    <file name="servicios_tvinteractiva.png" crc="3983667094" ref="index"/>
+    <file name="servicios_socialmedia.png" crc="4213161469" ref="index"/>
+    <file name="servicios_virtualgraphics.png" crc="3933705073" ref="index"/>
+    <file name="servicios_fidelizacion.png" crc="4176524759" ref="index"/>
+    <file name="servicios_mgoverment.png" crc="144189997" ref="index"/>
+    <file name="titulares2_bg.png" crc="447663188" ref="index"/>
+    <file name="herramientas_sms.png" crc="4115466733" ref="index"/>
+    <file name="herramientas_mms.png" crc="229050000" ref="index"/>
+    <file name="herramientas_web.png" crc="4124170889" ref="index"/>
+    <file name="herramientas_portalesmoviles.png" crc="345709524" ref="index"/>
+    <file name="herramientas_qr.png" crc="4110230791" ref="index"/>
+    <file name="herramientas_app.png" crc="3842721449" ref="index"/>
+    <file name="herramientas_ad.png" crc="4073325633" ref="index"/>
+    <file name="herramientas_virtual.png" crc="393490719" ref="index"/>
+    <file name="herramientas_crm.png" crc="3853279877" ref="index"/>
+    <file name="herramientas_text.png" crc="4019130601" ref="index"/>
+    <file name="bg_porquecelmedia.jpg" crc="4041343635" ref="index"/>
+    <file name="tecnologias_negocio.png" crc="3968531750" ref="index"/>
+    <file name="bg_proyectos-u46470.jpg" crc="395841806" ref="index"/>
+    <file name="bg_noticias.jpg" crc="26706112" ref="index"/>
+    <file name="bg_clientes-u46493.jpg" crc="78251457" ref="index"/>
+    <file name="logos_eluniversal.png" crc="319933864" ref="index"/>
+    <file name="logos_eluniversal_hover.png" crc="3880191111" ref="index"/>
+    <file name="logos_eluniversal_lb.jpg" crc="4221805590" ref="index"/>
+    <file name="contactos_seleccion.png" crc="470059748" ref="index"/>
+    <file name="u54749-25.png" crc="369929358" ref="index"/>
+    <file name="u54749-25-r.png" crc="93133721" ref="index"/>
+    <file name="u54749-25-m.png" crc="369929358" ref="index"/>
+    <file name="u54749-25-fs.png" crc="458520687" ref="index"/>
+    <file name="u54878-25.png" crc="369929358" ref="index"/>
+    <file name="u54878-25-r.png" crc="93133721" ref="index"/>
+    <file name="u54878-25-m.png" crc="369929358" ref="index"/>
+    <file name="u54878-25-fs.png" crc="458520687" ref="index"/>
+    <file name="u54935-25.png" crc="369929358" ref="index"/>
+    <file name="u54935-25-r.png" crc="93133721" ref="index"/>
+    <file name="u54935-25-m.png" crc="369929358" ref="index"/>
+    <file name="u54935-25-fs.png" crc="458520687" ref="index"/>
+    <file name="u54992-25.png" crc="369929358" ref="index"/>
+    <file name="u54992-25-r.png" crc="93133721" ref="index"/>
+    <file name="u54992-25-m.png" crc="369929358" ref="index"/>
+    <file name="u54992-25-fs.png" crc="458520687" ref="index"/>
+    <file name="u55049-25.png" crc="369929358" ref="index"/>
+    <file name="u55049-25-r.png" crc="93133721" ref="index"/>
+    <file name="u55049-25-m.png" crc="369929358" ref="index"/>
+    <file name="u55049-25-fs.png" crc="458520687" ref="index"/>
+    <file name="u55106-25.png" crc="369929358" ref="index"/>
+    <file name="u55106-25-r.png" crc="93133721" ref="index"/>
+    <file name="u55106-25-m.png" crc="369929358" ref="index"/>
+    <file name="u55106-25-fs.png" crc="458520687" ref="index"/>
+    <file name="img_referencial.jpg" crc="4116827570" ref="mobile-marketing:interactividad:gateway:fidelización:virtual-graphics:m-goverment:social-media"/>
+    <file name="titulo_caso_mobielm.png" crc="4130139393" ref="mobile-marketing"/>
+    <file name="bg_proyectos2.jpg" crc="469029321" ref="proyectos:proyecto-detalle"/>
+    <file name="icono_lupa.png" crc="3811906233" ref="proyectos:noticias:noticia-detalle:proyecto-detalle"/>
+    <file name="1-celmedia_caso_club-45-años133x75.jpg" crc="3849006120" ref="proyecto-detalle"/>
+    <file name="2-celmedia_caso_club-45-años133x75.jpg" crc="297279696" ref="proyecto-detalle"/>
+    <file name="4-celmedia_caso_club-45-años133x75.jpg" crc="4048808166" ref="proyecto-detalle"/>
+    <file name="5-celmedia_caso_club-45-años133x75.jpg" crc="4166587599" ref="proyecto-detalle"/>
+    <file name="titulo_caso_tvinter.png" crc="4132242082" ref="interactividad"/>
+    <file name="titulo_caso_gateway.png" crc="95019472" ref="gateway"/>
+    <file name="titulo_caso_fidelizacion.png" crc="3960621122" ref="fidelización"/>
+    <file name="titulo_caso_virtualg.png" crc="184808735" ref="virtual-graphics"/>
+    <file name="titulo_caso_mgovermetn.png" crc="4591691" ref="m-goverment"/>
+    <file name="titulo_caso_socialm.png" crc="4027167192" ref="social-media"/>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="m-goverment.css" crc="254569267" ref="tablet>m-goverment"/>
+      <file name="iefonts_m-goverment.css" crc="419471177" ref="tablet>m-goverment"/>
+      <file name="proyecto-detalle.css" crc="3811314258" ref="tablet>proyecto-detalle"/>
+      <file name="iefonts_proyecto-detalle.css" crc="130043573" ref="tablet>proyecto-detalle"/>
+      <file name="virtual-graphics.css" crc="4217836369" ref="tablet>virtual-graphics"/>
+      <file name="iefonts_virtual-graphics.css" crc="3828560968" ref="tablet>virtual-graphics"/>
+      <file name="fidelizacion.css" crc="4074989547" ref="tablet>fidelizacion"/>
+      <file name="iefonts_fidelizacion.css" crc="453724626" ref="tablet>fidelizacion"/>
+      <file name="noticia-detalle.css" crc="3914525692" ref="tablet>noticia-detalle"/>
+      <file name="iefonts_noticia-detalle.css" crc="3870930059" ref="tablet>noticia-detalle"/>
+      <file name="interactividad.css" crc="4110838890" ref="tablet>interactividad"/>
+      <file name="iefonts_interactividad.css" crc="4180315929" ref="tablet>interactividad"/>
+      <file name="noticias.css" crc="110275431" ref="tablet>noticias"/>
+      <file name="iefonts_noticias.css" crc="438546698" ref="tablet>noticias"/>
+      <file name="servicios.css" crc="3773015040" ref="tablet>servicios"/>
+      <file name="iefonts_servicios.css" crc="105756571" ref="tablet>servicios"/>
+      <file name="proyectos.css" crc="423568542" ref="tablet>proyectos"/>
+      <file name="index.css" crc="3773226520" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="505449320" ref="tablet>index"/>
+      <file name="mobile-marketing.css" crc="22977475" ref="tablet>mobile-marketing"/>
+      <file name="iefonts_mobile-marketing.css" crc="435528832" ref="tablet>mobile-marketing"/>
+      <file name="gateway.css" crc="50636502" ref="tablet>gateway"/>
+      <file name="iefonts_gateway.css" crc="5509984" ref="tablet>gateway"/>
+      <file name="social-media.css" crc="509935779" ref="tablet>social-media"/>
+      <file name="iefonts_social-media.css" crc="3990398209" ref="tablet>social-media"/>
+      <file name="contactos.css" crc="207939304" ref="tablet>contactos"/>
+      <file name="iefonts_contactos.css" crc="3824328088" ref="tablet>contactos"/>
+    </folder>
+    <file name="index.html" crc="284407846" mt="1407997077254" redirect="true"/>
+    <file name="servicios.html" crc="4160540641" mt="1407997237350" redirect="true"/>
+    <file name="mobile-marketing.html" crc="4223320692" mt="1407998176615" redirect="true"/>
+    <file name="interactividad.html" crc="331206100" mt="1407998195257" redirect="true"/>
+    <file name="gateway.html" crc="61754616" mt="1407998206824" redirect="true"/>
+    <file name="virtual-graphics.html" crc="108681710" mt="1407998243741" redirect="true"/>
+    <file name="proyectos.html" crc="235178334" mt="1407997116610" redirect="true"/>
+    <file name="noticias.html" crc="421516263" mt="1407997129460" redirect="true"/>
+    <file name="contactos.html" crc="111514966" mt="1407997168219" redirect="true"/>
+    <file name="fidelizacion.html" crc="511188569" mt="1407998218754" redirect="true"/>
+    <file name="m-goverment.html" crc="3817822985" mt="1407998257286" redirect="true"/>
+    <file name="social-media.html" crc="3812545692" mt="1407998277459" redirect="true"/>
+    <file name="proyecto-detalle.html" crc="3977793439" mt="1407997153671" redirect="true"/>
+    <file name="noticia-detalle.html" crc="249716887" mt="1407997139248" redirect="true"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="m-goverment.css" crc="340348609" ref="phone>m-goverment"/>
+      <file name="iefonts_m-goverment.css" crc="3942401983" ref="phone>m-goverment"/>
+      <file name="social-media.css" crc="4106244499" ref="phone>social-media"/>
+      <file name="iefonts_social-media.css" crc="68429838" ref="phone>social-media"/>
+      <file name="index.css" crc="87381110" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="359187267" ref="phone>index"/>
+      <file name="proyectos.css" crc="263160293" ref="phone>proyectos"/>
+      <file name="iefonts_proyectos.css" crc="299000102" ref="phone>proyectos"/>
+      <file name="proyecto-detalle.css" crc="264940001" ref="phone>proyecto-detalle"/>
+      <file name="iefonts_proyecto-detalle.css" crc="4101179861" ref="phone>proyecto-detalle"/>
+      <file name="servicios.css" crc="328413473" ref="phone>servicios"/>
+      <file name="iefonts_servicios.css" crc="4262701696" ref="phone>servicios"/>
+      <file name="mobile-marketing.css" crc="59654515" ref="phone>mobile-marketing"/>
+      <file name="iefonts_mobile-marketing.css" crc="526972245" ref="phone>mobile-marketing"/>
+      <file name="interactividad.css" crc="3823870368" ref="phone>interactividad"/>
+      <file name="iefonts_interactividad.css" crc="3779997655" ref="phone>interactividad"/>
+      <file name="gateway.css" crc="433793734" ref="phone>gateway"/>
+      <file name="iefonts_gateway.css" crc="4045382772" ref="phone>gateway"/>
+      <file name="fidelizacion.css" crc="292504240" ref="phone>fidelizacion"/>
+      <file name="iefonts_fidelizacion.css" crc="246830656" ref="phone>fidelizacion"/>
+      <file name="virtual-graphics.css" crc="3830657455" ref="phone>virtual-graphics"/>
+      <file name="iefonts_virtual-graphics.css" crc="345970834" ref="phone>virtual-graphics"/>
+    </folder>
+    <file name="index.html" crc="3924828877" mt="1407995728500" redirect="true"/>
+    <file name="proyectos.html" crc="3945243129" mt="1407990614756" redirect="true"/>
+    <file name="proyecto-detalle.html" crc="382973553" mt="1407992960379" redirect="true"/>
+    <file name="servicios.html" crc="322240000" mt="1407992926716" redirect="true"/>
+    <file name="mobile-marketing.html" crc="4238158213" mt="1407992760871" redirect="true"/>
+    <file name="interactividad.html" crc="3827978236" mt="1407992784142" redirect="true"/>
+    <file name="gateway.html" crc="219878727" mt="1407992859723" redirect="true"/>
+    <file name="fidelizacion.html" crc="510355961" mt="1407992877094" redirect="true"/>
+    <file name="virtual-graphics.html" crc="514462818" mt="1407992869250" redirect="true"/>
+    <file name="m-goverment.html" crc="213178393" mt="1407992901087" redirect="true"/>
+    <file name="social-media.html" crc="535964906" mt="1407992910083" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="3963563810" mt="1407985274042" redirect="true"/>
+  <file name="mobile-marketing.html" crc="3758441787" mt="1407989988176" redirect="true"/>
+  <file name="proyectos.html" crc="3914294886" mt="1407992539290" redirect="true"/>
+  <file name="noticias.html" crc="443991841" mt="1407990922221" redirect="true"/>
+  <file name="noticia-detalle.html" crc="478313503" mt="1407994037012" redirect="true"/>
+  <file name="proyecto-detalle.html" crc="4273610002" mt="1407992620654" redirect="true"/>
+  <file name="interactividad.html" crc="2497065" mt="1407990517886" redirect="true"/>
+  <file name="gateway.html" crc="404620876" mt="1407990532896" redirect="true"/>
+  <file name="fidelización.html" crc="3854476942" mt="1407985274235" redirect="true"/>
+  <file name="virtual-graphics.html" crc="4061144687" mt="1407990565275" redirect="true"/>
+  <file name="m-goverment.html" crc="517759643" mt="1407991149405" redirect="true"/>
+  <file name="social-media.html" crc="22671398" mt="1407991159790" redirect="true"/>
+</manifest>
