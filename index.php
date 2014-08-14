@@ -653,16 +653,16 @@ background-color:#ffffff}
      <div class="clearfix grpelem" id="u48714"><!-- column -->
       <div class="clearfix colelem" id="u48715"><!-- group -->
        <div class="pointer_cursor clearfix grpelem" id="u48716"><!-- group -->
-        <a class="block" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"></a>
-        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48718-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><?php echo $noticias[0]['fecha']; ?></h3></h3></a>
+        <a class="block" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"></a>
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48718-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h3><?php echo $noticias[1]['fecha']; ?></h3></h3></a>
        <!--  <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48717-4" href="noticia-detalle.html"><h3>Tags</h3></a> -->
        </div>
       </div>
-      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48724-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[0]['titulo']); ?></h2></a>
-      <a class="nonblock nontext colelem" id="u48723" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[0]['imagen'];?>" alt="" width="350" height="255"/></a>
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48725-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[0]['descripcion'], 0, 100)); ?>...</h3></a>
+      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48724-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[1]['titulo']); ?></h2></a>
+      <a class="nonblock nontext colelem" id="u48723" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[1]['imagen'];?>" alt="" width="350" height="255"/></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48725-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[1]['descripcion'], 0, 100)); ?>...</h3></a>
       <div class="clearfix colelem" id="u48719"><!-- group -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48720-5" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><span id="u48720">Leer más</span></h3></a>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48720-5" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h3><span id="u48720">Leer más</span></h3></a>
        <a class="nonblock nontext clip_frame grpelem" id="u48721" href="noticia-detalle.html" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48721_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
       </div>
      </div>
