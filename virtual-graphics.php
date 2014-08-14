@@ -80,7 +80,7 @@ var __adobewebfontsappname__ = "muse";
     <div class="mse_pre_init" id="u50907"><!-- simple frame --></div>
     <div class="clip_frame clearfix mse_pre_init" id="u50022"><!-- image -->
      <div id="u50022_clip">
-      <img class="position_content" id="u50022_img" src="images/img_referencial.jpg" alt="" width="525" height="525"/>
+      <img class="position_content" id="u50022_img" src="admin/assets/celmediachile/servicios/<?php echo $servicios[0]['imagen']; ?>" alt="" width="525" height="525"/>
      </div>
     </div>
     <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u50051-4" href="index.php#servicios"><!-- content --><h2>&lt; Regresar</h2></a>
@@ -106,9 +106,9 @@ var __adobewebfontsappname__ = "muse";
       </div>
      </div>
      <div class="clearfix grpelem" id="pu50909"><!-- column -->
-      <div class="colelem" id="u50909"><img src="images/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div>
+      <div class="colelem" id="u50909"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div>
       <div class="Cuerpo-de-Texto1 clearfix colelem" id="u50908-4"><!-- content -->
-       <h2><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 195)); ?>...</h2>
+       <h2><?php echo utf8_encode( $proyectos[0]['nombre']).''.utf8_encode( substr($proyectos[0]['descripcion'], 0, 180)); ?>...</h2>
       </div>
       <a class="nonblock nontext clearfix colelem" id="u50006-6" href="proyecto-detalle.html"><!-- content --><p id="u50006-4"><span class="Links-Menu" id="u50006">&nbsp;Ver más de este caso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u50007"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u50008"><!-- image --><img id="u50008_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u50006-3"></span></p></a>
      </div>

@@ -60,7 +60,7 @@ var __adobewebfontsappname__ = "muse";
    <div class="position_content" id="page_position_content">
     <div class="clearfix colelem" id="pu55365"><!-- group -->
      <div class="clearfix mse_pre_init" id="u55365"><!-- group -->
-      <a class="nonblock nontext clearfix grpelem" id="u55372-4" href="noticias.php"><!-- content --><p>NOTICIAS</p></a>
+      <a class="nonblock nontext clearfix grpelem" id="u55372-4" href="index.php#noticias"><!-- content --><p>NOTICIAS</p></a>
       <a class="nonblock nontext clearfix grpelem" id="u55368-4" href="index.php#clientes"><!-- content --><p>CLIENTES</p></a>
       <a class="nonblock nontext clearfix grpelem" id="u55371-4" href="index.php"><!-- content --><p id="u55371-2"><span class="Links-Menu" id="u55371">INICIO</span></p></a>
       <div class="grpelem" id="pu55370"><!-- inclusion -->
@@ -80,7 +80,7 @@ var __adobewebfontsappname__ = "muse";
     <div class="mse_pre_init" id="u50896"><!-- simple frame --></div>
     <div class="clip_frame clearfix mse_pre_init" id="u49876"><!-- image -->
      <div id="u49876_clip">
-      <img class="position_content" id="u49876_img" src="images/img_referencial.jpg" alt="" width="525" height="525"/>
+      <img class="position_content" id="u49876_img" src="admin/assets/celmediachile/servicios/<?php echo $servicios[0]['imagen']; ?>" alt="" width="525" height="525"/>
      </div>
     </div>
     <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u49875-4" href="index.php#servicios"><!-- content --><h2>&lt; Regresar</h2></a>
@@ -108,9 +108,9 @@ var __adobewebfontsappname__ = "muse";
       </div>
      </div>
      <div class="clearfix grpelem" id="pu50898"><!-- column -->
-      <div class="colelem" id="u50898"><img src="images/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div>
+      <div class="colelem" id="u50898"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div>
       <div class="Cuerpo-de-Texto1 clearfix colelem" id="u50897-4"><!-- content -->
-       <h2><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 195)); ?>...</h2>
+       <h2><?php echo utf8_encode( $proyectos[0]['nombre']).''.utf8_encode( substr($proyectos[0]['descripcion'], 0, 180)); ?>...</h2>
       </div>
       <a class="nonblock nontext clearfix colelem" id="u49871-6" href="proyecto-detalle.html"><!-- content --><p id="u49871-4"><span class="Links-Menu" id="u49871">&nbsp;Ver más de este caso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49872"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49873"><!-- image --><img id="u49873_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49871-3"></span></p></a>
       <a class="nonblock nontext clearfix colelem" id="u49880-6" href="proyectos.html"><!-- content --><p id="u49880-4"><span class="Links-Menu" id="u49880">&nbsp;Ver todos los casos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49881"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49882"><!-- image --><img id="u49882_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49880-3"></span></p></a>

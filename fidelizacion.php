@@ -82,7 +82,7 @@ var __adobewebfontsappname__ = "muse";
     <div class="mse_pre_init" id="u50900"><!-- simple frame --></div>
     <div class="clip_frame clearfix mse_pre_init" id="u49945"><!-- image -->
      <div id="u49945_clip">
-      <img class="position_content" id="u49945_img" src="images/<?php echo $servicios[0]['imagen']; ?>" alt="" width="525" height="525"/>
+      <img class="position_content" id="u49945_img" src="admin/assets/celmediachile/servicios/<?php echo $servicios[0]['imagen']; ?>" alt="" width="525" height="525"/>
      </div>
     </div>
     <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u49927-4" href="index.php#servicios"><!-- content --><h2>&lt; Regresar</h2></a>
@@ -109,9 +109,9 @@ var __adobewebfontsappname__ = "muse";
       </div>
      </div>
      <div class="clearfix grpelem" id="pu50902"><!-- column -->
-      <div class="colelem" id="u50902"><img src="images/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div>
+      <div class="colelem" id="u50902"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div>
       <div class="Cuerpo-de-Texto1 clearfix colelem" id="u50901-4"><!-- content -->
-       <h2><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 195)); ?>...</h2>
+       <h2><?php echo utf8_encode( $proyectos[0]['nombre']).''.utf8_encode( substr($proyectos[0]['descripcion'], 0, 180)); ?>...</h2>
       </div>
       <a class="nonblock nontext clearfix colelem" id="u49956-6" href="proyecto-detalle.html"><!-- content --><p id="u49956-4"><span class="Links-Menu" id="u49956">&nbsp;Ver más de este caso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49957"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49958"><!-- image --><img id="u49958_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49956-3"></span></p></a>
       <a class="nonblock nontext clearfix colelem" id="u49938-6" href="proyectos.html"><!-- content --><p id="u49938-4"><span class="Links-Menu" id="u49938">&nbsp;Ver todos los casos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49939"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49940"><!-- image --><img id="u49940_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49938-3"></span></p></a>

@@ -89,7 +89,7 @@ var __adobewebfontsappname__ = "muse";
     <div class="mse_pre_init" id="u50489"><!-- simple frame --></div>
     <div class="clip_frame clearfix mse_pre_init" id="u49712"><!-- image -->
      <div id="u49712_clip">
-      <img class="position_content" id="u49712_img" src="images/<?php echo $servicios[0]['imagen']; ?>" alt="" width="525" height="525"/>
+      <img class="position_content" id="u49712_img" src="admin/assets/celmediachile/servicios/<?php echo $servicios[0]['imagen']; ?>" alt="" width="525" height="525"/>
      </div>
     </div>
     <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u49754-4" href="index.php#servicios"><!-- content --><h2>&lt; Regresar</h2></a>
@@ -112,7 +112,7 @@ var __adobewebfontsappname__ = "muse";
         <h1>Caso de éxito</h1>
        </div>
       </div>
-      <div class="colelem" id="u50490"><img src="images/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div> <!-- width="350" height="50" -->
+      <div class="colelem" id="u50490"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="145"/></div> <!-- width="350" height="50" -->
      </div>
     </div>
     <div class="clearfix colelem" id="pu46617-7"><!-- group -->
@@ -123,7 +123,7 @@ var __adobewebfontsappname__ = "muse";
      </div>
      <div class="clearfix grpelem" id="pu49735-4"><!-- column -->
       <div class="Cuerpo-de-Texto1 clearfix colelem" id="u49735-4"><!-- content -->
-       <h2><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 195)); ?>...</h2>
+       <h2><?php echo utf8_encode( $proyectos[0]['nombre']).''.utf8_encode( substr($proyectos[0]['descripcion'], 0, 180)); ?>...</h2>
       </div>
       <a class="nonblock nontext clearfix colelem" id="u49746-6" href="proyecto-detalle.html"><!-- content --><p id="u49746-4"><span class="Links-Menu" id="u49746">&nbsp;Ver más de este caso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49747"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49748"><!-- image --><img id="u49748_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49746-3"></span></p></a>
       <a class="nonblock nontext clearfix colelem" id="u49736-6" href="proyectos.html"><!-- content --><p id="u49736-4"><span class="Links-Menu" id="u49736">&nbsp;Ver todos los casos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49737"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49738"><!-- image --><img id="u49738_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49736-3"></span></p></a>
