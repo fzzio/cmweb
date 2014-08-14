@@ -698,185 +698,187 @@ background-color:#ffffff}
     </div>
     <div class="PamphletWidget clearfix widget_invisible colelem" id="pamphletu53997"><!-- none box -->
      <div class="ThumbGroup clearfix grpelem" id="u54008"><!-- none box -->
+      <?php foreach ($clientes as $clienteitem): ?>
+        <div class="popup_anchor">
+         <div class="Thumb popup_element clientecm" style="background-image: url('admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>');"><!-- simple frame --></div>
+        </div>        
+      <?php endforeach ?>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54009"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54047"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54049"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54051"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54053"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54055"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54057"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54059"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54061"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54063"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54065"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54067"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54147"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54149"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54151"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54153"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54155"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54157"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54159"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54161"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54165"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54167"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54169"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54171"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54173"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54175"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54177"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54179"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54181"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54183"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54185"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54187"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54189"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54191"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54193"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54195"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54197"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54199"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54201"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54203"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54205"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54207"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54209"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54211"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54213"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54215"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54217"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54219"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54221"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54223"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54225"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54227"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54229"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54231"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54233"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54235"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54237"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54239"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
       <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54241"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element" id="u54243"><!-- simple frame --></div>
+       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
       </div>
      </div>
      <div class="popup_anchor" id="u54012popup">

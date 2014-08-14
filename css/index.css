@@ -2861,6 +2861,27 @@
 	margin-right: -10000px;
 }
 
+.clientecm{
+	position: relative;
+	width: 85px;
+	height: 85px;
+	border-style: none;
+	background-color: red;
+	border-color: transparent;
+	background-repeat: no-repeat;
+	background-position: left top;
+	float: left;
+	background-size: contain;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.clientecm:hover{
+
+}
+
 #u54009
 {
 	position: absolute;
