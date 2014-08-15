@@ -2866,7 +2866,7 @@
 	width: 85px;
 	height: 85px;
 	border-style: none;
-	background-color: red;
+	background-color: transparent;
 	border-color: transparent;
 	background-repeat: no-repeat;
 	background-position: left top;
@@ -3603,6 +3603,21 @@
 #u54012popup
 {
 	z-index: 651;
+}
+
+.clientecmpopup{
+	z-index: 652;
+	width: 621px;
+	height: 466px;
+	border-style: none;
+	border-color: transparent;
+	margin-right: -10000px;
+	position: relative;
+	top: 22px;
+	left: 22px;
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 #u54013

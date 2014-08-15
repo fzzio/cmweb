@@ -33,7 +33,7 @@
     $noticias = @MySql::getInstance()->getResultSet($sqlNot);
 
     $sqlCli = "
-      SELECT c.nombre, c.imagen
+      SELECT c.nombre, c.imagen, c.imagenhover, c.imagenbg
       FROM cliente as c
       WHERE c.estado = '1'";
 
@@ -699,250 +699,29 @@ background-color:#ffffff}
     <div class="PamphletWidget clearfix widget_invisible colelem" id="pamphletu53997"><!-- none box -->
      <div class="ThumbGroup clearfix grpelem" id="u54008"><!-- none box -->
       <?php foreach ($clientes as $clienteitem): ?>
-        <div class="popup_anchor">
-         <div class="Thumb popup_element clientecm" style="background-image: url('admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>');"><!-- simple frame --></div>
-        </div>        
+        <div class="popup_anchor">            
+           <div class="Thumb popup_element clientecm"
+              style="background-image: url('admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>');"
+              onMouseOver="this.style.backgroundImage='url(admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>)'"
+              onMouseOut="this.style.backgroundImage='url(admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagenhover']; ?>)'"
+            >
+            <!-- simple frame -->
+          </div>
+        </div>
       <?php endforeach ?>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clientecm"><!-- simple frame --></div>
-      </div>
      </div>
      <div class="popup_anchor" id="u54012popup">
       <div class="ContainerGroup clearfix" id="u54012"><!-- stack box -->
-       <div class="Container grpelem" id="u54013"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54048"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54050"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54052"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54054"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54056"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54058"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54060"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54062"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54064"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54066"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54068"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54148"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54150"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54152"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54154"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54156"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54158"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54160"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54162"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54166"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54168"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54170"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54172"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54174"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54176"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54178"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54180"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54182"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54184"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54186"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54188"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54190"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54192"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54194"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54196"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54198"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54200"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54202"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54204"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54206"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54208"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54210"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54212"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54214"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54216"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54218"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54220"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54222"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54224"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54226"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54228"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54230"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54232"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54234"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54236"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54238"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54240"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54242"><!-- simple frame --></div>
-       <div class="Container invi grpelem" id="u54244"><!-- simple frame --></div>
+        <?php foreach ($clientes as $clienteitem): ?>
+          <div class="popup_anchor">            
+             <div class="Thumb popup_element clientecm"
+                style="background-image: url('admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagenbg']; ?>');"
+              >
+              <!-- simple frame -->
+            </div>
+          </div>
+        <?php endforeach ?>
+       <div class="Container grpelem clientecmpopup" style="background-image: url('admin/assets/celmediachile/clientes/<?php echo $clientes[0]['imagenbg']; ?>');"><!-- simple frame --></div>
       </div>
      </div>
      <div class="popup_anchor">
