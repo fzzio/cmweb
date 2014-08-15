@@ -220,7 +220,7 @@ var __adobewebfontsappname__ = "muse";
    
 
 
-    <a class="nonblock nontext clearfix colelem" id="u51276-6" href="proyectos.html"><!-- content --><p id="u51276-4"><span class="Links-Menu" id="u51276">&nbsp;Ver más noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u51277" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=-1,M21=1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u51278"><!-- image --><img id="u51278_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u51276-3"></span></p></a>
+    <a class="nonblock nontext clearfix colelem" id="u51276-6" href="proyectos.php"><!-- content --><p id="u51276-4"><span class="Links-Menu" id="u51276">&nbsp;Ver más noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u51277" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=-1,M21=1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u51278"><!-- image --><img id="u51278_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u51276-3"></span></p></a>
     <div class="clearfix colelem" id="pu50428-4"><!-- group -->
      <div class="Cuerpo-de-texto-2 clearfix grpelem" id="u50428-4"><!-- content -->
       <h3>© 2014 CELMEDIA, Todos los derechos reservados</h3>
@@ -231,13 +231,13 @@ var __adobewebfontsappname__ = "muse";
     </div>
     <div class="clearfix colelem" id="ppu50430-4"><!-- group -->
      <div class="clearfix grpelem" id="pu50430-4"><!-- column -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50430-4" href="proyectos.html"><!-- content --><h3>Proyectos</h3></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50430-4" href="proyectos.php"><!-- content --><h3>Proyectos</h3></a>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50432-4"><!-- content -->
        <h3>Clientes</h3>
       </div>
      </div>
      <div class="clearfix grpelem" id="pu50431-4"><!-- column -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="mobile-marketing.html"><!-- content --><h3>Mobile Marketing</h3></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="mobile-marketing.php"><!-- content --><h3>Mobile Marketing</h3></a>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50433-4"><!-- content -->
        <h3>TV Interactiva</h3>
       </div>
@@ -255,7 +255,7 @@ var __adobewebfontsappname__ = "muse";
      </div>
     </div>
     <div class="clearfix colelem" id="pu50435-4"><!-- group -->
-     <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u50435-4" href="noticias.html"><!-- content --><h3>Noticias</h3></a>
+     <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u50435-4" href="noticias.php"><!-- content --><h3>Noticias</h3></a>
      <div class="clearfix grpelem" id="pu50436-4"><!-- column -->
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50436-4"><!-- content -->
        <h3>Gateway</h3>
