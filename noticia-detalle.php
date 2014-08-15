@@ -30,6 +30,7 @@
 
     $tags = @MySql::getInstance()->getResultSet($sqlTag);
     $lista_tags = '';
+    
     foreach ($tags as $tag) {
       $lista_tags.=$tag['descripcion'].' - ';
     }
@@ -133,7 +134,7 @@ var __adobewebfontsappname__ = "muse";
     </div>
     <a class="nonblock nontext clearfix colelem" id="u51851-6" href="noticias.php"><!-- content --><p id="u51851-4"><span class="Links-Menu" id="u51851">&nbsp;Volver a todos las noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u51852"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u51853"><!-- image --><img id="u51853_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u51851-3"></span></p></a>
     <div class="Titulares clearfix colelem" id="u51856-4"><!-- content -->
-     <h1>Otros proyectos</h1>
+     <h1>Otras Noticias</h1>
     </div>
     <div class="clearfix colelem" id="pu51708"><!-- group -->
      <div class="clearfix grpelem" id="u51708"><!-- column -->

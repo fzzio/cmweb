@@ -43,9 +43,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -63,9 +63,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -157,9 +157,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -189,9 +189,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -222,9 +222,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -340,10 +340,10 @@
 	min-height: 23px;
 	padding-left: 10px;
 	padding-top: 10px;
-	font-size: 12px;
-	text-align: left;
-	line-height: 17px;
 	color: #000000;
+	font-size: 12px;
+	line-height: 17px;
+	text-align: left;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-left: 59px;
@@ -375,10 +375,10 @@
 	min-height: 49px;
 	padding-left: 10px;
 	padding-top: 10px;
+	color: #000000;
+	line-height: 62px;
 	font-size: 44px;
 	text-align: left;
-	line-height: 62px;
-	color: #000000;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 7px;
@@ -392,8 +392,8 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	font-size: 24px;
-	line-height: 34px;
 	color: #FFFFFF;
+	line-height: 34px;
 	position: relative;
 	margin-right: -10000px;
 	left: 826px;
@@ -424,10 +424,10 @@
 	min-height: 69px;
 	padding-left: 10px;
 	padding-top: 10px;
+	color: #000000;
+	line-height: 25px;
 	font-size: 18px;
 	text-align: left;
-	line-height: 25px;
-	color: #000000;
 	position: relative;
 }
 
@@ -444,10 +444,10 @@
 	min-height: 228px;
 	padding-left: 10px;
 	padding-top: 10px;
-	font-size: 12px;
-	text-align: left;
-	line-height: 17px;
 	color: #000000;
+	font-size: 12px;
+	line-height: 17px;
+	text-align: left;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-top: 11px;
@@ -482,10 +482,10 @@
 	min-height: 58px;
 	padding-left: 10px;
 	padding-top: 10px;
-	font-size: 12px;
-	text-align: left;
-	line-height: 17px;
 	color: #000000;
+	font-size: 12px;
+	line-height: 17px;
+	text-align: left;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-left: 1px;
@@ -501,8 +501,8 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #8C85A9;
-	text-align: center;
 	line-height: 35px;
+	text-align: center;
 	margin-top: 20px;
 	position: relative;
 }
@@ -519,8 +519,8 @@
 	width: 350px;
 	min-height: 45px;
 	background-color: #000000;
-	text-align: center;
 	line-height: 35px;
+	text-align: center;
 	margin-top: 20px;
 	position: relative;
 }
@@ -553,9 +553,9 @@
 	z-index: 42;
 	width: 458px;
 	min-height: 30px;
+	color: #E0EAE2;
 	font-size: 14px;
 	line-height: 20px;
-	color: #E0EAE2;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -567,9 +567,9 @@
 	z-index: 46;
 	width: 349px;
 	min-height: 30px;
+	color: #E0EAE2;
 	font-size: 14px;
 	line-height: 20px;
-	color: #E0EAE2;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -599,9 +599,9 @@
 	z-index: 50;
 	width: 103px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -612,9 +612,9 @@
 	z-index: 58;
 	width: 103px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-top: 6px;
@@ -636,9 +636,9 @@
 	z-index: 54;
 	width: 183px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -649,9 +649,9 @@
 	z-index: 62;
 	width: 183px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-top: 6px;
@@ -673,9 +673,9 @@
 	z-index: 66;
 	width: 183px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -686,9 +686,9 @@
 	z-index: 78;
 	width: 213px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-top: 6px;
@@ -705,8 +705,8 @@
 	-webkit-border-radius: 8px;
 	-khtml-border-radius: 8px;
 	border-radius: 8px;
-	text-align: left;
 	line-height: 35px;
+	text-align: left;
 	position: relative;
 	margin-right: -10000px;
 	left: 688px;
@@ -740,9 +740,9 @@
 	z-index: 70;
 	width: 103px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -765,9 +765,9 @@
 	z-index: 74;
 	width: 103px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -778,9 +778,9 @@
 	z-index: 82;
 	width: 144px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-top: 6px;
@@ -792,9 +792,9 @@
 	z-index: 86;
 	width: 144px;
 	min-height: 24px;
+	color: #929994;
 	font-size: 14px;
 	line-height: 20px;
-	color: #929994;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -809,8 +809,8 @@
 	width: 175px;
 	min-height: 45px;
 	background-color: #000000;
-	text-align: center;
 	line-height: 35px;
+	text-align: center;
 	position: relative;
 	margin-right: -10000px;
 	left: 863px;

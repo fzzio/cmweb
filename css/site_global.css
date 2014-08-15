@@ -312,6 +312,7 @@ a.nontext /* used to override default properties of 'a' tag */
 	float: left;
 }
 
+
 .popup_element
 {
 	z-index: 100000;

@@ -76,9 +76,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -96,9 +96,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -176,9 +176,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	font-size: 18px;
-	line-height: 22px;
 	color: #7F7F7F;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
@@ -239,10 +239,10 @@
 	z-index: 4;
 	width: 693px;
 	min-height: 110px;
+	color: #000000;
+	line-height: 56px;
 	font-size: 56px;
 	text-align: left;
-	line-height: 56px;
-	color: #000000;
 	margin-left: 3px;
 	position: relative;
 }

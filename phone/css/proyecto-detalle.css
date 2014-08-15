@@ -83,10 +83,10 @@
 	width: 322px;
 	min-height: 49px;
 	padding-top: 10px;
+	color: #000000;
+	line-height: 24px;
 	font-size: 24px;
 	text-align: left;
-	line-height: 24px;
-	color: #000000;
 	margin-left: 21px;
 	position: relative;
 }
@@ -98,10 +98,10 @@
 	min-height: 65px;
 	padding-left: 20px;
 	padding-top: 10px;
-	font-size: 12px;
-	text-align: left;
-	line-height: 17px;
 	color: #000000;
+	font-size: 12px;
+	line-height: 17px;
+	text-align: left;
 	margin-top: 263px;
 	position: relative;
 }
@@ -124,10 +124,10 @@
 	width: 322px;
 	min-height: 228px;
 	padding-top: 10px;
-	font-size: 12px;
-	text-align: left;
-	line-height: 17px;
 	color: #000000;
+	font-size: 12px;
+	line-height: 17px;
+	text-align: left;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-left: 21px;
@@ -227,8 +227,8 @@
 	width: 2px;
 	min-height: 57px;
 	padding: 19px;
-	text-align: center;
 	line-height: 14px;
+	text-align: center;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	top: 76px;
 }
@@ -261,9 +261,9 @@
 	width: 2px;
 	min-height: 57px;
 	padding: 19px;
-	text-align: center;
-	line-height: 14px;
 	color: #999999;
+	line-height: 14px;
+	text-align: center;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	top: 76px;
 	left: 305px;
@@ -343,8 +343,8 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	line-height: 14px;
 	color: #FFFFFF;
+	line-height: 14px;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	width: 100%;
@@ -416,8 +416,8 @@
 	min-height: 29px;
 	background-color: transparent;
 	font-size: 24px;
-	line-height: 29px;
 	color: #7F7F7F;
+	line-height: 29px;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
 	position: relative;
@@ -452,8 +452,8 @@
 	padding-left: 24px;
 	padding-top: 24px;
 	font-size: 24px;
-	line-height: 29px;
 	color: #7F7F7F;
+	line-height: 29px;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
 	top: -1px;
@@ -489,8 +489,8 @@
 	padding-left: 24px;
 	padding-top: 24px;
 	font-size: 24px;
-	line-height: 29px;
 	color: #7F7F7F;
+	line-height: 29px;
 	font-family: open-sans, sans-serif;
 	font-weight: 300;
 	top: -1px;
@@ -516,10 +516,10 @@
 	z-index: 79;
 	width: 185px;
 	min-height: 19px;
-	font-size: 18px;
-	text-align: left;
-	line-height: 25px;
 	color: #000000;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: left;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -595,9 +595,9 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	text-align: center;
-	line-height: 14px;
 	color: #FFFFFF;
+	line-height: 14px;
+	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -656,8 +656,8 @@
 	min-height: 24px;
 	background-color: transparent;
 	font-size: 18px;
-	line-height: 25px;
 	color: #FFFFFF;
+	line-height: 25px;
 	-webkit-transform: matrix(-1,0,0,-1,153,25);
 	-ms-transform: matrix(-1,0,0,-1,153,25);
 	-o-transform: matrix(-1,0,0,-1,153,25);
@@ -698,9 +698,9 @@
 	z-index: 97;
 	width: 275px;
 	min-height: 30px;
+	color: #FFFFFF;
 	font-size: 14px;
 	line-height: 20px;
-	color: #FFFFFF;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	-webkit-transform: matrix(-1,0,0,-1,275,100);
@@ -779,8 +779,8 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	line-height: 21px;
 	color: #FFFFFF;
+	line-height: 21px;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -1048,9 +1048,9 @@
 {
 	z-index: 117;
 	width: 190px;
+	color: #FFFFFF;
 	font-size: 14px;
 	line-height: 20px;
-	color: #FFFFFF;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	-webkit-transform: matrix(-1,0,0,-1,190,20);
@@ -1132,9 +1132,9 @@
 {
 	z-index: 127;
 	width: 190px;
+	color: #FFFFFF;
 	font-size: 14px;
 	line-height: 20px;
-	color: #FFFFFF;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	-webkit-transform: matrix(-1,0,0,-1,190,20);
