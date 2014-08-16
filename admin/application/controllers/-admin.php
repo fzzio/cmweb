@@ -171,17 +171,12 @@ class Admin extends CI_Controller {
 
         $crud->display_as('nombre','Nombre');
         $crud->display_as('imagen','Logo');
-        $crud->display_as('imagenhover','Logo Hover');
-        $crud->display_as('imagenbg','Imagen Grande');
-        
         $crud->display_as('estado','Estado');
 
-        $crud->required_fields('nombre','imagen', 'imagenhover', 'imagenbg','estado');
-        $crud->columns('nombre','imagen', 'imagenhover', 'imagenbg','estado');
+        $crud->required_fields('nombre','imagen','estado');
+        $crud->columns('nombre','imagen','estado');
         $crud->set_field_upload('imagen', 'assets/celmediachile/clientes');
-        $crud->set_field_upload('imagenhover', 'assets/celmediachile/clientes');
-        $crud->set_field_upload('imagenbg', 'assets/celmediachile/clientes');
-        $crud->fields('nombre','imagen','imagenhover', 'imagenbg', 'estado');
+        $crud->fields('nombre','imagen','estado');
         $crud->field_type('estado', 'dropdown', array(
             '1' => 'Activo',
             '2' => 'Inactivo'

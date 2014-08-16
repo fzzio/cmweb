@@ -700,8 +700,8 @@ background-color:#ffffff}
 			<div class="popup_anchor">            
 				<div class="Thumb popup_element clientecm"
 				style="background-image: url('admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>');"
-				onMouseOver="this.style.backgroundImage='url(admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>)'"
-				onMouseOut="this.style.backgroundImage='url(admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagenhover']; ?>)'"
+				onMouseOver="this.style.backgroundImage='url(admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagenhover']; ?>)'"
+				onMouseOut="this.style.backgroundImage='url(admin/assets/celmediachile/clientes/<?php echo $clienteitem['imagen']; ?>)'"
 				>
 					<!-- simple frame -->
 				</div>
