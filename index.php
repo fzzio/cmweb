@@ -56,7 +56,7 @@
 </script>
   
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="7.4.30.244"/>
+  <meta name="generator" content="Bluefish 2.2.6" />
   <link rel="shortcut icon" href="images/favicon.ico?380174083"/>
   <title>inicio</title>
   <link media="only screen and (max-device-width: 370px)" rel="alternate" href="http://celmediaec.com/phone/index.html"/>
@@ -383,7 +383,7 @@ background-color:#ffffff}
        </div>
       </div>
      </div>
-     <a class="nonblock nontext anim_swing clip_frame mse_pre_init" id="u26435" href="index.html#home"><!-- image --><img class="block" id="u26435_img" src="images/celmedia_logo_menu.png" alt="" width="170" height="62"/></a>
+     <a class="nonblock nontext anim_swing clip_frame mse_pre_init" id="u26435" href="index.php#home"><!-- image --><img class="block" id="u26435_img" src="images/celmedia_logo_menu.png" alt="" width="170" height="62"/></a>
     </div>
     <a class="anchor_item colelem" id="home"></a>
     <div class="colelem" id="u32538"><!-- custom html -->
@@ -574,7 +574,7 @@ background-color:#ffffff}
      <div class="clip_frame grpelem" id="u46453"><!-- image -->
       <img class="block" id="u46453_img" src="images/tecnologias_negocio.png" alt="" width="804" height="600"/>
      </div>
-     <a class="nonblock nontext anim_swing clearfix grpelem" id="u46466-6" href="index.html#contactos"><!-- content --><p id="u46466-4"><span class="Links-Menu" id="u46466">¿Cómo hacer esto parte de mi negocio?&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u46597"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u46592"><!-- image --><img id="u46592_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u46466-3"></span></p></a>
+     <a class="nonblock nontext anim_swing clearfix grpelem" id="u46466-6" href="index.php#contactos"><!-- content --><p id="u46466-4"><span class="Links-Menu" id="u46466">¿Cómo hacer esto parte de mi negocio?&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u46597"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u46592"><!-- image --><img id="u46592_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u46466-3"></span></p></a>
     </div>
 
     <!-- Fin de Celmedia -->
@@ -1167,7 +1167,7 @@ background-color:#ffffff}
     <div class="clearfix colelem" id="ppu47940-4"><!-- group -->
      <div class="clearfix grpelem" id="pu47940-4"><!-- column -->
       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47940-4" href="proyectos.html"><!-- content --><h3>Proyectos</h3></a>
-      <a class="nonblock nontext anim_swing Cuerpo-de-texto-2 clearfix colelem" id="u47942-4" href="index.html#clientes"><!-- content --><h3>Clientes</h3></a>
+      <a class="nonblock nontext anim_swing Cuerpo-de-texto-2 clearfix colelem" id="u47942-4" href="index.php#clientes"><!-- content --><h3>Clientes</h3></a>
      </div>
      <div class="clearfix grpelem" id="pu47954-4"><!-- column -->
       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="mobile-marketing.html"><!-- content --><h3>Mobile Marketing</h3></a>
