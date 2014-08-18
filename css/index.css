@@ -2133,6 +2133,17 @@
 	left: 372px;
 }
 
+.img-pry-cliente{
+	position: relative;
+	margin: 0 auto;
+}
+
+.contenedor-pry-cliente{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #u50499
 {
 	z-index: 423;
@@ -2880,12 +2891,22 @@
 
 #pamphletu53997
 {
-	z-index: 589;
+	/*z-index: 589;
 	width: 0.01px;
 	height: 425px;
 	margin-left: 60px;
 	margin-top: 355px;
-	position: relative;
+	position: relative;*/
+}
+
+.contendor-clientes{
+	height: 480px;
+    margin-left: 60px;
+    margin-top: 300px;
+    position: relative;
+    width: 100%;
+    z-index: 589;
+    /*background-color: red;*/
 }
 
 #u54008

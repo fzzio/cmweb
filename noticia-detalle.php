@@ -12,16 +12,15 @@
   $id_noticia = $_GET["id"];
 
 
-  $noticias = array();
+  $noticiaRecibida = array();
   $tags = array();
   try {
 
     $sqlNot = "
-      SELECT  n.titulo, n.subtitulo, n.descripcion, n.imagen, n.fecha
+      SELECT  n.titulo, n.subtitulo, n.descripcion, n.imagen, n.imagen_detalle, n.fecha
       FROM noticia as n
       WHERE n.id=$id_noticia";
-
-    $noticias = @MySql::getInstance()->getResultSet($sqlNot);
+    $noticiaRecibida = @MySql::getInstance()->getSingleRow($sqlNot);
 
     $sqlTag = "
       SELECT t.descripcion
@@ -36,7 +35,7 @@
     }
 
     $sqlNoti = "
-      SELECT n.id, n.titulo, n.descripcion, n.imagen, n.fecha
+      SELECT n.id, n.titulo, n.descripcion, n.imagen, n.imagen_detalle, n.fecha
       FROM noticia as n
       WHERE n.estado = '1' and n.id!=$id_noticia ORDER BY n.fecha DESC";
 
@@ -45,8 +44,8 @@
 
   } catch (Exception $e) {
 
-}?>
-
+  }
+?>
 <!DOCTYPE html>
 <html class="html">
  <head>
@@ -110,7 +109,7 @@ var __adobewebfontsappname__ = "muse";
      </div>
      
     </div>
-    <a class="nonblock nontext  Cuerpo-de-Texto1 clearfix colelem" id="u51846-4" ><!-- content --><h2><?php echo utf8_encode($noticias[0]['titulo']); ?></h2></a>
+    <a class="nonblock nontext  Cuerpo-de-Texto1 clearfix colelem" id="u51846-4" ><!-- content --><h2><?php echo utf8_encode($noticiaRecibida['titulo']); ?></h2></a>
     <div class="clearfix colelem" id="pu51877"><!-- group -->
      
      <div class="clearfix grpelem" id="u51845"><!-- column -->
@@ -118,19 +117,19 @@ var __adobewebfontsappname__ = "muse";
        <div class="clearfix colelem" id="u51833"><!-- group -->
         <div class="clearfix grpelem" id="u51835"><!-- group -->
         <!--  <a class="block" href="noticia-detalle.php?id=<?php echo $listaNoticias[0]['id']; ?>"></a> -->
-         <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51834-4" ><!-- content --><h3><?php echo $noticias[0]['fecha']; ?></h3></a>
+         <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51834-4" ><!-- content --><h3><?php echo $noticiaRecibida['fecha']; ?></h3></a>
          <!-- <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51836-4" href="noticia-detalle.php?id=<?php echo $listaNoticias[0]['id']; ?>"><h3>Tags</h3></a> -->
         </div>
        </div>
-       <a class="nonblock nontext MuseLinkActive Cuerpo-de-Texto1 clearfix colelem" id="u51837-4" ><!-- content --><h2><?php echo utf8_encode($noticias[0]['subtitulo']); ?></h2></a>
-       <a class="nonblock nontext MuseLinkActive colelem" id="u51843" ><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[0]['imagen']; ?>"  alt="" width="1019" height="451"/></a>
-       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u51838-4" ><!-- content --><h3><?php echo utf8_encode($noticias[0]['descripcion']); ?></h3></a>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-Texto1 clearfix colelem" id="u51837-4" ><!-- content --><h2><?php echo utf8_encode($noticiaRecibida['subtitulo']); ?></h2></a>
+       <a class="nonblock nontext MuseLinkActive colelem" id="u51843" ><img src="admin/assets/celmediachile/noticias/<?php echo $noticiaRecibida['imagen_detalle']; ?>"  alt="" width="1019" height="451"/></a>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u51838-4" ><!-- content --><h3><?php echo utf8_encode($noticiaRecibida['descripcion']); ?></h3></a>
       </div>
      </div>
     
     </div>
     <div class="clearfix colelem" id="u51847-6"><!-- content -->
-     <p><span id="u51847">Temas:</span>&nbsp;<span id="u51847-3"><?php echo $lista_tags ?></span></p>
+     <p><span id="u51847">Temas:</span>&nbsp;<span id="u51847-3"><?php echo utf8_encode($lista_tags); ?></span></p>
     </div>
     <a class="nonblock nontext clearfix colelem" id="u51851-6" href="noticias.php"><!-- content --><p id="u51851-4"><span class="Links-Menu" id="u51851">&nbsp;Volver a todos las noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u51852"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u51853"><!-- image --><img id="u51853_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u51851-3"></span></p></a>
     <div class="Titulares clearfix colelem" id="u51856-4"><!-- content -->

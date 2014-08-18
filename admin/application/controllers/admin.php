@@ -23,7 +23,7 @@ class Admin extends CI_Controller {
         array_push($menu, array("url" => "admin/adminClientes", "label" => "Clientes", "icon" => "icon-home"));
         array_push($menu, array("url" => "admin/adminPais", "label" => "País", "icon" => "icon-home"));
         array_push($menu, array("url" => "admin/adminSector", "label" => "Sector", "icon" => "icon-home"));
-        array_push($menu, array("url" => "admin/adminCategoria", "label" => "Categoria", "icon" => "icon-home"));
+        //array_push($menu, array("url" => "admin/adminCategoria", "label" => "Categoria", "icon" => "icon-home"));
         array_push($menu, array("url" => "admin/adminTags", "label" => "Tags", "icon" => "icon-home"));
         array_push($menu, array("url" => "admin/adminServicios", "label" => "Servicios", "icon" => "icon-home"));
         array_push($menu, array("url" => "admin/adminProyectos", "label" => "Proyectos", "icon" => "icon-home"));
@@ -277,6 +277,7 @@ class Admin extends CI_Controller {
         $crud->display_as('descripcion','Descripción');
         $crud->display_as('fecha','Fecha');
         $crud->display_as('imagen','Imagen');
+        $crud->display_as('imagen_detalle','Imagen Detalle');
         $crud->display_as('prioridad','Prioridad');
         $crud->display_as('estado','Estado');
 
@@ -287,8 +288,8 @@ class Admin extends CI_Controller {
         $crud->set_relation('id_cliente', 'cliente', 'nombre');
 
         $crud->set_field_upload('imagen', 'assets/celmediachile/proyectos');
-        $crud->set_relation_n_n('Tags', 'tags_proyectos', 'tags', 'id_tags', 'id_proyecto', 'descripcion');
-        $crud->set_relation_n_n('Categorias', 'proyecto_categoria', 'categoria', 'id_categoria', 'id_proyecto', 'nombre');
+        $crud->set_field_upload('imagen_detalle', 'assets/celmediachile/proyectos');
+        $crud->set_relation_n_n('Tags', 'tags_proyectos', 'tags', 'id_proyecto', 'id_tags', 'descripcion');
 
         $output = $crud->render();
         $this->showPage($output);
@@ -306,13 +307,14 @@ class Admin extends CI_Controller {
         $crud->display_as('subtitulo','Subtítulo');
         $crud->display_as('descripcion','Descripción');
         $crud->display_as('imagen','Imagen');
+        $crud->display_as('imagen_detalle','Imagen Detalle');
         $crud->display_as('fecha','Fecha');
         $crud->display_as('estado','Estado');
 
         $crud->set_relation('id_pais', 'pais', 'nombre');
         $crud->set_relation('id_sector', 'sector', 'nombre');
 
-        $crud->required_fields('id_pais', 'id_sector', 'titulo', 'descripcion', 'imagen', 'fecha', 'estado');
+        $crud->required_fields('id_pais', 'id_sector', 'titulo', 'descripcion', 'imagen', 'imagen_detalle', 'fecha', 'estado');
 
         //$crud->columns('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');
         //$crud->fields('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');
@@ -320,6 +322,7 @@ class Admin extends CI_Controller {
         $crud->set_relation_n_n('Tags', 'tags_noticias', 'tags', 'id_noticia', 'id_tags', 'descripcion');
 
         $crud->set_field_upload('imagen', 'assets/celmediachile/noticias');
+        $crud->set_field_upload('imagen_detalle', 'assets/celmediachile/noticias');
 
         $output = $crud->render();
         $this->showPage($output);
