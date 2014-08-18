@@ -116,25 +116,14 @@ var __adobewebfontsappname__ = "muse";
       <div class="position_content" id="u51845_position_content">
        <div class="clearfix colelem" id="u51833"><!-- group -->
         <div class="clearfix grpelem" id="u51835"><!-- group -->
-<<<<<<< HEAD
-       
-         <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51834-4" ><!-- content --><h3><?php echo $noticias[0]['fecha']; ?></h3></a>
+         <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51834-4" ><!-- content --><h3><?php echo $noticiaRecibida['fecha']; ?></h3></a>
         
         </div>
        </div>
-       <a class="nonblock nontext MuseLinkActive Cuerpo-de-Texto1 clearfix colelem" id="u51837-4" ><!-- content --><h2><?php echo utf8_encode($noticias[0]['subtitulo']); ?></h2></a>
-       <a class="nonblock nontext MuseLinkActive colelem" id="u51843" ><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[0]['imagen']; ?>"  alt="" width="1019" height="451"/></a>
-       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u51838-4" style="height:230px; overflow:hidden" ><!-- content --><h3><?php echo utf8_encode($noticias[0]['descripcion']); ?></h3></a>
-=======
-        <!--  <a class="block" href="noticia-detalle.php?id=<?php echo $listaNoticias[0]['id']; ?>"></a> -->
-         <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51834-4" ><!-- content --><h3><?php echo $noticiaRecibida['fecha']; ?></h3></a>
-         <!-- <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u51836-4" href="noticia-detalle.php?id=<?php echo $listaNoticias[0]['id']; ?>"><h3>Tags</h3></a> -->
-        </div>
-       </div>
        <a class="nonblock nontext MuseLinkActive Cuerpo-de-Texto1 clearfix colelem" id="u51837-4" ><!-- content --><h2><?php echo utf8_encode($noticiaRecibida['subtitulo']); ?></h2></a>
-       <a class="nonblock nontext MuseLinkActive colelem" id="u51843" ><img src="admin/assets/celmediachile/noticias/<?php echo $noticiaRecibida['imagen_detalle']; ?>"  alt="" width="1019" height="451"/></a>
-       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u51838-4" ><!-- content --><h3><?php echo utf8_encode($noticiaRecibida['descripcion']); ?></h3></a>
->>>>>>> faed215f6b0e6dcd0ba0d236d39c0a4db7d92864
+       <a class="nonblock nontext MuseLinkActive colelem" id="u51843" ><img src="admin/assets/celmediachile/noticias/<?php echo $noticiaRecibida['imagen']; ?>"  alt="" width="1019" height="451"/></a>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u51838-4" style="height:230px; overflow:hidden" ><!-- content --><h3><?php echo utf8_encode($noticiaRecibida['descripcion']); ?></h3></a>
+
       </div>
      </div>
     
