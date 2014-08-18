@@ -97,7 +97,8 @@ var __adobewebfontsappname__ = "muse";
 
 #u54553-1{
   text-align: left;
-  line-height: 60px;
+  line-height: 50px;
+  font-size: 50px;
 }
 
 #status {
@@ -354,7 +355,7 @@ background-color:#ffffff}
          <div class="SlideShowCaptionPanel clearfix" id="u54538"><!-- stack box -->
           <?php $a=1; foreach ($sliderPrincipal as $imagen ) { ?>
             <div class="SSSlideCaption Titulares clearfix grpelem" id="u45886-24"><!-- content -->
-             <h1 id="u54553-1" style="width:80%"><?php echo utf8_encode($imagen['descripcion']);?></h1>
+             <h1 id="u54553-1" style="width:85% !important"><?php echo utf8_encode($imagen['descripcion']);?></h1>
              <h1 id="u54553-9">&nbsp;</h1>
              <h1 id="u54553-13"><span id="u54553-10">​</span><span><span class="actAsInlineDiv normal_text" id="u54554"><!-- content --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u54555"><!-- group --><span class="pointer_cursor actAsDiv clearfix grpelem" id="u54557"><!-- group --><a class="block anim_swing" href="index.php#servicios"></a><a class="nonblock nontext actAsDiv anim_swing clearfix grpelem" id="u54556-4" href="<?php echo utf8_encode($imagen['link']);?>"><!-- content --><span class="actAsPara" id="u54556-2"><span class="Links-Botones-Grandes" id="u54556"><?php echo utf8_encode($imagen['textoboton']);?></span></span></a></span></span></span></span><span></span></h1>
              <h1 id="u54553-14">&nbsp;</h1>
@@ -1215,47 +1216,50 @@ background-color:#ffffff}
       <h3>Suscríbete</h3>
      </div>
     </div>
-    <div class="clearfix colelem" id="ppu47940-4"><!-- group -->
-     <div class="clearfix grpelem" id="pu47940-4"><!-- column -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47940-4" href="proyectos.php"><!-- content --><h3>Proyectos</h3></a>
-      <a class="nonblock nontext anim_swing Cuerpo-de-texto-2 clearfix colelem" id="u47942-4" href="index.php#clientes"><!-- content --><h3>Clientes</h3></a>
-     </div>
-     <div class="clearfix grpelem" id="pu47954-4"><!-- column -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=1"><h3>Mobile Marketing</h3></a>
-      <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47953-4">
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=2"><h3>TV Interactiva</h3></a>
+
+    <form action="#" method="post">
+      <div class="clearfix colelem" id="ppu47940-4"><!-- group -->
+       <div class="clearfix grpelem" id="pu47940-4"><!-- column -->
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47940-4" href="proyectos.php"><!-- content --><h3>Proyectos</h3></a>
+        <a class="nonblock nontext anim_swing Cuerpo-de-texto-2 clearfix colelem" id="u47942-4" href="index.php#clientes"><!-- content --><h3>Clientes</h3></a>
+       </div>
+       <div class="clearfix grpelem" id="pu47954-4"><!-- column -->
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=1"><h3>Mobile Marketing</h3></a>
+        <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47953-4">
+         <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=2"><h3>TV Interactiva</h3></a>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="pu47957-4"><!-- column -->
+        <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47957-4"><!-- content -->
+         <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=5"><h3>Virtual Graphics</h3></a>
+        </div>
+        <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47956-4"><!-- content -->
+         <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=6"><h3>M&#45;Goverment</h3></a>
+        </div>
+       </div>
+       <div class="rounded-corners clearfix grpelem" id="u48020-4"><!-- content -->
+        <p id="u48020-2"><span class="Links-Menu" id="u48020"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu61148_input" name="custom_U61148" tabindex="29"/>&nbsp;&nbsp; E&#45;mail </span></p>
+       </div>
       </div>
-     </div>
-     <div class="clearfix grpelem" id="pu47957-4"><!-- column -->
-      <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47957-4"><!-- content -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=5"><h3>Virtual Graphics</h3></a>
+
+      <div class="clearfix colelem" id="pu47944-4"><!-- group -->
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u47944-4" href="noticias.php"><!-- content --><h3>Noticias</h3></a>
+       <div class="clearfix grpelem" id="pu47952-4"><!-- column -->
+        <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47952-4"><!-- content -->
+         <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=3"><h3>Gateway</h3></a>
+        </div>
+        <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47951-4"><!-- content -->
+         <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=4"><h3>Fidelización</h3></a>
+        </div>
+       </div>
+       <div class="Cuerpo-de-texto-2 clearfix grpelem" id="u47955-4"><!-- content -->
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=7"><h3>Social Media</h3></a>
+       </div>
+       <div class="clearfix grpelem" id="u48027-7"><!-- content -->
+        <p id="u48027-5"><span class="Links-Menu" id="u48027">Enviar</span><span class="Links-Menu" id="u48027-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u48028"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u48029"><!-- image --><img id="u48029_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u48027-4"></span></p>
+       </div>
       </div>
-      <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47956-4"><!-- content -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=6"><h3>M&#45;Goverment</h3></a>
-      </div>
-     </div>
-     <div class="rounded-corners clearfix grpelem" id="u48020-4"><!-- content -->
-      <p id="u48020-2"><span class="Links-Menu" id="u48020"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu61148_input" name="custom_U61148" tabindex="29"/>&nbsp;&nbsp; E&#45;mail hola</span></p>
-     </div>
-     
-    </div>
-    <div class="clearfix colelem" id="pu47944-4"><!-- group -->
-     <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u47944-4" href="noticias.php"><!-- content --><h3>Noticias</h3></a>
-     <div class="clearfix grpelem" id="pu47952-4"><!-- column -->
-      <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47952-4"><!-- content -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=3"><h3>Gateway</h3></a>
-      </div>
-      <div class="Cuerpo-de-texto-2 clearfix colelem" id="u47951-4"><!-- content -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=4"><h3>Fidelización</h3></a>
-      </div>
-     </div>
-     <div class="Cuerpo-de-texto-2 clearfix grpelem" id="u47955-4"><!-- content -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u47954-4" href="servicios.php?srv=7"><h3>Social Media</h3></a>
-     </div>
-     <div class="clearfix grpelem" id="u48027-7"><!-- content -->
-      <p id="u48027-5"><span class="Links-Menu" id="u48027">Enviar</span><span class="Links-Menu" id="u48027-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u48028"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u48029"><!-- image --><img id="u48029_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u48027-4"></span></p>
-     </div>
-    </div>
+    </form>
     <div class="verticalspacer"></div>
     <div class="mse_pre_init" id="u46510"><!-- simple frame --></div>
    </div>
