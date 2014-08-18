@@ -317,7 +317,7 @@ class Admin extends CI_Controller {
         //$crud->columns('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');
         //$crud->fields('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');
 
-        $crud->set_relation_n_n('Tags', 'tags_noticias', 'tags', 'id_tags', 'id_noticia', 'descripcion');
+        $crud->set_relation_n_n('Tags', 'tags_noticias', 'tags', 'id_noticia', 'id_tags', 'descripcion');
 
         $crud->set_field_upload('imagen', 'assets/celmediachile/noticias');
 

@@ -41,10 +41,8 @@
 
 
   } catch (Exception $e) {
-
-} ?>
-
-
+  }
+?>
 <!DOCTYPE html>
 <html class="html">
  <head>
@@ -590,27 +588,27 @@ background-color:#ffffff}
     </div>
     <div class="clearfix colelem" id="pu46565"><!-- group -->
      <div class="clearfix grpelem" id="u46565"><!-- column -->
-      <a class="nonblock nontext colelem" id="u46558" href="proyecto-detalle.php"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="270"/></a>
+      <a class="nonblock nontext colelem" id="u46558" href="proyecto-detalle.php?pry=1"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="270"/></a>
       <div class="pointer_cursor clearfix colelem" id="u46560"><!-- group -->
-       <a class="block" href="proyecto-detalle.php"></a>
-       <a class="nonblock nontext grpelem" id="u46561" href="proyecto-detalle.php"><img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[0]['cliente'];?>" alt="" width="100" height="100"/></a>
-       <a class="nonblock nontext clearfix grpelem" id="u46562-6" href="proyecto-detalle.php"><!-- content --><h2 class="Cuerpo-de-Texto1" id="u46562-2"><?php echo utf8_encode($proyectos[0]['nombre']); ?></h2><h3 class="Cuerpo-de-texto-2" id="u46562-4"><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 45)); ?>...</h3></a>
+       <a class="block" href="proyecto-detalle.php?pry=1"></a>
+       <a class="nonblock nontext grpelem" id="u46561" href="proyecto-detalle.php?pry=1"><img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[0]['cliente'];?>" alt="" width="100" height="100"/></a>
+       <a class="nonblock nontext clearfix grpelem" id="u46562-6" href="proyecto-detalle.php?pry=1"><!-- content --><h2 class="Cuerpo-de-Texto1" id="u46562-2"><?php echo utf8_encode($proyectos[0]['nombre']); ?></h2><h3 class="Cuerpo-de-texto-2" id="u46562-4"><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 45)); ?>...</h3></a>
       </div>
      </div>
      <div class="clearfix grpelem" id="u50497"><!-- column -->
-      <a class="nonblock nontext colelem" id="u50499" href="proyecto-detalle.php"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="270"/></a>
+      <a class="nonblock nontext colelem" id="u50499" href="proyecto-detalle.php?pry=2"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="270"/></a>
       <div class="pointer_cursor clearfix colelem" id="u50498"><!-- group -->
-       <a class="block" href="proyecto-detalle.php"></a>
-       <a class="nonblock nontext grpelem" id="u50501" href="proyecto-detalle.php"><img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[0]['cliente'];?>" alt="" width="100" height="100"/></a>
-       <a class="nonblock nontext clearfix grpelem" id="u50500-6" href="proyecto-detalle.php"><!-- content --><h2 class="Cuerpo-de-Texto1" id="u50500-2"><?php echo utf8_encode($proyectos[0]['nombre']); ?></h2><h3 class="Cuerpo-de-texto-2" id="u50500-4"><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 45)); ?>...</h3></a>
+       <a class="block" href="proyecto-detalle.php?pry=2"></a>
+       <a class="nonblock nontext grpelem" id="u50501" href="proyecto-detalle.php?pry=2"><img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[0]['cliente'];?>" alt="" width="100" height="100"/></a>
+       <a class="nonblock nontext clearfix grpelem" id="u50500-6" href="proyecto-detalle.php?pry=2"><!-- content --><h2 class="Cuerpo-de-Texto1" id="u50500-2"><?php echo utf8_encode($proyectos[0]['nombre']); ?></h2><h3 class="Cuerpo-de-texto-2" id="u50500-4"><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 45)); ?>...</h3></a>
       </div>
      </div>
      <div class="clearfix grpelem" id="u50507"><!-- column -->
-      <a class="nonblock nontext colelem" id="u50511" href="proyecto-detalle.php"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="270"/></a>
+      <a class="nonblock nontext colelem" id="u50511" href="proyecto-detalle.php?pry=3"><img src="admin/assets/celmediachile/proyectos/<?php echo $proyectos[0]['imagen'];?>" alt="" width="350" height="270"/></a>
       <div class="pointer_cursor clearfix colelem" id="u50510"><!-- group -->
-       <a class="block" href="proyecto-detalle.php"></a>
-       <a class="nonblock nontext grpelem" id="u50508" href="proyecto-detalle.php"><img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[0]['cliente'];?>" alt="" width="100" height="100"/></a>
-       <a class="nonblock nontext clearfix grpelem" id="u50509-6" href="proyecto-detalle.php"><!-- content --><h2 class="Cuerpo-de-Texto1" id="u50509-2"><?php echo utf8_encode($proyectos[0]['nombre']); ?></h2><h3 class="Cuerpo-de-texto-2" id="u50509-4"><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 45)); ?>...</h3></a>
+       <a class="block" href="proyecto-detalle.php?pry=3"></a>
+       <a class="nonblock nontext grpelem" id="u50508" href="proyecto-detalle.php?pry=3"><img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[0]['cliente'];?>" alt="" width="100" height="100"/></a>
+       <a class="nonblock nontext clearfix grpelem" id="u50509-6" href="proyecto-detalle.php?pry=3"><!-- content --><h2 class="Cuerpo-de-Texto1" id="u50509-2"><?php echo utf8_encode($proyectos[0]['nombre']); ?></h2><h3 class="Cuerpo-de-texto-2" id="u50509-4"><?php echo utf8_encode( substr($proyectos[0]['descripcion'], 0, 45)); ?>...</h3></a>
       </div>
      </div>
     </div>
