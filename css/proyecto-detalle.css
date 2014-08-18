@@ -1403,3 +1403,29 @@ body
 	clear: both;
 }
 
+
+.pry-contenedor-tags{
+	border-color: transparent;
+    border-style: none;
+    left: 100px;
+    margin-top: 11px;
+    position: relative;
+    width: 600px;
+    z-index: 147;
+}
+.tag-proyecto
+{
+	background-color: #91A5AD;
+	width: 109px;
+	min-height: 18px;
+	padding-top: 5px;
+	margin-right: 5px;
+	padding-bottom: 3px;
+	color: #FBF3F4;
+	line-height: 20px;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	float: left;
+	display: inline-block;
+}

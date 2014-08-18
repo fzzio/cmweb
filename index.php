@@ -601,10 +601,10 @@ background-color:#ffffff}
           </a>
           <a class="nonblock nontext clearfix grpelem" id="u46562-6" href="proyecto-detalle.php?pry=<?php echo $proyectos[0]['id'];?>">          
             <h2 class="Cuerpo-de-Texto1 pry-titular" id="u46562-2">
-              <?php echo utf8_encode( substr( $proyectos[0]['nombre'], 0, 17)) ;?>...
+              <?php echo utf8_encode( substr( $proyectos[0]['nombre'], 0, 14)) ;?>...
             </h2>
             <h3 class="Cuerpo-de-texto-2 pry-subtitular" id="u46562-4">
-              <?php echo utf8_encode( substr( strip_tags($proyectos[0]['descripcion']) , 0, 55)); ?>...
+              <?php echo utf8_encode( substr( strip_tags($proyectos[0]['descripcion']) , 0, 55)); ?> ...
             </h3>
           </a>
         </div>
@@ -620,12 +620,11 @@ background-color:#ffffff}
             <img src="admin/assets/celmediachile/clientes/<?php echo $proyectos[1]['imagen_cliente'];?>" alt="" width="85" height="85" class="img-pry-cliente" /> 
           </a>
           <a class="nonblock nontext clearfix grpelem" id="u50500-6" href="proyecto-detalle.php?pry=<?php echo $proyectos[1]['id'];?>">
-            <!-- content -->
             <h2 class="Cuerpo-de-Texto1 pry-titular" id="u50500-2">
-              Título de proyecto
+              <?php echo utf8_encode( substr( $proyectos[1]['nombre'], 0, 14)) ;?>...
             </h2>
             <h3 class="Cuerpo-de-texto-2 pry-subtitular" id="u50500-4">
-              Breve descripción no más de dos lineas…
+              <?php echo utf8_encode( substr( strip_tags($proyectos[1]['descripcion']) , 0, 55)); ?> ...
             </h3>
           </a>
         </div>
@@ -644,10 +643,10 @@ background-color:#ffffff}
           <a class="nonblock nontext clearfix grpelem" id="u50509-6" href="proyecto-detalle.php?pry=<?php echo $proyectos[2]['id'];?>">
             <!-- content -->
             <h2 class="Cuerpo-de-Texto1 pry-titular" id="u50509-2">
-              Título de proyecto
+              <?php echo utf8_encode( substr( $proyectos[2]['nombre'], 0, 14)) ;?>...
             </h2>
             <h3 class="Cuerpo-de-texto-2 pry-subtitular" id="u50509-4">
-              Breve descripción no más de dos lineas…
+              <?php echo utf8_encode( substr( strip_tags($proyectos[2]['descripcion']) , 0, 55)); ?> ...
             </h3>
           </a>
         </div>
@@ -677,13 +676,30 @@ background-color:#ffffff}
       <div class="clearfix colelem" id="u46752"><!-- group -->
        <div class="pointer_cursor clearfix grpelem" id="u46723"><!-- group -->
         <a class="block" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"></a>
-        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u46729-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><?php echo $noticias[0]['fecha']; ?></h3></a>
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u46729-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>">
+          <!-- content -->
+          <h3>
+            <?php echo $noticias[0]['fecha']; ?>
+          </h3>
+        </a>
         <!-- <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u46731-4" href="noticia-detalle.html"><h3>Tags</h3></a> -->
        </div>
       </div>
-      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u46725-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[0]['titulo']); ?></h2></a>
-      <a class="nonblock nontext colelem" id="u46724" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[0]['imagen'];?>" alt="" width="350" height="255"/></a>
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u46726-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[0]['descripcion'], 0, 100)); ?>...</h3></a>
+      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u46725-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>">
+        <!-- content -->
+        <h2>
+          <?php echo utf8_encode(substr($noticias[0]['titulo'], 0, 25)); ?>...
+        </h2>
+      </a>
+      <a class="nonblock nontext colelem" id="u46724" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>">
+        <img src="admin/assets/celmediachile/noticias/<?php echo $noticias[0]['imagen'];?>" alt="" width="350" height="255"/>
+      </a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u46726-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>">
+        <!-- content -->
+        <h3>
+          <?php echo utf8_encode( substr( strip_tags($noticias[0]['descripcion']), 0, 100)); ?>...
+        </h3>
+      </a>
       <div class="clearfix colelem" id="u48699"><!-- group -->
        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u46733-5" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><span id="u46733">Leer más</span></h3></a>
        <a class="nonblock nontext clip_frame grpelem" id="u48696" href="noticia-detalle.html" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48696_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
@@ -705,25 +721,43 @@ background-color:#ffffff}
         */ ?>
        </div>
       </div>
-      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48724-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[1]['titulo']); ?></h2></a>
-      <a class="nonblock nontext colelem" id="u48723" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[1]['imagen'];?>" alt="" width="350" height="255"/></a>
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48725-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[1]['descripcion'], 0, 150)); ?>...</h3></a>
+      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48724-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>">
+        <!-- content -->
+        <h2><?php echo utf8_encode(substr($noticias[1]['titulo'], 0, 25)); ?></h2>...
+      </a>
+      <a class="nonblock nontext colelem" id="u48723" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>">
+        <img src="admin/assets/celmediachile/noticias/<?php echo $noticias[1]['imagen'];?>" alt="" width="350" height="255"/>
+      </a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48725-4" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>">
+        <!-- content -->
+        <h3><?php echo utf8_encode( substr( strip_tags($noticias[1]['descripcion']), 0, 150)); ?>...</h3>
+      </a>
       <div class="clearfix colelem" id="u48719"><!-- group -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48720-5" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>"><!-- content --><h3><span id="u48720">Leer más</span></h3></a>
-       <a class="nonblock nontext clip_frame grpelem" id="u48721" href="noticia-detalle.html" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48721_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48720-5" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>">
+          <!-- content -->
+          <h3><span id="u48720">Leer más</span></h3>
+        </a>
+        <a class="nonblock nontext clip_frame grpelem" id="u48721" href="noticia-detalle.php?id=<?php echo $noticias[1]['id']; ?>" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48721_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
       </div>
      </div>
+
      <div class="clearfix grpelem" id="u48740"><!-- column -->
       <div class="clearfix colelem" id="u48742"><!-- group -->
        <div class="pointer_cursor clearfix grpelem" id="u48744"><!-- group -->
         <a class="block" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"></a>
-        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48743-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><?php echo $noticias[2]['fecha']; ?></h3></h3></a>
-       <!--  <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48745-4" href="noticia-detalle.html"><h3>Tags</h3></a> -->
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48743-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>">
+          <!-- content -->
+          <h3><?php echo $noticias[2]['fecha']; ?></h3>
+        </a>
+        <!--  <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48745-4" href="noticia-detalle.html"><h3>Tags</h3></a> -->
        </div>
       </div>
-      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48751-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[2]['titulo']); ?></h2></a>
+      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48751-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>">
+        <!-- content -->
+        <h2><?php echo utf8_encode(substr($noticias[2]['titulo'], 0, 25)); ?></h2>...
+      </a>
       <a class="nonblock nontext colelem" id="u48750" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[2]['imagen'];?>" alt="" width="350" height="255"/></a></a>
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48741-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[2]['descripcion'], 0, 100)); ?>...</h3></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48741-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr( strip_tags($noticias[2]['descripcion']), 0, 100)); ?>...</h3></a>
       <div class="clearfix colelem" id="u48746"><!-- group -->
        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48747-5" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><span id="u48747">Leer más</span></h3></a>
        <a class="nonblock nontext clip_frame grpelem" id="u48748" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48748_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
@@ -1283,11 +1317,11 @@ background-color:#ffffff}
   </div>
   <!-- JS includes -->
   <script type="text/javascript">
-   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
+    if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+  </script>
   <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
+    window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+  </script>
   <script src="scripts/museutils.js?4291592202" type="text/javascript"></script>
   <script src="scripts/jquery.musepolyfill.bgsize.js?291134478" type="text/javascript"></script>
   <script src="scripts/webpro.js?3903299128" type="text/javascript"></script>

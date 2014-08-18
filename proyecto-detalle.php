@@ -1,3 +1,54 @@
+<?php
+  include("lib/config.php");
+  include('lib/MySql.Class.php');
+
+  $db = array(
+    'host'=>$cfg_host,
+    'user'=>$cfg_user,
+    'pass'=>$cfg_pass,
+    'name'=>$cfg_base
+  );
+
+  $id_proyecto = $_GET["pry"];
+
+
+  $proyectoRecibido = array();
+  $tags = array();
+  try {
+
+    $sqlPry = "
+      SELECT p.nombre, p.descripcion, p.imagen, p.imagen_detalle, p.fecha
+      FROM proyecto as p
+      WHERE
+      p.id=$id_proyecto";
+    $proyectoRecibido = @MySql::getInstance()->getSingleRow($sqlPry);
+
+
+
+    $sqlTag = "
+      SELECT t.descripcion
+      FROM tags as t, tags_proyectos as p
+      WHERE p.id_proyecto=$id_proyecto and t.id=p.id_tags";
+    $tags = @MySql::getInstance()->getResultSet($sqlTag);
+    $lista_tags = '';
+    foreach ($tags as $tag) {
+      $lista_tags.=$tag['descripcion'].' - ';
+    }
+
+    $sqlPro = "
+      SELECT p.id, p.nombre, p.descripcion, p.imagen, p.id_cliente, c.imagen as imagen_cliente
+      FROM proyecto as p, cliente as c
+      WHERE p.estado = '1' and c.id=p.id_cliente and p.id!=$id_proyecto
+      ORDER BY p.fecha DESC
+      LIMIT 3";
+
+    $listaProyectos = @MySql::getInstance()->getResultSet($sqlPro);
+
+
+  } catch (Exception $e) {
+
+  }
+?>
 <!DOCTYPE html>
 <html class="html">
  <head>
@@ -142,23 +193,28 @@ var __adobewebfontsappname__ = "muse";
       <h2 id="u51223-4">Mobile Marketing &#45; Social Media &#45; 360 &#45; Radio primario &#45;</h2>
       <h2 id="u51223-6">Fidelización &#45; Gateway</h2>
      </div>
+     <?php
+     /*
      <div class="clip_frame grpelem" id="u51865"><!-- image -->
       <img class="block" id="u51865_img" src="images/left_arrowblack.png" alt="" width="35" height="35"/>
      </div>
      <div class="clip_frame grpelem" id="u51857"><!-- image -->
       <img class="block" id="u51857_img" src="images/right_arrowblack.png" alt="" width="35" height="35"/>
      </div>
+     */
+     ?>
     </div>
     <div class="colelem" id="u51215"><!-- simple frame --></div>
     <div class="clearfix colelem" id="pu51226-4"><!-- group -->
      <div class="clearfix grpelem" id="u51226-4"><!-- content -->
       <p>Tecnologías:</p>
      </div>
-     <div class="clearfix grpelem" id="u51227-4"><!-- content -->
-      <p>Responsive</p>
-     </div>
-     <div class="clearfix grpelem" id="u51228-4"><!-- content -->
-      <p>HTML</p>
+     <div class="clearfix grpelem pry-contenedor-tags"><!-- content -->
+      <?php foreach ($tags as $tag): ?>
+        <p class="tag-proyecto">
+          <?php echo utf8_encode($tag["descripcion"]); ?>  
+        </p>
+      <?php endforeach ?>
      </div>
     </div>
     <a class="nonblock nontext clearfix colelem" id="u51261-6" href="proyectos.html"><!-- content --><p id="u51261-4"><span class="Links-Menu" id="u51261">&nbsp;Volver a todos los proyectos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u51262"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u51263"><!-- image --><img id="u51263_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u51261-3"></span></p></a>

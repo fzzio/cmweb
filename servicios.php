@@ -49,7 +49,7 @@
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="7.4.30.244"/>
   <link rel="shortcut icon" href="images/favicon.ico?380174083"/>
-  <title>Mobile Marketing</title>
+  <title><?php echo utf8_encode($servicio['titulo']); ?></title>
   <link media="only screen and (max-device-width: 370px)" rel="alternate" href="http://celmediaec.com/phone/mobile-marketing.html"/>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4245872416"/>
