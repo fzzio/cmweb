@@ -78,7 +78,7 @@ var __adobewebfontsappname__ = "muse";
       </div>
      </div>
      <div class="clip_frame mse_pre_init" id="u55298"><!-- image -->
-      <img class="block" id="u55298_img" src="images/celmedia_logo_menu.png" alt="" width="170" height="62"/>
+      <a class="nonblock nontext MuseLinkActive clearfix grpelem" href="index.php"><img class="block" id="u55298_img" src="images/celmedia_logo_menu.png" alt="" width="170" height="62"/></a>
      </div>
     </div>
     <div class="clearfix colelem" id="pu51275-4"><!-- group -->
@@ -178,7 +178,7 @@ var __adobewebfontsappname__ = "muse";
          </li>
         </ul>
        </div>
-      <!--  <div class="grpelem" id="u51541"></div> -->
+       <div class="grpelem" id="u51541"></div>
 
      <?php  $id1 = 51424;
             $top = 0;
@@ -197,9 +197,9 @@ var __adobewebfontsappname__ = "muse";
         
          </div>
         </div>
-        <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u51508-4" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticia['titulo']); ?></h2></a>
+        <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u51508-4" style="height:70px; overflow:hidden" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticia['titulo']); ?></h2></a>
         <a class="nonblock nontext colelem" id="u51503" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticia['imagen'];?>" alt="" width="350" height="255"/></a>
-        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u51513-4" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>"><!-- content --><h3><?php echo utf8_encode(substr($noticia['descripcion'], 0, 100)); ?>...</h3></a>
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u51513-4" style="height:80px; overflow:hidden" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>"><!-- content --><h3><?php echo utf8_encode(substr($noticia['descripcion'], 0, 100)); ?>...</h3></a>
         <div class="clearfix colelem" id="u51504"><!-- group -->
          <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u51507-5" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>"><!-- content --><h3><span id="u51507">Leer más</span></h3></a>
          <a class="nonblock nontext clip_frame grpelem" id="u51505" href="noticia-detalle.php?id=<?php echo $noticia['id']; ?>" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u51505_img" src="images/scroll_arrowblack.png" alt="" width="15" height="15"/></a>
@@ -211,13 +211,9 @@ var __adobewebfontsappname__ = "muse";
          $id1=$id1+13;
         }  $i++; } ?>
 
-
-
     
     </div>
 
-
-   
 
 
     <a class="nonblock nontext clearfix colelem" id="u51276-6" href="proyectos.php"><!-- content --><p id="u51276-4"><span class="Links-Menu" id="u51276">&nbsp;Ver más noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u51277" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=-1,M21=1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u51278"><!-- image --><img id="u51278_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u51276-3"></span></p></a>
@@ -233,21 +229,21 @@ var __adobewebfontsappname__ = "muse";
      <div class="clearfix grpelem" id="pu50430-4"><!-- column -->
       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50430-4" href="proyectos.php"><!-- content --><h3>Proyectos</h3></a>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50432-4"><!-- content -->
-       <h3>Clientes</h3>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50430-4" href="index.php#clientes"><h3>Clientes</h3></a>
       </div>
      </div>
      <div class="clearfix grpelem" id="pu50431-4"><!-- column -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="mobile-marketing.php"><!-- content --><h3>Mobile Marketing</h3></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=1"><!-- content --><h3>Mobile Marketing</h3></a>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50433-4"><!-- content -->
-       <h3>TV Interactiva</h3>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=2"><h3>TV Interactiva</h3></a>
       </div>
      </div>
      <div class="clearfix grpelem" id="pu50434-4"><!-- column -->
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50434-4"><!-- content -->
-       <h3>Virtual Graphics</h3>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=5"><h3>Virtual Graphics</h3></a>
       </div>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50437-4"><!-- content -->
-       <h3>M&#45;Goverment</h3>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=6"><h3>M&#45;Goverment</h3></a>
       </div>
      </div>
      <div class="rounded-corners clearfix grpelem" id="u50440-4"><!-- content -->
@@ -258,14 +254,14 @@ var __adobewebfontsappname__ = "muse";
      <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix grpelem" id="u50435-4" href="noticias.php"><!-- content --><h3>Noticias</h3></a>
      <div class="clearfix grpelem" id="pu50436-4"><!-- column -->
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50436-4"><!-- content -->
-       <h3>Gateway</h3>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=3"><h3>Gateway</h3></a>
       </div>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u50438-4"><!-- content -->
-       <h3>Fidelización</h3>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=4"><h3>Fidelización</h3></a>
       </div>
      </div>
      <div class="Cuerpo-de-texto-2 clearfix grpelem" id="u50439-4"><!-- content -->
-      <h3>Social Media</h3>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u50431-4" href="servicios.php?srv=7"><h3>Social Media</h3></a>
      </div>
      <div class="clearfix grpelem" id="u50441-7"><!-- content -->
       <p id="u50441-5"><span class="Links-Menu" id="u50441">Enviar</span><span class="Links-Menu" id="u50441-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u50442"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u50443"><!-- image --><img id="u50443_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u50441-4"></span></p>
