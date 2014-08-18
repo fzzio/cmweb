@@ -23,7 +23,12 @@
       p.id=$id_proyecto";
     $proyectoRecibido = @MySql::getInstance()->getSingleRow($sqlPry);
 
-
+    $sqlSliderPry = "
+      SELECT ip.imagen, ip.titulo, ip.descripcion, ip.fecha
+      FROM imagen_proyecto as ip
+      WHERE
+      ip.id_proyecto=$id_proyecto";
+    $sliderProyectoRecibido = @MySql::getInstance()->getResultSet($sqlSliderPry);
 
     $sqlTag = "
       SELECT t.descripcion
@@ -120,26 +125,16 @@ var __adobewebfontsappname__ = "muse";
     <div class="SlideShowWidget clearfix colelem" id="slideshowu50982"><!-- none box -->
      <div class="popup_anchor" id="u51016popup">
       <div class="SlideShowContentPanel clearfix" id="u51016"><!-- stack box -->
-       <div class="SSSlide clip_frame clearfix grpelem" id="u51019"><!-- image -->
-        <div id="u51019_clip">
-         <img class="ImageInclude position_content" id="u51019_img" data-src="images/1-celmedia_caso_club-45-a%c3%b1os.jpg" src="images/blank.gif" alt="" data-width="758" data-height="430"/>
-        </div>
-       </div>
-       <div class="SSSlide invi clip_frame clearfix grpelem" id="u51186"><!-- image -->
-        <div id="u51186_clip">
-         <img class="ImageInclude position_content" id="u51186_img" data-src="images/2-celmedia_caso_club-45-a%c3%b1os.jpg" src="images/blank.gif" alt="" data-width="758" data-height="430"/>
-        </div>
-       </div>
-       <div class="SSSlide invi clip_frame clearfix grpelem" id="u51195"><!-- image -->
-        <div id="u51195_clip">
-         <img class="ImageInclude position_content" id="u51195_img" data-src="images/4-celmedia_caso_club-45-a%c3%b1os.jpg" src="images/blank.gif" alt="" data-width="758" data-height="430"/>
-        </div>
-       </div>
-       <div class="SSSlide invi clip_frame clearfix grpelem" id="u51204"><!-- image -->
-        <div id="u51204_clip">
-         <img class="ImageInclude position_content" id="u51204_img" data-src="images/5-celmedia_caso_club-45-a%c3%b1os.jpg" src="images/blank.gif" alt="" data-width="758" data-height="430"/>
-        </div>
-       </div>
+
+
+      <?php foreach ($sliderProyectoRecibido as $slideProyecto): ?>
+        <div class="SSSlide invi clip_frame clearfix grpelem c-img-slider-pry"><!-- image -->
+          <div class="clip-img-slider-pry">
+            <img class="ImageInclude position_content img-slider-pry" data-src="admin/assets/celmediachile/proyectos/<?php echo $slideProyecto['imagen'];?>" src="images/blank.gif" alt="" data-width="758" data-height="430"/>
+          </div>
+        </div> 
+      <?php endforeach ?>
+
       </div>
      </div>
      <div class="popup_anchor" id="u51009popup">
