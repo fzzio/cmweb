@@ -129,8 +129,8 @@ var __adobewebfontsappname__ = "muse";
       <div class="Cuerpo-de-Texto1 clearfix colelem" id="u49735-4"><!-- content -->
        <h2><?php echo utf8_encode( $proyectos[0]['nombre']).''.utf8_encode( substr($proyectos[0]['descripcion'], 0, 180)); ?>...</h2>
       </div>
-      <a class="nonblock nontext clearfix colelem" id="u49746-6" href="proyecto-detalle.html"><!-- content --><p id="u49746-4"><span class="Links-Menu" id="u49746">&nbsp;Ver más de este caso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49747"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49748"><!-- image --><img id="u49748_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49746-3"></span></p></a>
-      <a class="nonblock nontext clearfix colelem" id="u49736-6" href="proyectos.html"><!-- content --><p id="u49736-4"><span class="Links-Menu" id="u49736">&nbsp;Ver todos los casos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49737"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49738"><!-- image --><img id="u49738_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49736-3"></span></p></a>
+      <a class="nonblock nontext clearfix colelem" id="u49746-6" href="proyecto-detalle.php?pry=<?php echo $proyectos[0]['id'] ?>"><!-- content --><p id="u49746-4"><span class="Links-Menu" id="u49746">&nbsp;Ver más de este caso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49747"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49748"><!-- image --><img id="u49748_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49746-3"></span></p></a>
+      <a class="nonblock nontext clearfix colelem" id="u49736-6" href="proyectos.php"><!-- content --><p id="u49736-4"><span class="Links-Menu" id="u49736">&nbsp;Ver todos los casos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49737"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49738"><!-- image --><img id="u49738_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49736-3"></span></p></a>
      </div>
     </div>
     <div class="clearfix colelem" id="pu49664-4"><!-- group -->
@@ -143,23 +143,23 @@ var __adobewebfontsappname__ = "muse";
     </div>
     <div class="clearfix colelem" id="ppu49666-4"><!-- group -->
      <div class="clearfix grpelem" id="pu49666-4"><!-- column -->
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u49666-4" href="proyectos.html"><!-- content --><h3>Proyectos</h3></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u49666-4" href="proyectos.php"><!-- content --><h3>Proyectos</h3></a>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u49668-4"><!-- content -->
        <h3>Clientes</h3>
       </div>
      </div>
      <div class="clearfix grpelem" id="pu49667-4"><!-- column -->
-      <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="mobile-marketing.html"><!-- content --><h3>Mobile Marketing</h3></a>
+      <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=1"><!-- content --><h3>Mobile Marketing</h3></a>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u49669-4"><!-- content -->
-       <h3>TV Interactiva</h3>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=2"><h3>TV Interactiva</h3></a>
       </div>
      </div>
      <div class="clearfix grpelem" id="pu49670-4"><!-- column -->
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u49670-4"><!-- content -->
-       <h3>Virtual Graphics</h3>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=5"><h3>Virtual Graphics</h3></a>
       </div>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u49673-4"><!-- content -->
-       <h3>M&#45;Goverment</h3>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=6"><h3>M&#45;Goverment</h3></a>
       </div>
      </div>
      <div class="rounded-corners clearfix grpelem" id="u49676-4"><!-- content -->
@@ -167,17 +167,17 @@ var __adobewebfontsappname__ = "muse";
      </div>
     </div>
     <div class="clearfix colelem" id="pu49671-4"><!-- group -->
-     <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u49671-4" href="noticias.html"><!-- content --><h3>Noticias</h3></a>
+     <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u49671-4" href="noticias.php"><!-- content --><h3>Noticias</h3></a>
      <div class="clearfix grpelem" id="pu49672-4"><!-- column -->
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u49672-4"><!-- content -->
-       <h3>Gateway</h3>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=3"><h3>Gateway</h3></a>
       </div>
       <div class="Cuerpo-de-texto-2 clearfix colelem" id="u49674-4"><!-- content -->
-       <h3>Fidelización</h3>
+       <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=1"><h3>Fidelización</h3></a>
       </div>
      </div>
      <div class="Cuerpo-de-texto-2 clearfix grpelem" id="u49675-4"><!-- content -->
-      <h3>Social Media</h3>
+      <a class="nonblock nontext MuseLinkActive Cuerpo-de-texto-2 clearfix colelem" id="u49667-4" href="servicios.php?srv=7"><h3>Social Media</h3></a>
      </div>
      <div class="clearfix grpelem" id="u49677-7"><!-- content -->
       <p id="u49677-5"><span class="Links-Menu" id="u49677">Enviar</span><span class="Links-Menu" id="u49677-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="Links-Menu"><span class="actAsInlineDiv normal_text" id="u49678"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u49679"><!-- image --><img id="u49679_img" src="images/flecha_blanca.png" alt="" width="14" height="14"/></span></span></span><span class="Links-Menu" id="u49677-4"></span></p>
