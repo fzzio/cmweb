@@ -312,7 +312,7 @@ class Admin extends CI_Controller {
         $crud->set_relation('id_pais', 'pais', 'nombre');
         $crud->set_relation('id_sector', 'sector', 'nombre');
 
-        $crud->required_fields('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');
+        $crud->required_fields('id_pais', 'id_sector', 'titulo', 'descripcion', 'imagen', 'fecha', 'estado');
 
         //$crud->columns('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');
         //$crud->fields('id_pais', 'id_sector', 'titulo', 'subtitulo', 'descripcion', 'imagen', 'fecha', 'estado');

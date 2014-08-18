@@ -433,52 +433,52 @@ background-color:#ffffff}
     <div class="PamphletWidget clearfix colelem" id="pamphletu41272"><!-- none box -->
      <div class="ThumbGroup clearfix grpelem" id="u41381"><!-- none box -->
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41384" href="mobile-marketing.php"><!-- column --><div class="clip_frame colelem" id="u46124"><!-- image --><img class="block" id="u46124_img" src="images/servicios_mobilemarketing.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41385-4"><!-- content --><h2>Mobile Marketing</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41384" href="servicios.php?srv=1"><!-- column --><div class="clip_frame colelem" id="u46124"><!-- image --><img class="block" id="u46124_img" src="images/servicios_mobilemarketing.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41385-4"><!-- content --><h2>Mobile Marketing</h2></div></a>
       </div>
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41386" href="gateway.php"><!-- column --><div class="clip_frame colelem" id="u46138"><!-- image --><img class="block" id="u46138_img" src="images/servicios_gateway.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41387-4"><!-- content --><h2>Gateway</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41386" href="servicios.php?srv=3"><!-- column --><div class="clip_frame colelem" id="u46138"><!-- image --><img class="block" id="u46138_img" src="images/servicios_gateway.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41387-4"><!-- content --><h2>Gateway</h2></div></a>
       </div>
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41382" href="interactividad.php"><!-- column --><div class="clip_frame colelem" id="u46132"><!-- image --><img class="block" id="u46132_img" src="images/servicios_tvinteractiva.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41383-4"><!-- content --><h2>Interactividad</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41382" href="servicios.php?srv=2"><!-- column --><div class="clip_frame colelem" id="u46132"><!-- image --><img class="block" id="u46132_img" src="images/servicios_tvinteractiva.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41383-4"><!-- content --><h2>Interactividad</h2></div></a>
       </div>
      </div>
      <div class="popup_anchor" id="u41277popup">
       <div class="ContainerGroup clearfix" id="u41277"><!-- none box -->
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u41348" href="mobile-marketing.php"><!-- column --><div class="clip_frame colelem" id="u48607"><!-- image --><img class="block" id="u48607_img" src="images/servicios_mobilemarketing.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48606-4"><!-- content --><h2>Mobile Marketing</h2></div></a>
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u41354" href="gateway.php"><!-- column --><div class="clip_frame colelem" id="u48645"><!-- image --><img class="block" id="u48645_img" src="images/servicios_gateway.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48644-4"><!-- content --><h2>Gateway</h2></div></a>
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u41278" href="interactividad.php"><!-- column --><div class="clip_frame colelem" id="u48611"><!-- image --><img class="block" id="u48611_img" src="images/servicios_tvinteractiva.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48610-4"><!-- content --><h2>Interactividad</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u41348" href="servicios.php?srv=1"><!-- column --><div class="clip_frame colelem" id="u48607"><!-- image --><img class="block" id="u48607_img" src="images/servicios_mobilemarketing.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48606-4"><!-- content --><h2>Mobile Marketing</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u41354" href="servicios.php?srv=3"><!-- column --><div class="clip_frame colelem" id="u48645"><!-- image --><img class="block" id="u48645_img" src="images/servicios_gateway.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48644-4"><!-- content --><h2>Gateway</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u41278" href="servicios.php?srv=2"><!-- column --><div class="clip_frame colelem" id="u48611"><!-- image --><img class="block" id="u48611_img" src="images/servicios_tvinteractiva.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48610-4"><!-- content --><h2>Interactividad</h2></div></a>
       </div>
      </div>
     </div>
     <div class="PamphletWidget clearfix colelem" id="pamphletu41673"><!-- none box -->
      <div class="ThumbGroup clearfix grpelem" id="u41784"><!-- none box -->
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41787" href="social-media.php"><!-- column --><div class="clip_frame colelem" id="u46164"><!-- image --><img class="block" id="u46164_img" src="images/servicios_socialmedia.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41788-4"><!-- content --><h2>Social Media</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41787" href="servicios.php?srv=7"><!-- column --><div class="clip_frame colelem" id="u46164"><!-- image --><img class="block" id="u46164_img" src="images/servicios_socialmedia.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41788-4"><!-- content --><h2>Social Media</h2></div></a>
       </div>
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41789" href="virtual-graphics.php"><!-- column --><div class="clip_frame clearfix colelem" id="u46158"><!-- image --><div id="u46158_clip"><img class="position_content" id="u46158_img" src="images/servicios_virtualgraphics.png" alt="" width="70" height="100"/></div></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41790-4"><!-- content --><h2>Virtual Graphics</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41789" href="servicios.php?srv=5"><!-- column --><div class="clip_frame clearfix colelem" id="u46158"><!-- image --><div id="u46158_clip"><img class="position_content" id="u46158_img" src="images/servicios_virtualgraphics.png" alt="" width="70" height="100"/></div></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41790-4"><!-- content --><h2>Virtual Graphics</h2></div></a>
       </div>
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41785" href="fidelizacion.php"><!-- column --><div class="clip_frame colelem" id="u46145"><!-- image --><img class="block" id="u46145_img" src="images/servicios_fidelizacion.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41786-4"><!-- content --><h2>Fidelización</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u41785" href="servicios.php?srv=4"><!-- column --><div class="clip_frame colelem" id="u46145"><!-- image --><img class="block" id="u46145_img" src="images/servicios_fidelizacion.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u41786-4"><!-- content --><h2>Fidelización</h2></div></a>
       </div>
      </div>
      <div class="popup_anchor" id="u41678popup">
       <div class="ContainerGroup clearfix" id="u41678"><!-- none box -->
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u41679" href="social-media.php"><!-- column --><div class="clip_frame colelem" id="u48669"><!-- image --><img class="block" id="u48669_img" src="images/servicios_socialmedia.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48668-4"><!-- content --><h2>Social Media</h2></div></a>
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u41752" href="virtual-graphics.php"><!-- column --><div class="clip_frame clearfix colelem" id="u48653"><!-- image --><div id="u48653_clip"><img class="position_content" id="u48653_img" src="images/servicios_virtualgraphics.png" alt="" width="70" height="100"/></div></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48652-4"><!-- content --><h2>Virtual Graphics</h2></div></a>
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u41721" href="fidelizacion.php"><!-- column --><div class="clip_frame colelem" id="u48649"><!-- image --><img class="block" id="u48649_img" src="images/servicios_fidelizacion.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48648-4"><!-- content --><h2>Fidelización</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u41679" href="servicios.php?srv=7"><!-- column --><div class="clip_frame colelem" id="u48669"><!-- image --><img class="block" id="u48669_img" src="images/servicios_socialmedia.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48668-4"><!-- content --><h2>Social Media</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u41752" href="servicios.php?srv=5"><!-- column --><div class="clip_frame clearfix colelem" id="u48653"><!-- image --><div id="u48653_clip"><img class="position_content" id="u48653_img" src="images/servicios_virtualgraphics.png" alt="" width="70" height="100"/></div></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48652-4"><!-- content --><h2>Virtual Graphics</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u41721" href="servicios.php?srv=4"><!-- column --><div class="clip_frame colelem" id="u48649"><!-- image --><img class="block" id="u48649_img" src="images/servicios_fidelizacion.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48648-4"><!-- content --><h2>Fidelización</h2></div></a>
       </div>
      </div>
     </div>
     <div class="PamphletWidget clearfix colelem" id="pamphletu46180"><!-- none box -->
      <div class="ThumbGroup clearfix grpelem" id="u46183"><!-- none box -->
       <div class="popup_anchor">
-       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u46184" href="m-goverment.php"><!-- column --><div class="clip_frame colelem" id="u46186"><!-- image --><img class="block" id="u46186_img" src="images/servicios_mgoverment.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u46185-4"><!-- content --><h2>M&#45;Goverment</h2></div></a>
+       <a class="nonblock nontext Thumb popup_element rgba-background clearfix" id="u46184" href="servicios.php?srv=6"><!-- column --><div class="clip_frame colelem" id="u46186"><!-- image --><img class="block" id="u46186_img" src="images/servicios_mgoverment.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u46185-4"><!-- content --><h2>M&#45;Goverment</h2></div></a>
       </div>
      </div>
      <div class="popup_anchor" id="u46196popup">
       <div class="ContainerGroup clearfix" id="u46196"><!-- none box -->
-       <a class="nonblock nontext Container invi clearfix grpelem" id="u46267" href="m-goverment.php"><!-- column --><div class="clip_frame colelem" id="u48665"><!-- image --><img class="block" id="u48665_img" src="images/servicios_mgoverment.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48664-4"><!-- content --><h2>M&#45;Goverment</h2></div></a>
+       <a class="nonblock nontext Container invi clearfix grpelem" id="u46267" href="servicios.php?srv=6"><!-- column --><div class="clip_frame colelem" id="u48665"><!-- image --><img class="block" id="u48665_img" src="images/servicios_mgoverment.png" alt="" width="70" height="100"/></div><div class="Cuerpo-de-Texto1 clearfix colelem" id="u48664-4"><!-- content --><h2>M&#45;Goverment</h2></div></a>
       </div>
      </div>
     </div>
@@ -667,17 +667,17 @@ background-color:#ffffff}
      <div class="clearfix grpelem" id="u48740"><!-- column -->
       <div class="clearfix colelem" id="u48742"><!-- group -->
        <div class="pointer_cursor clearfix grpelem" id="u48744"><!-- group -->
-        <a class="block" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"></a>
-        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48743-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><?php echo $noticias[0]['fecha']; ?></h3></h3></a>
+        <a class="block" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"></a>
+        <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48743-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><?php echo $noticias[2]['fecha']; ?></h3></h3></a>
        <!--  <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48745-4" href="noticia-detalle.html"><h3>Tags</h3></a> -->
        </div>
       </div>
-      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48751-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[0]['titulo']); ?></h2></a>
-      <a class="nonblock nontext colelem" id="u48750" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[0]['imagen'];?>" alt="" width="350" height="255"/></a></a>
-      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48741-4" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[0]['descripcion'], 0, 100)); ?>...</h3></a>
+      <a class="nonblock nontext Cuerpo-de-Texto1 clearfix colelem" id="u48751-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h2><?php echo utf8_encode($noticias[2]['titulo']); ?></h2></a>
+      <a class="nonblock nontext colelem" id="u48750" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><img src="admin/assets/celmediachile/noticias/<?php echo $noticias[2]['imagen'];?>" alt="" width="350" height="255"/></a></a>
+      <a class="nonblock nontext Cuerpo-de-texto-2 clearfix colelem" id="u48741-4" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><?php echo utf8_encode( substr($noticias[2]['descripcion'], 0, 100)); ?>...</h3></a>
       <div class="clearfix colelem" id="u48746"><!-- group -->
-       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48747-5" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>"><!-- content --><h3><span id="u48747">Leer más</span></h3></a>
-       <a class="nonblock nontext clip_frame grpelem" id="u48748" href="noticia-detalle.php?id=<?php echo $noticias[0]['id']; ?>" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48748_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
+       <a class="nonblock nontext Cuerpo-de-texto-2 clearfix grpelem" id="u48747-5" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>"><!-- content --><h3><span id="u48747">Leer más</span></h3></a>
+       <a class="nonblock nontext clip_frame grpelem" id="u48748" href="noticia-detalle.php?id=<?php echo $noticias[2]['id']; ?>" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u48748_img" src="images/scroll_arrowblack3.png" alt="" width="15" height="15"/></a>
       </div>
      </div>
     </div>
