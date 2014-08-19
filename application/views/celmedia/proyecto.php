@@ -18,9 +18,39 @@
 	<?php elseif ($pagina == '1'): ?>
 		<div class="row espaciado-a">
 			<div class="col-md-8">
-				lala
+				<?php if (count( $sliderProyecto ) > 0): ?>
+				<div id="carousel-proyectos" class="carousel slide" data-ride="carousel">
+
+					<ol class="carousel-indicators">
+						<?php $i=0; ?>
+						<?php foreach ($sliderProyecto as $slide): ?>
+							<li data-target="#carousel-proyectos" data-slide-to="<?php echo $i; ?>" class="<?php echo ( ($slide === reset($sliderProyecto)) ? 'active' : '' ) ; ?>"></li>	
+							<?php $i= $i++; ?>
+						<?php endforeach ?>
+					</ol>
+
+					<div class="carousel-inner">
+						<?php foreach ($sliderProyecto as $slide): ?>
+							<div class="item <?php echo ( ($slide === reset($sliderProyecto)) ? 'active' : '' ) ; ?>">
+								<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
+								<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="">
+							</div>
+						<?php endforeach ?>
+					</div>
+				
+					<a class="left carousel-control" href="#carousel-proyectos" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-proyectos" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+				<?php endif ?>
+
+
+
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 fondoRosa">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
@@ -48,11 +78,15 @@
 			</div>
 		</div>
 		<div class="row espaciado-a">
-			<div class="col-md-12 barra-tags">
+			<div class="col-md-8 barra-tags">
 				<span class="label lbl-tecnologias">Tags: </span>
 				<?php foreach ($tags as $tag): ?>
 					<span class="label lbl-tecnologias lbl-tecnologias-2"><?php echo $tag["descripcion"]; ?></span>	
 				<?php endforeach ?>
+			</div>
+			<div class="col-md-4 fondoRosa">
+				<?php $rutaImg = base_url('assets/celmediachile/clientes') . '/' . $clienteCaso->imagenhover; ?>
+				<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="">
 			</div>
 		</div>
 		

@@ -333,8 +333,8 @@ a{
 	line-height: 70px;
 }
 .s-titular-2{
-	font-size: 50px;
-	line-height: 60px;
+	font-size: 40px;
+    line-height: 36px;
 }
 .s-titular-3{
 	font-size: 30px;
@@ -363,6 +363,7 @@ a{
 	padding-bottom: 5px;
 	color: #FFFFFF;
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 .titular-ver-caso{
@@ -503,6 +504,12 @@ a{
 	background-size: cover;
 	background-position: center top;
 	background-attachment: fixed;	
+}
+.fondoRosa{
+	background-color: #f7eaec;
+}
+.bordeRedondo{
+	border-radius: 10px;
 }
 
 .barra-tags{
