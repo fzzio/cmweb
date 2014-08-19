@@ -15,6 +15,49 @@
 
 	<?php if ($pagina == '0'): ?>
 
+		<div class="row espaciado-a">
+			<div class="col-md-12">
+				
+
+				<form method="post" accept-charset="utf-8" action=""  class="form-horizontal" >
+					
+					<span class="help-block"><?php echo validation_errors(); ?></strong>
+					<select name="spais">
+						<option selected="selected" disabled="disabled"> Paises</option>
+						<?php foreach ($paises as $pais): ?>						
+							<option value="<?php echo $pais["id"] ?>"><?php echo $pais["nombre"] ?></option>
+						<?php endforeach ?>
+					</select>
+
+
+					<select name="ssector">
+						<option selected="selected" disabled="disabled"> Sector</option>
+						<?php foreach ($sectores as $sector): ?>						
+							
+							<option value="<?php echo $sector["id"] ?>"><?php echo $sector["nombre"] ?></option>
+						<?php endforeach ?>
+					</select>
+
+
+					<select name="sservicio">
+						<option selected="selected" disabled="disabled"> Servicios</option>
+						<?php foreach ($servicios as $servicio): ?>						
+							<option value="<?php echo $servicio["id"] ?>"><?php echo $servicio["titulo"] ?></option>
+						<?php endforeach ?>
+					</select>
+
+
+					<select name="stags">
+						<option selected="selected" disabled="disabled"> Tags</option>
+						<?php foreach ($tags as $tag): ?>						
+							<option value="<?php echo $tag["id"] ?>"><?php echo $tag["descripcion"] ?></option>
+						<?php endforeach ?>
+					</select>
+
+					<button type="submit" class="btn btn-primary ">Buscar</button>
+				</form>
+			</div>
+		</div>
 	<?php elseif ($pagina == '1'): ?>
 		<div class="row espaciado-a">
 			<div class="col-md-8">
@@ -46,9 +89,6 @@
 					</a>
 				</div>
 				<?php endif ?>
-
-
-
 			</div>
 			<div class="col-md-4 fondoRosa">
 				<div class="container-fluid">
@@ -78,15 +118,20 @@
 			</div>
 		</div>
 		<div class="row espaciado-a">
-			<div class="col-md-8 barra-tags">
-				<span class="label lbl-tecnologias">Tags: </span>
-				<?php foreach ($tags as $tag): ?>
-					<span class="label lbl-tecnologias lbl-tecnologias-2"><?php echo $tag["descripcion"]; ?></span>	
-				<?php endforeach ?>
+			<div class="col-md-8">
+				
 			</div>
 			<div class="col-md-4 fondoRosa">
 				<?php $rutaImg = base_url('assets/celmediachile/clientes') . '/' . $clienteCaso->imagenhover; ?>
 				<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="">
+			</div>
+		</div>
+		<div class="row espaciado-a">
+			<div class="col-md-12 barra-tags">
+				<span class="label lbl-tecnologias">Tags: </span>
+				<?php foreach ($tags as $tag): ?>
+					<span class="label lbl-tecnologias lbl-tecnologias-2"><?php echo $tag["descripcion"]; ?></span>	
+				<?php endforeach ?>
 			</div>
 		</div>
 		
