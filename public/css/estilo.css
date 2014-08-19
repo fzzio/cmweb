@@ -291,6 +291,10 @@ a{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.espaciado-b{
+	padding-bottom: 0px;
+	padding-top: 6px;
+}
 .txt-mayus{
 	text-transform: uppercase;
 }
@@ -387,13 +391,13 @@ a{
     color: #bc949c;
     text-align: left;
     font-family: 'open_sansregular';
-    font-size: 24px;
+    font-size: 18px;
     line-height: 15px;
 }
 .texto-caso{
 	color: #FFFFFF;
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .titular-ver-casos{
@@ -415,7 +419,7 @@ a{
 }
 
 .titulo-noticia{
-	font-size: 30px;
+	font-size: 26px;
     line-height: 34px;
     color: #000000;
 }

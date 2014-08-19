@@ -27,7 +27,7 @@
 								<h3 class="titulo-noticia">
 									<?php
 										if(strlen($noticia['titulo']) > 40){
-											echo utf8_encode( substr( $noticia['titulo'], 0, 40)) . "...";
+											echo utf8_encode( substr( $noticia['titulo'], 0, 45)) . "...";
 										}else{
 											echo utf8_encode( $noticia['titulo']);
 										}

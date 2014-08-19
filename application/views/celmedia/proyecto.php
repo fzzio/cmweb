@@ -75,8 +75,8 @@
 
 <div class="container">
 	<div class="row espaciado-a">
-		<?php foreach ($noticias as $noticia): ?>
-			<a href="<?php echo site_url('site/noticia') . '/' . $noticia['id'];?>" class="">
+		<?php foreach ($proyectos as $proyecto): ?>
+			<a href="<?php echo site_url('site/proyecto') . '/' . $proyecto['prid'];?>" class="">
 				<div class="col-md-4 text-center espaciado-a">
 					<div class="container-fluid">
 						<div class="row">
@@ -84,16 +84,16 @@
 							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />							
 						</div>
 						<div class="row bg-cliente">
-							<?php $rutaImgC = base_url('assets/celmediachile/clientes') . '/' . $proyecto['climagen'];	?>
+							<?php $rutaImgC = base_url('assets/celmediachile/clientes') . '/' . $proyecto['climagenhover'];	?>
 							<div class="col-md-4">
-								<img src="<?php echo $rutaImgC; ?>" alt="" class="img-responsive obj-centrar" />							
+								<img src="<?php echo $rutaImgC; ?>" alt="" class="img-responsive espaciado-b" />							
 							</div>
 							<div class="col-md-8 bg-titular-caso text-left">
 								<h3 class="titulo-caso">
-									<?php echo ( substr( $proyecto['prnombre'], 0, 14)) ;?>...
+									<?php echo ( substr( $proyecto['prnombre'], 0, 20)) ;?>...
 								</h3>
 								<h4 class="texto-caso">
-									<?php echo utf8_encode( substr( strip_tags($proyecto['prdescripcion']) , 0, 45)); ?> ...
+									<?php echo utf8_encode( substr( strip_tags($proyecto['prdescripcion']) , 0, 61)); ?> ...
 								</h4>
 							</div>
 						</div>
