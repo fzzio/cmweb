@@ -66,20 +66,57 @@ class Site extends CI_Controller {
         $idproyecto = $this->uri->segment(3);
 
         $data['header'] = $this->load->view('celmedia/header', array());
-        $contenido['proyecto'] = $this->db->get_where('proyecto', array('id' => $idproyecto, 'estado' => 1))->row();
-        $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
+        
+        if($idproyecto){
 
-        //$contenido['tags'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
+            $contenido['pagina'] = "1";
+
+            $contenido['proyecto'] = $this->db->get_where('proyecto', array('id' => $idproyecto, 'estado' => 1))->row();
+            $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
+            
+
+            //$contenido['tags'] = $this->db->get_where('tags', array('estado' => 1))->result_array();
+
+            $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_proyectos as tp', 't.id = tp.id_tags')->join('proyecto as p', 'tp.id_proyecto = p.id')->where( array('p.id' => $idproyecto, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
 
 
-        $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->limit(3)->order_by("pr.fecha", "desc")->get()->result_array();
+            $contenido["servicio"] = $this->db->get_where('servicio', array('id' => $contenido['proyecto']->id_servicio, 'estado' => 1))->row();
+            
+            $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->limit(3)->order_by("pr.fecha", "desc")->get()->result_array();
 
+        }else{
+            $contenido['pagina'] = "0";
+
+            $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.estado' => 1, 'cl.estado' => 1 )  )->order_by("pr.fecha", "desc")->get()->result_array();
+        }
         $data['content'] = $this->load->view('celmedia/proyecto', $contenido);
         $data['footer'] = $this->load->view('celmedia/footer', array());
-
     }
 
+    public function noticia(){
 
+        $idnoticia = $this->uri->segment(3);
+
+        $data['header'] = $this->load->view('celmedia/header', array());
+        
+        if($idnoticia){
+
+            $contenido['pagina'] = "1";
+
+            $contenido['noticia'] = $this->db->get_where('noticia', array('id' => $idnoticia, 'estado' => 1))->row();
+
+            $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_noticias as tn', 't.id = tn.id_tags')->join('noticia as n', 'tn.id_noticia = n.id')->where( array('n.id' => $idnoticia, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
+            
+            $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.id !=' => $idnoticia, 'n.estado' => 1 )  )->limit(3)->order_by("n.fecha", "desc")->get()->result_array();
+
+        }else{
+            $contenido['pagina'] = "0";
+            $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.estado' => 1 )  )->order_by("n.fecha", "desc")->get()->result_array();
+        }
+
+        $data['content'] = $this->load->view('celmedia/noticia', $contenido);
+        $data['footer'] = $this->load->view('celmedia/footer', array());
+    }    
 }
 
 /* End of file welcome.php */

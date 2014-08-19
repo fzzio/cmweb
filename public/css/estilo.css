@@ -19,7 +19,10 @@ a{
 	font-family: 'open_sansregular';
 }
 
-
+.fondoPlomo{
+	background-color: #91A5AD;
+	color: #FFFFFF;
+}
 
 .fondoBlanco{
 	background-color: #FFFFFF;
@@ -479,6 +482,9 @@ a{
 	-o-transition: all ease 0.5s;
 	transition: all ease 0.5s;
 }
+.fondoCrema{
+	background-color: #F7EAEC;
+}
 
 .fondoproyecto{
 	background-image: url('../img/bg_proyectos2750x646.jpg');
@@ -486,6 +492,13 @@ a{
 	background-size: cover;
 	background-position: center top;
 	background-attachment: fixed;
+}
+.fondonoticia{
+	background-image: url('../img/bg_noticias.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;	
 }
 
 .barra-tags{
@@ -498,6 +511,14 @@ a{
 	color: #7a6b6e;
 	font-family: 'open_sanslight';
 	font-size: 15px;
+}
+
+.lbl-tecnologias-2{
+	color: #fbf3f4;
+	font-family: 'open_sanslight';
+	font-size: 15px;
+	background-color: #91a5ad;
+	border-radius: 0px;
 }
 
 /* Large desktop */

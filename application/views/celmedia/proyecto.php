@@ -12,64 +12,71 @@
 			<a href="<?php echo site_url('site/index');?>" class="texto-gris"> &lt; Regresar</a>
 		</div>
 	</div>
-	<div class="row espaciado-a">
-		<div class="col-md-8">
-			lala
-		</div>
-		<div class="col-md-4">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="s-titular-3">
-							<?php echo $proyecto->nombre; ?>
-						</h1>
+
+	<?php if ($pagina == '0'): ?>
+
+	<?php elseif ($pagina == '1'): ?>
+		<div class="row espaciado-a">
+			<div class="col-md-8">
+				lala
+			</div>
+			<div class="col-md-4">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="s-titular-3">
+								<?php echo $proyecto->nombre; ?>
+							</h1>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h3 class="s-subtitular-3">
-							Categorías:
-							<?php //echo $proyecto->subtitulo; ?>
-						</h3>
+					<div class="row fondoPlomo">
+						<div class="col-md-12">
+							<h3 class="s-subtitular-3">
+								Servicio: <strong><?php echo $servicio->titulo; ?></strong>
+							</h3>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="servicio-parrafo">
-							<?php echo $proyecto->descripcion; ?>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="servicio-parrafo">
+								<?php echo $proyecto->descripcion; ?>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
+			</div>
 		</div>
-	</div>
-	<div class="row espaciado-a">
-		<div class="col-md-12 barra-tags">
-			<span class="label lbl-tecnologias">Tecnologías</span>
-			<span class="label lbl-tecnologias label-info">Info</span>
-			<span class="label lbl-tecnologias label-info">Warning</span>
-			<span class="label lbl-tecnologias label-info">Danger</span>
+		<div class="row espaciado-a">
+			<div class="col-md-12 barra-tags">
+				<span class="label lbl-tecnologias">Tags: </span>
+				<?php foreach ($tags as $tag): ?>
+					<span class="label lbl-tecnologias lbl-tecnologias-2"><?php echo $tag["descripcion"]; ?></span>	
+				<?php endforeach ?>
+			</div>
 		</div>
-	</div>
+		
+		<div class="container">
+			<div class="row espaciado-a">
+				<div class="col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 text-center page-scroll">
+					<a href="<?php echo site_url('site/proyectos'); ?>" class="btn btn-slh">Ver todos los casos</a>
+				</div>
+			</div>
+			<div class="row espaciado-a">
+				<div class="col-md-12">
+					<h1 class="s-titular">
+						Otros casos
+					</h1>			
+				</div>
+			</div>
+		</div>
+	<?php endif ?>
 </div>
 
 <div class="container">
 	<div class="row espaciado-a">
-		<div class="col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 text-center page-scroll">
-			<a href="<?php echo site_url('site/proyectos'); ?>" class="btn btn-slh">Ver todos los casos</a>
-		</div>
-	</div>
-	<div class="row espaciado-a">
-		<div class="col-md-12">
-			<h1 class="s-titular">
-				Otros casos
-			</h1>			
-		</div>
-	</div>
-	<div class="row espaciado-a">
-		<?php foreach ($proyectos as $proyecto): ?>
-			<a href="<?php echo site_url('site/proyecto') . '/' . $proyecto['prid'];?>" class="">
+		<?php foreach ($noticias as $noticia): ?>
+			<a href="<?php echo site_url('site/noticia') . '/' . $noticia['id'];?>" class="">
 				<div class="col-md-4 text-center espaciado-a">
 					<div class="container-fluid">
 						<div class="row">
@@ -83,10 +90,10 @@
 							</div>
 							<div class="col-md-8 bg-titular-caso text-left">
 								<h3 class="titulo-caso">
-									<?php echo utf8_encode( substr( $proyecto['prnombre'], 0, 14)) ;?>...
+									<?php echo ( substr( $proyecto['prnombre'], 0, 14)) ;?>...
 								</h3>
 								<h4 class="texto-caso">
-									<?php echo utf8_encode( substr( strip_tags($proyecto['prdescripcion']) , 0, 55)); ?> ...
+									<?php echo utf8_encode( substr( strip_tags($proyecto['prdescripcion']) , 0, 45)); ?> ...
 								</h4>
 							</div>
 						</div>

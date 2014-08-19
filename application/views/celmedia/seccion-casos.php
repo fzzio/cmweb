@@ -37,7 +37,7 @@
 	</div>
 	<div class="row espaciado-a">
 		<div class="col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 text-center page-scroll">
-			<a href="<?php echo site_url('site/proyectos'); ?>" class="btn btn-slh">Ver todos los casos</a>
+			<a href="<?php echo site_url('site/proyecto'); ?>" class="btn btn-slh">Ver todos los casos</a>
 		</div>
 	</div>
 	<div class="row espaciado-a">&nbsp;</div>

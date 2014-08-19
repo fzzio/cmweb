@@ -4,7 +4,7 @@
 		<div class="col-md-12">
 			<h1 class="s-titular">
 				Contáctanos
-			</h1>		
+			</h1>
 		</div>
 	</div>
 	<div class="row espaciado-a">
