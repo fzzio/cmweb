@@ -12,16 +12,7 @@ web/js/*
 web/images/*
 web/uploads/rrhh/*
 
-admin/applications/*
-admin/otros/*
-admin/system/*
-admin/template/*
-admin/user_guide/*
-admin/index.php
-admin/license.txt
-admin/assets/grocery_crud/*
-admin/assets/uploads/*
-admin/assets/index.html
+sadmin/user_guide/*
 
 
 # -- Composer -----------------------------------------
