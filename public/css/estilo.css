@@ -333,8 +333,8 @@ a{
 	line-height: 70px;
 }
 .s-titular-2{
-	font-size: 40px;
-    line-height: 36px;
+	font-size: 50px;
+	line-height: 60px;
 }
 .s-titular-3{
 	font-size: 30px;
@@ -363,7 +363,6 @@ a{
 	padding-bottom: 5px;
 	color: #FFFFFF;
 	text-align: center;
-	margin-bottom: 0px;
 }
 
 .titular-ver-caso{
@@ -505,12 +504,6 @@ a{
 	background-position: center top;
 	background-attachment: fixed;	
 }
-.fondoRosa{
-	background-color: #f7eaec;
-}
-.bordeRedondo{
-	border-radius: 10px;
-}
 
 .barra-tags{
 	background-color: #fbf3f4;
@@ -597,4 +590,63 @@ a{
 	.seccion-celmedia{
 		height: auto;
 	}
+}
+.contactos > li{
+	width: 182px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.contactos > li.active{
+	background-image: url('../img/contactos_seleccion.png');
+	color: white;
+	border-color: none;
+}
+
+.contactos > li a{
+	background: transparent !important;
+	color: white;
+	padding-bottom: 6px;
+	text-align: center;
+}
+
+.contactos > li.active a{
+	color: white;
+}
+
+.contactos > li a:hover{
+	color: white;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: none;
+    border-color: none;
+    border-image: none;
+    border-style: none;
+    border-width: 0px;
+    color: white;
+    cursor: default;
+}
+.form-control{
+	background: #31424f;
+	
+}
+
+.form-control::-moz-placeholder {
+    color: #78adbc;
+    opacity: 1;
+}
+
+
+.nav-tabs {
+    border-bottom: 2px solid black;
+}
+
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -12px;
 }

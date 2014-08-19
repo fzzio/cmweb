@@ -9,35 +9,47 @@
             <div class="container">
                 <div class="row expaciado-a">&nbsp;</div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <span class="copy-footer">COPYRIGHT @2014 CELMEDIA, TODOS LOS DERECHOS RESERVADOS</span>
+                    <div class="col-md-8">
+                        <span class="copy-footer" style="font-family: open-sans,sans-serif; font-size: 14px;">&copy; 2014 CELMEDIA, Todos los derechos reservados</span>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="copy-footer" style="font-family: open-sans,sans-serif; font-size: 14px;">Suscríbete</span>
                     </div>
                 </div>
                 <div class="row text-left">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <p class="links-footer">
+                    <div class="col-md-2"><br/>
+                        <p class="links-footer" style="line-height: 20px; font-size: 14px;">
                             <a href="#">Proyectos</a><br />
                             <a href="#">Clientes</a><br />
                             <a href="#">Noticias</a><br />
                         </p>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <p class="links-footer">
+                    <div class="col-md-2"><br/>
+                        <p class="links-footer" style="line-height: 20px; font-size: 14px;">
                             <a href="#">Mobile Marketing</a><br />
                             <a href="#">TV Interactiva</a><br />
                             <a href="#">Gateway</a><br />
                             <a href="#">Fidelización</a><br />
                         </p>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <p class="links-footer">
+                    <div class="col-md-2"><br/>
+                        <p class="links-footer" style="line-height: 20px; font-size: 14px;">
                             <a href="#">Virtual Graphics</a><br />
                             <a href="#">M-Goverment</a><br />
                             <a href="#">Social Media</a><br />
                         </p>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <p class="texto-blanco">Suscríbete</p>
+
+                    <div class="col-md-4 col-md-offset-2"><br/>
+                        <form  class="form-horizontal" role="form"  >
+                            <div class="row">
+                                <div class="col-md-11 col-md-offset-1 form-group">
+                                    <span class="help-block"><?php echo form_error('emailS'); ?></span>
+                                    <input type="email" class="form-control" name="emailS"  id="emailC"  placeholder="Email">
+                                    <br/><button  class="btn btn-slh" >Enviar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

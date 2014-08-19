@@ -64,7 +64,7 @@
 				</div>
 				<div class="row espaciado-a">
 					<div class="col-md-12">
-						<a href="<?php echo site_url('site/proyectos'); ?>" class="link-celmedia titular-ver-casos">
+						<a href="<?php echo site_url('site/proyecto'); ?>" class="link-celmedia titular-ver-casos">
 							Ver todos los casos
 						</a>
 					</div>
