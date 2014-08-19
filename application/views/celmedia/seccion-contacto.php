@@ -32,7 +32,7 @@
 			<div class="tab-content">
 			  <div class="tab-pane active" id="chile">
 			  	<div class="row">
-			  		<div class="col-md-4 col-md-offset-1">
+			  		<div class="col-md-5">
 			  			<br/><br/><h4><strong>CHILE - CASA CENTRAL</strong></h4><br/><br/>
 			  			<p><img id="u54741_img" class="block" width="20" height="20" alt="" src="public/img/icono_direccion2.png"> Barros Errázuriz N° 1960, piso 4° Providencia<br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Santiago, Chile<br/>
@@ -60,7 +60,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<button type="submit" class="btn btn-default"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
 				  				</div>
 				  			</div>
 						   	<input type="hidden" name="tipo" id="tipo" value="1">
@@ -70,7 +70,7 @@
 			  </div>
 			   <div class="tab-pane" id="argentina">
 			  	<div class="row">
-			  		<div class="col-md-4 col-md-offset-1">
+			  		<div class="col-md-5">
 			  			<br/><br/><h4><strong>ARGENTINA</strong></h4><br/><br/>
 			  			<p><img id="u54741_img" class="block" width="20" height="20" alt="" src="public/img/icono_direccion2.png"> Reconquista 336, piso 11, depto. “X” (C1003ABH)<br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ciudad Autónoma de Buenos Aires - Argentina<br/>
@@ -97,7 +97,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<button type="submit" class="btn btn-default"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
 				  				</div>
 				  			</div>
 						   	<input type="hidden" name="tipo" id="tipo" value="1">
@@ -107,7 +107,7 @@
 			  </div>
 			  <div class="tab-pane" id="peru">
 			  	<div class="row">
-			  		<div class="col-md-4 col-md-offset-1">
+			  		<div class="col-md-5">
 			  			<br/><br/><h4><strong>PER&Uacute;</strong></h4><br/><br/>
 			  			<p><img id="u54741_img" class="block" width="20" height="20" alt="" src="public/img/icono_direccion2.png"> Victor Andrés Belaúnde 147, vía principal 150<br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edificio Real Seis - piso6 <br/>
@@ -137,7 +137,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<button type="submit" class="btn btn-default"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
 				  				</div>
 				  			</div>
 						   	<input type="hidden" name="tipo" id="tipo" value="3">
@@ -147,7 +147,7 @@
 			  </div>
 			  <div class="tab-pane" id="colombia">
 			  	<div class="row">
-			  		<div class="col-md-4 col-md-offset-1">
+			  		<div class="col-md-5">
 			  			<br/><br/><h4><strong>COLOMBIA</strong></h4><br/><br/>
 			  			<p><img id="u54741_img" class="block" width="20" height="20" alt="" src="public/img/icono_direccion2.png"> Celmedia MKT S.A.<br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cra 11b # 98-08 of 304<br/>
@@ -176,7 +176,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<button type="submit" class="btn btn-default"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
 				  				</div>
 				  			</div>
 						    <input type="hidden" name="tipo" id="tipo" value="4">
@@ -186,7 +186,7 @@
 			  </div>
 			  <div class="tab-pane" id="ecuador">
 			  	<div class="row">
-			  		<div class="col-md-4 col-md-offset-1">
+			  		<div class="col-md-5">
 			  			<br/><br/><h4><strong>ECUADOR</strong></h4><br/><br/>
 			  			<p><img id="u54741_img" class="block" width="20" height="20" alt="" src="public/img/icono_direccion2.png"> Av. Rodrigo Chávez y Av. Juan Tanca Marengo s # 3 y 4<br/> 
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edificio Grafehi Piso 2 Guayaquil - Ecuador<br/>
@@ -218,7 +218,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<button type="submit" class="btn btn-default"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
 				  				</div>
 				  			</div>
 						  	<input type="hidden" name="tipo" id="tipo" value="5">
@@ -228,7 +228,7 @@
 			  </div>
 			  <div class="tab-pane" id="mexico">
 			  	<div class="row">
-			  		<div class="col-md-4 col-md-offset-1">
+			  		<div class="col-md-5">
 			  			<br/><br/><h4><strong>M&Eacute;XICO</strong></h4><br/><br/>
 			  			<p><img id="u54741_img" class="block" width="20" height="20" alt="" src="public/img/icono_direccion2.png"> Av. Paseo de las Palmas 215 Piso 5 Despacho 502 Col.<br/>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lomas de Chapultepec. Del. Miguel Hidalgo C.P. 11000 México D.F<br/>
@@ -256,7 +256,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<button type="submit" class="btn btn-default"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
 				  				</div>
 				  			</div>
 						  	<input type="hidden" name="tipo" id="tipo" value="6">
