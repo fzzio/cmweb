@@ -73,7 +73,7 @@ class Site extends CI_Controller {
 
             $contenido['proyecto'] = $this->db->get_where('proyecto', array('id' => $idproyecto, 'estado' => 1))->row();
             $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
-            
+            $contenido['clienteCaso'] = $this->db->get_where('cliente', array('id' => $contenido['proyecto']->id_cliente, 'estado' => 1))->row();
 
             //$contenido['tags'] = $this->db->get_where('tags', array('estado' => 1))->result_array();
 

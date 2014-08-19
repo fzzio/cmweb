@@ -41,6 +41,7 @@
 				<div class="row espaciado-a">
 					<div class="col-md-12">
 						<h3 class="titular-secc-caso" style="background-color: <?php echo $servicio->color; ?>;">Caso de éxito</h3>
+						<img src="<?php echo base_url('public/img/indicador_casos.png'); ?>" alt="" class="img-responsive obj-centrar" style="background-color: <?php echo $servicio->color; ?>;" />
 					</div>
 				</div>
 				<div class="row espaciado-a">

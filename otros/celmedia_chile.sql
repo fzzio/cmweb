@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 19-08-2014 a las 16:36:42
+-- Tiempo de generación: 19-08-2014 a las 20:58:20
 -- Versión del servidor: 5.5.31
 -- Versión de PHP: 5.4.16
 
@@ -75,7 +75,7 @@ INSERT INTO `cliente` (`id`, `nombre`, `imagen`, `imagenhover`, `imagenbg`, `est
 (9, 'CINÉPOLIS', '78a48-cinepolis_85gris.png', '580c1-cinepolis_85.png', 'cb4a2-cinepolis_400.png', 1),
 (10, 'Club Militar', '0099e-club-militar_85gris.png', 'e351b-club-militar_85color.png', '3bd39-club-militar_400.png', 1),
 (11, 'Coca Cola', '29b88-cocacola_85gris.png', '1f5ea-cocacola_85.png', 'a4024-cocacola_400.png', 1),
-(12, 'Colgate', 'd65ee-28d6e-colgate_85gris.png', '42d80-colgate_85.png', '5b958-colgate_400.png', 1),
+(12, 'Colgate', 'd870a-colgate_85gris.png', '42d80-colgate_85.png', '5b958-colgate_400.png', 1),
 (13, 'Colsubsidio', 'c38d3-colsubsidio_85gris.png', '54a9d-colsubsidio_85.png', '78084-colsubsidio_400.png', 1),
 (14, 'Crem Helado', '76722-creamhelado_85gris.png', '77800-creamhelado_85.png', '9830e-creamhelado_400.png', 1),
 (15, 'DANE', 'e0620-dane_85gris.png', 'c4d21-dane_85.png', '4e6ed-dane_400.png', 1),
