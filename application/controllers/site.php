@@ -42,10 +42,94 @@ class Site extends CI_Controller {
 
         $contenido['clientes'] = $this->db->get_where('cliente', array('estado' => 1))->result_array();
 
-      	$data['content'] = $this->load->view('celmedia/index', $contenido);
-        $data['footer'] = $this->load->view('celmedia/footer', array());
+
+                // $data['content'] = $this->load->view('celmedia/index', $contenido);
+                // $data['footer'] = $this->load->view('celmedia/footer', array());
+
+
+
+    
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('nombreC', 'Nombre', 'required');
+        $this->form_validation->set_rules('emailC', 'E-mail', 'required');
+        $this->form_validation->set_rules('telefonoC', 'Telefono', 'required');
+        $this->form_validation->set_rules('mensajeC', 'Mensaje', 'required');        
+        $this->form_validation->set_rules('empresaC', 'Empresa', 'required');
+        $this->form_validation->set_rules('asuntoC', 'Asunto', 'required');
+        
+            $this->form_validation->set_message('required', 'El campo es requerido');
+            
+            if ($this->form_validation->run() == FALSE)
+            {
+               
+                //$this->load->view('categoria' , $data);
+
+                $data['content'] = $this->load->view('celmedia/index', $contenido);
+                $data['footer'] = $this->load->view('celmedia/footer', array());
+            }
+            else
+            {
+                
+            
+
+                $this->load->library('email');
+    
+                $this->email->initialize();
+    
+                $nombre = $data['nombreC']=$this->input->post('nombreC');
+                $email= $data['emailC']=$this->input->post('emailC');
+                $asunto= $data['asuntoC']=$this->input->post('asuntoC');
+                $telefono= $data['telefonoC']=$this->input->post('telefonoC');
+                $mensaje= $data['mensajeC']=$this->input->post('mensajeC');
+                $empresa= $data['empresaC']=$this->input->post('empresaC');
+
+    
+                $subject = 'Pedido de Informacion CELMEDIA';
+    
+                $message = ' 
+                Formulario de Contacto
+                      
+                    Pedido de información
+    
+                    Se ha enviado un nuevo pedido de información,
+                    y los datos ingresados son los siguientes:
+                      
+                              Nombre: '.$nombre.'
+                              Empresa: '.$empresa.'
+                              E-mail: '.$email.'
+                              Asunto: '.$asunto.'
+                              Telefono: '.$telefono.'
+                              Mensaje: '.$mensaje.'
+                              
+                ';
+    
+    
+    
+                $this->email->from($email);
+                //$this->email->to('aarteaga@salcedomotors.com, ventas@salcedomotors.com'); 
+                $this->email->to('yc@selnet.com.ec, lpincay@celmedia.com'); 
+    
+                $this->email->subject($subject);
+                $this->email->message($message);    
+                $this->email->send();
+                //die();
+        
+                // $this->load->view('categoria' , $data);
+                // echo $message;
+                // exit(0);
+
+                $data['content'] = $this->load->view('celmedia/index', $contenido);
+                $data['footer'] = $this->load->view('celmedia/footer', array());
+             
+        
+            }
+        
+
+
 	}
 
+   
     public function servicios(){
 
         $idservicio = $this->uri->segment(3); //idcontenido
