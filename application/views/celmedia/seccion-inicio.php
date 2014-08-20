@@ -9,21 +9,20 @@
               <div class="row espaciado-top visible-sm visible-xs hidden-md hidden-lg"></div>
               <div class="row espaciado-top visible-sm visible-xs hidden-md hidden-lg"></div>
               <div class="row espaciado-a">
-                <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                     <div class="titular-slider">
                       <?php echo $slide["descripcion"]; ?>
                     </div>
                 </div>
               </div>
               <div class="row espaciado-a">
-                <div class="col-md-3 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12">
-                    <a href="<?php echo $slide['link']; ?>" class="btn btn-slh link-celmedia"><?php echo $slide["textoboton"]; ?></a>
+                <div class="col-md-2 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
+                    <br/><a href="<?php echo $slide['link']; ?>" class="btn btn-slh link-celmedia"><?php echo $slide["textoboton"]; ?></a>
                 </div>
               </div>
               <div class="row espaciado-a">
-                <br /><br /><br />
-                <div class="col-md-12 text-center page-scroll">
-                  <h4 class="txt-mayus txt-normal">scroll para continuar</h4>
+                <div class="col-md-12 text-center page-scroll" style="margin-bottom:20px">
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><h4 class="txt-mayus txt-normal">scroll para continuar</h4>
                   <a href="#servicios" class="link-celmedia link-scroll-sld"></a>
                 </div>
               </div>

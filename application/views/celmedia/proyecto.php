@@ -7,54 +7,50 @@
 			</h1>
 		</div>
 	</div>
-	<div class="row espaciado-a">
-		<div class="col-md-12">
-			<a href="<?php echo site_url('site/index');?>" class="texto-gris"> &lt; Regresar</a>
-		</div>
-	</div>
+	
 
 	<?php if ($pagina == '0'): ?>
 
 		<div class="row espaciado-a">
-			<div class="col-md-12">
-				
-
+			
 				<form method="post" accept-charset="utf-8" action=""  class="form-horizontal" >
-					
-					<span class="help-block"><?php echo validation_errors(); ?></strong>
-					<select name="spais">
-						<option selected="selected" disabled="disabled"> Paises</option>
-						<?php foreach ($paises as $pais): ?>						
-							<option value="<?php echo $pais["id"] ?>"><?php echo $pais["nombre"] ?></option>
-						<?php endforeach ?>
-					</select>
-
-
-					<select name="ssector">
-						<option selected="selected" disabled="disabled"> Sector</option>
-						<?php foreach ($sectores as $sector): ?>						
-							
-							<option value="<?php echo $sector["id"] ?>"><?php echo $sector["nombre"] ?></option>
-						<?php endforeach ?>
-					</select>
-
-
-					<select name="sservicio">
-						<option selected="selected" disabled="disabled"> Servicios</option>
-						<?php foreach ($servicios as $servicio): ?>						
-							<option value="<?php echo $servicio["id"] ?>"><?php echo $servicio["titulo"] ?></option>
-						<?php endforeach ?>
-					</select>
-
-
-					<select name="stags">
-						<option selected="selected" disabled="disabled"> Tags</option>
-						<?php foreach ($tags as $tag): ?>						
-							<option value="<?php echo $tag["id"] ?>"><?php echo $tag["descripcion"] ?></option>
-						<?php endforeach ?>
-					</select>
-
-					<button type="submit" class="btn btn-primary ">Buscar</button>
+					<span class="help-block"><?php echo validation_errors(); ?></span>
+					<div class="col-md-2 col-md-offset-1" style="padding-left: 2px; padding-right: 2px;">						
+						<select class="form-control" name="spais">
+							<option selected="selected" disabled="disabled"> Paises</option>
+							<?php foreach ($paises as $pais): ?>						
+								<option value="<?php echo $pais["id"] ?>"><?php echo $pais["nombre"] ?></option>
+							<?php endforeach ?>
+						</select>
+					</div>
+					<div class="col-md-2 " style="padding-left: 2px; padding-right: 2px;">
+						<select class="form-control" name="ssector">
+							<option selected="selected" disabled="disabled"> Sector</option>
+							<?php foreach ($sectores as $sector): ?>						
+								
+								<option value="<?php echo $sector["id"] ?>"><?php echo $sector["nombre"] ?></option>
+							<?php endforeach ?>
+						</select>
+					</div>
+					<div class="col-md-2 " style="padding-left: 2px; padding-right: 2px;">
+						<select class="form-control" name="sservicio">
+							<option selected="selected" disabled="disabled"> Servicios</option>
+							<?php foreach ($servicios as $servicio): ?>						
+								<option value="<?php echo $servicio["id"] ?>"><?php echo $servicio["titulo"] ?></option>
+							<?php endforeach ?>
+						</select>
+					</div>
+					<div class="col-md-2 " style="padding-left: 2px; padding-right: 2px;">
+						<select class="form-control" name="stags">
+							<option selected="selected" disabled="disabled"> Tags</option>
+							<?php foreach ($tags as $tag): ?>						
+								<option value="<?php echo $tag["id"] ?>"><?php echo $tag["descripcion"] ?></option>
+							<?php endforeach ?>
+						</select>
+					</div>
+					<div class="col-md-2" style="padding-left: 2px; padding-right: 2px;">
+						<button type="submit" class="btn btn-primary">Buscar</button>
+					</div>
 				</form>
 			</div>
 		</div>

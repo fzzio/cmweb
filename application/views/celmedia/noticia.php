@@ -43,7 +43,7 @@
 					</div>
 					<div class="row fondoCrema">
 						<div class="col-md-12 bg-titular-noticia text-left">
-							<div class="texto-noticia">
+							<div class="texto-noticia-descripcion">
 								<?php echo utf8_encode( $noticia->descripcion ); ?>
 							</div>
 						</div>

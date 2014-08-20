@@ -19,29 +19,29 @@
                 <div class="row text-left">
                     <div class="col-md-2"><br/>
                         <p class="links-footer" style="line-height: 20px; font-size: 14px;">
-                            <a href="#">Proyectos</a><br />
-                            <a href="#">Clientes</a><br />
-                            <a href="#">Noticias</a><br />
+                            <a href="<?php echo site_url('site/proyecto'); ?>">Proyectos</a><br/>
+                            <a href="<?php echo site_url('site');?>#clientes">Clientes</a><br />
+                            <a href="<?php echo site_url('site/noticia'); ?>">Noticias</a><br />
                         </p>
                     </div>
                     <div class="col-md-2"><br/>
                         <p class="links-footer" style="line-height: 20px; font-size: 14px;">
-                            <a href="#">Mobile Marketing</a><br />
-                            <a href="#">TV Interactiva</a><br />
-                            <a href="#">Gateway</a><br />
-                            <a href="#">Fidelización</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/1'; ?>">Mobile Marketing</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/2'; ?>">TV Interactiva</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/3'; ?>">Gateway</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/4'; ?>">Fidelización</a><br />
                         </p>
                     </div>
                     <div class="col-md-2"><br/>
                         <p class="links-footer" style="line-height: 20px; font-size: 14px;">
-                            <a href="#">Virtual Graphics</a><br />
-                            <a href="#">M-Goverment</a><br />
-                            <a href="#">Social Media</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/5'; ?>">Virtual Graphics</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/6'; ?>">M-Goverment</a><br />
+                            <a href="<?php echo site_url('site/servicios') . '/7'; ?>">Social Media</a><br />
                         </p>
                     </div>
 
                     <div class="col-md-4 col-md-offset-2"><br/>
-                        <form  class="form-horizontal" role="form"  >
+                        <form  class="form-horizontal" role="form">
                             <div class="row">
                                 <div class="col-md-11 col-md-offset-1 form-group">
                                     <span class="help-block"><?php echo form_error('emailS'); ?></span>

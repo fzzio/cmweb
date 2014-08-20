@@ -1,11 +1,11 @@
 <div class="container">
 	<div class="row espaciado-top"></div>
 	<div class="row espaciado-a">
-		<div class="col-md-4">
+		<div class="col-md-4 colores-<?php  echo $servicio->id; ?>" >
 			<div class="container-fluid">
 				<div class="row espaciado-a">
 					<div class="col-md-12">
-						<a href="<?php echo site_url('site/index');?>" class="texto-gris"> &lt; Regresar</a>
+						<a href="<?php echo site_url('site/index#servicios');?>" class="texto-gris"> &lt; Regresar </a>
 					</div>
 				</div>
 				<div class="row">
@@ -32,7 +32,7 @@
 			</div>
 
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4" style="padding-left:0px">
 			<?php $rutaImg = base_url('assets/celmediachile/servicios') . '/' . $servicio->imagen; ?>
 			<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
 		</div>
@@ -41,18 +41,18 @@
 				<div class="row espaciado-a">
 					<div class="col-md-12">
 						<h3 class="titular-secc-caso" style="background-color: <?php echo $servicio->color; ?>;">Caso de éxito</h3>
-						<img src="<?php echo base_url('public/img/indicador_casos.png'); ?>" alt="" class="img-responsive obj-centrar" style="background-color: <?php echo $servicio->color; ?>;" />
+						<img src="<?php echo base_url('public/img/indicador_casos.png'); ?>" alt="" class="img-responsive obj-centrar" style="background-color: <?php echo $servicio->color; ?>; position: relative; top: -10px;" />
 					</div>
 				</div>
 				<div class="row espaciado-a">
-					<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto->imagen; ?>
+					<?php  $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto->imagen;  ?>
 					<div class="col-md-12">
 						<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
 					</div>
 				</div>
 				<div class="row espaciado-a">
 					<div class="col-md-12">
-						<span class="s-subtitular"><?php echo $proyecto->nombre; ?></span>
+						<span class="s-subtitular-p"><?php  echo utf8_encode( substr($proyecto->descripcion, 0, 220)).'...'; ?></span>
 					</div>
 				</div>
 				<div class="row espaciado-a">
@@ -64,7 +64,7 @@
 				</div>
 				<div class="row espaciado-a">
 					<div class="col-md-12">
-						<a href="<?php echo site_url('site/proyecto'); ?>" class="link-celmedia titular-ver-casos">
+						<a href="<?php echo site_url('site/proyecto'); ?>" class="link-celmedia titular-ver-caso" style="background-color: black">
 							Ver todos los casos
 						</a>
 					</div>
