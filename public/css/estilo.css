@@ -344,7 +344,8 @@ a{
 .s-titular-3{
 	font-size: 30px;
 	line-height: 35px;
-	font-family: 'open_sansregular';
+	font-family: 'open_sanslight';
+	text-align: center;
 }
 .s-subtitular{
     font-size: 18px;
@@ -356,9 +357,11 @@ a{
     line-height: 29px;
 }
 .s-subtitular-3{
-	font-size: 18px;
+	font-size: 12px;
     line-height: 20px;
-    font-family: 'open_sansregular';
+    font-family: open-sans,sans-serif;
+    color: #f7eaec;
+    margin-top:10px;
 }
 
 .titular-secc-caso{
@@ -426,14 +429,25 @@ a{
 }
 
 .titulo-noticia{
-	font-size: 26px;
+	font-size: 24px;
     line-height: 34px;
     color: #000000;
+    font-family: open-sans,sans-serif;
+}
+.titulo-noticia-principal{
+	font-family: open-sans,sans-serif;
+	font-size: 32px;
+	text-align: center;
+}
+
+.titulo-noticia:hover{
+	color: #b0757b;
 }
 .texto-noticia{
 	color: #000000;	
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 20px;	
+	font-family: open-sans,sans-serif;
 }
 
 .texto-noticia-descripcion{
@@ -623,10 +637,11 @@ a{
 
 .contactos > li a{
 	background: transparent !important;
-	color: white;
+	color: black;
 	padding-bottom: 6px;
 	text-align: center;
 }
+
 
 .contactos > li.active a{
 	color: white;
@@ -674,6 +689,7 @@ a{
 .colores-1{
 	background-color: #fff0f3;
 	height:570px;
+	/*padding-left: 240px;*/
 }
 
 .servicio-parrafo{
@@ -688,6 +704,20 @@ a{
     text-align: justify;
    
 }
+
+.proyecto-parrafo{
+    color: #000000;
+    font-family: 'open_sanslight';
+    font-size: 12px;
+   
+    line-height: 17px;
+    
+    padding-top: 10px;
+    
+    text-align: justify;
+   
+}
+
 .s-subtitular-p{
 	color: #000000;
     font-family: open-sans,sans-serif;
@@ -720,4 +750,77 @@ a{
 .colores-7{
 	background-color: #fff0f3;
 	height:570px;
+}
+
+.hover-noticias img:hover{
+	opacity: 0.7;
+}
+
+.sombreado-imagen img:hover{
+	opacity: 0.8;
+	
+}
+
+.fondoRosa{
+	background-color: #f7eaec;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: none !important;
+}
+
+
+.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+    background: url('../img/img-slider/a17.png') no-repeat;
+    overflow:hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05ldn { background-position: -250px -40px; }
+.jssora05rdn { background-position: -310px -40px; }
+
+.jssort01 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.jssort01 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    border: #000 2px solid;
+}
+
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
+    background: url('../img/img-slider/t01.png') center center;
+    border-width: 0px;
+    top: 2px;
+    left: 2px;
+    width: 68px;
+    height: 68px;
+}
+
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border: #fff 1px solid;
+}
+.leyendo-slider{
+	position: absolute; 
+	display: block; 
+	background: url('../img/img-slider/loading.gif') no-repeat center center;
+	top: 0px; left: 0px;width: 100%;height:100%;
 }

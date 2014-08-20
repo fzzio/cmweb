@@ -35,16 +35,16 @@
 								</h3>
 							</div>
 						</div>					
-						<div class="row">
+						<div class="row ">
 							<?php $rutaImg = base_url('assets/celmediachile/noticias') . '/' . $noticia['imagen']; ?>
-							<div class="col-md-12">
+							<div class="col-md-12 sombreado-imagen">
 								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12 bg-titular-noticia text-left">
 								<h4 class="texto-noticia">
-									<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 55)); ?> ...
+									<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 105)); ?> ...
 								</h4>
 							</div>
 						</div>

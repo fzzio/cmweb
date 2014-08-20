@@ -277,8 +277,89 @@ class Site extends CI_Controller {
         $idnoticia = $this->uri->segment(3);
 
         $data['header'] = $this->load->view('celmedia/header', array());
-        
-        if($idnoticia){
+        $contenido['paises'] = $this->db->get_where('pais', array('estado' => 1))->result_array();
+        $contenido['sectores'] = $this->db->get_where('sector', array('estado' => 1))->result_array();
+        //$contenido['tags'] = $this->db->get_where('tags', array('estado' => 1))->result_array();
+
+
+         if (!isset($_POST))
+                //if ($this->form_validation->run() == FALSE)
+            {
+               
+                
+               if($idnoticia){
+
+                    $contenido['pagina'] = "1";
+
+                    $contenido['noticia'] = $this->db->get_where('noticia', array('id' => $idnoticia, 'estado' => 1))->row();
+
+                    $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_noticias as tn', 't.id = tn.id_tags')->join('noticia as n', 'tn.id_noticia = n.id')->where( array('n.id' => $idnoticia, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
+                    
+                    $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.id !=' => $idnoticia, 'n.estado' => 1 )  )->limit(3)->order_by("n.fecha", "desc")->get()->result_array();
+
+
+
+                }else{
+                    $contenido['pagina'] = "0";
+                    $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.estado' => 1 )  )->order_by("n.fecha", "desc")->get()->result_array();
+                }
+
+                
+
+
+                $data['content'] = $this->load->view('celmedia/proyecto', $contenido);
+                $data['footer'] = $this->load->view('celmedia/footer', array());
+            }
+            else
+            {
+                $arrayvacio = array( );
+
+
+                $pais = $data['spais']=$this->input->post('spais');
+                $sector= $data['ssector']=$this->input->post('ssector');
+                $anio= $data['sanio']=$this->input->post('sanio');
+                /*$tag= $data['stags']=$this->input->post('stags');*/
+
+                if (!$pais==0) {
+                    $arrayvacio['id_pais']=$pais;
+                    /*array_push($arrayvacio, $pais);*/
+                }
+                if (!$sector==0) {
+                   $arrayvacio['id_sector']=$sector;
+                }
+              
+              /*  if (!$sanio==0) {
+                   $arrayvacio['id_anio']=$anio;
+                }*/
+                /*if (!$tag==0) {
+                   $arrayvacio['id_pais']=$pais;
+                }*/
+
+                if($idnoticia){
+
+                    $contenido['pagina'] = "1";
+
+                    $contenido['noticia'] = $this->db->get_where('noticia', array('id' => $idnoticia, 'estado' => 1))->row();
+
+                    $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_noticias as tn', 't.id = tn.id_tags')->join('noticia as n', 'tn.id_noticia = n.id')->where( array('n.id' => $idnoticia, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
+                    
+                    $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.id !=' => $idnoticia, 'n.estado' => 1 )  )->limit(3)->order_by("n.fecha", "desc")->get()->result_array();
+
+                }else{
+                    $contenido['pagina'] = "0";
+                    $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.estado' => 1 )  )->where($arrayvacio)->order_by("n.fecha", "desc")->get()->result_array();
+
+                    //$contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen, cl.imagenhover as climagenhover')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->where($arrayvacio)->order_by("pr.fecha", "desc")->get()->result_array();
+
+
+                   // $contenido['proyectos'] = $this->db->get_where('proyecto', $arrayvacio)->result_array();
+                }
+
+                $data['content'] = $this->load->view('celmedia/noticia', $contenido);
+                $data['footer'] = $this->load->view('celmedia/footer', array());
+            }
+
+        /*if($idnoticia){
 
             $contenido['pagina'] = "1";
 
@@ -296,7 +377,7 @@ class Site extends CI_Controller {
         }
 
         $data['content'] = $this->load->view('celmedia/noticia', $contenido);
-        $data['footer'] = $this->load->view('celmedia/footer', array());
+        $data['footer'] = $this->load->view('celmedia/footer', array());*/
     }    
 }
 

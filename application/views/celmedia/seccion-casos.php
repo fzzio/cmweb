@@ -10,9 +10,9 @@
 	<div class="row espaciado-a">
 		<?php foreach ($proyectos as $proyecto): ?>
 			<a href="<?php echo site_url('site/proyecto') . '/' . $proyecto['prid'];?>" class="">
-				<div class="col-md-4 text-center espaciado-a">
+				<div class="col-md-4 text-center espaciado-a ">
 					<div class="container-fluid">
-						<div class="row">
+						<div class="row hover-noticias" >
 							<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto['primagen_detalle']; ?>
 							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />							
 						</div>

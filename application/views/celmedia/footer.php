@@ -74,6 +74,10 @@
 
         <script type="text/javascript" src="<?php echo base_url('public/js/lionbars/lionbars03min.js'); ?>"></script>
 
+         <script type="text/javascript" src="<?php echo base_url('public/js/js-slider/jssor.core.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('public/js/js-slider/jssor.utils.js'); ?>"></script>
+     <script type="text/javascript" src="<?php echo base_url('public/js/js-slider/jssor.slider.js'); ?>"></script>
+
         <script type="text/javascript" src="<?php echo base_url('public/js/script.js'); ?>"></script>
     </body>
 </html>
