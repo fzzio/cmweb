@@ -25,7 +25,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="servicio-parrafo">
-							<?php echo $servicio->descripcion; ?>
+							<br/><?php echo $servicio->descripcion; ?>
 						</div>
 					</div>
 				</div>
