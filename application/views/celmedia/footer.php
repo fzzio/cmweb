@@ -12,7 +12,7 @@
                     <div class="col-md-8">
                         <span class="copy-footer" style="font-family: open-sans,sans-serif; font-size: 14px;">&copy; 2014 CELMEDIA, Todos los derechos reservados</span>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="padding-left:0px;">
                         <span class="copy-footer" style="font-family: open-sans,sans-serif; font-size: 14px;">Suscríbete</span>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="col-md-4 col-md-offset-2"><br/>
-                        <form  class="form-horizontal formulario-contacto" role="form">
+                        <form  class="form-horizontal formulario-contacto-a" role="form">
                             <div class="row">
                                 <div class="col-md-11 col-md-offset-1 form-group">
                                     <span class="help-block"><?php echo form_error('emailS'); ?></span>
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-md-offset-5">
+                                <div class="col-md-5 col-md-offset-5" style="padding-right:0px">
                                     <button  class="btn btn-slh link-home" style="padding:5px;" >Enviar</button><br/><br/>
                                 </div>
                             </div>
