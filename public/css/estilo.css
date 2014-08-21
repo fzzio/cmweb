@@ -234,6 +234,7 @@ a{
 }
 #contacto.seccion-celmedia{
 	background-image: url('../img/bg_contacto.jpg');
+	background-position: bottom center;
 	/*height: auto;*/
 }
 
