@@ -35,7 +35,7 @@ $(document).ready(function() {
         $(this).find(".img-c-hover").stop(true, true).hide();
     });
 
-    jQuery(".proyecto-parrafo").lionbars();
+    //jQuery(".proyecto-parrafo").lionbars();
 
  var _SlideshowTransitions = [
             //Fade in L

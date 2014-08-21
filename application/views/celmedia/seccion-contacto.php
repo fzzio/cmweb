@@ -43,7 +43,7 @@
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
 			  			<br/><br/><h4 style=" margin-left: -15px;"><strong>Cont&aacute;ctanos</strong></h4>
-			  			<form method="post" class="form-horizontal" role="form"  >
+			  			<form method="post" class="form-horizontal formulario-contacto" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">
 				  					<span class="help-block"><?php echo form_error('nombreC'); ?></span>
@@ -60,7 +60,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
 						   	<input type="hidden" name="tipo" id="tipo" value="1">
@@ -80,7 +80,7 @@
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
 			  			<br/><br/><h4><strong>Cont&aacute;ctanos</strong></h4>
-			  			<form method="post" class="form-horizontal" role="form"  >
+			  			<form method="post" class="form-horizontal formulario-contacto" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">
 				  					<span class="help-block"><?php echo form_error('nombreC'); ?></span>
@@ -97,7 +97,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
 						   	<input type="hidden" name="tipo" id="tipo" value="1">
@@ -120,7 +120,7 @@
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
 			  			<br/><br/><h4><strong>Cont&aacute;ctanos</strong></h4>
-			  			<form method="post" class="form-horizontal" role="form"  >
+			  			<form method="post" class="form-horizontal formulario-contacto" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">
 				  					<span class="help-block"><?php echo form_error('nombreC'); ?></span>
@@ -137,7 +137,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
 						   	<input type="hidden" name="tipo" id="tipo" value="3">
@@ -159,7 +159,7 @@
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
 			  			<br/><br/><h4><strong>Cont&aacute;ctanos</strong></h4>
-			  			<form method="post" class="form-horizontal" role="form"  >
+			  			<form method="post" class="form-horizontal formulario-contacto" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">
 				  					<span class="help-block"><?php echo form_error('nombreC'); ?></span>
@@ -176,7 +176,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
 						    <input type="hidden" name="tipo" id="tipo" value="4">
@@ -201,7 +201,7 @@
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
 			  			<br/><br/><h4><strong>Cont&aacute;ctanos</strong></h4>
-			  			<form method="post" class="form-horizontal" role="form"  >
+			  			<form method="post" class="form-horizontal formulario-contacto" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">
 				  					<span class="help-block"><?php echo form_error('nombreC'); ?></span>
@@ -218,7 +218,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<br/><button type="submit" class="btn btn-slh"  >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
 						  	<input type="hidden" name="tipo" id="tipo" value="5">
@@ -239,7 +239,7 @@
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
 			  			<br/><br/><h4><strong>Cont&aacute;ctanos</strong></h4>
-			  			<form method="post" class="form-horizontal" role="form"  >
+			  			<form method="post" class="form-horizontal formulario-contacto" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">
 				  					<span class="help-block"><?php echo form_error('nombreC'); ?></span>
@@ -256,7 +256,7 @@
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
 				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
-				  					<br/><button type="submit" class="btn btn-slh" >Enviar</button>
+				  					<br/><button type="submit" class="btn btn-slh link-home" >Enviar</button>
 				  				</div>
 				  			</div>
 						  	<input type="hidden" name="tipo" id="tipo" value="6">
