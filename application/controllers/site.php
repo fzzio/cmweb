@@ -29,54 +29,69 @@ class Site extends CI_Controller {
 	{
 		$debug = false;
 		$data['debug'] = $debug;
-		$data['header'] = $this->load->view('celmedia/header', array());
 
-
-        $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
-
-        $contenido['servicios'] = $this->db->get_where('servicio', array('estado' => 1))->result_array();
-
-        $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.estado' => 1, 'cl.estado' => 1 )  )->limit(3)->order_by("pr.fecha", "desc")->get()->result_array();
-
-        $contenido['noticias'] = $this->db->select('*')->from('noticia')->where( array('estado' => 1)  )->limit(3)->order_by("fecha", "desc")->get()->result_array();
-
-        $contenido['clientes'] = $this->db->get_where('cliente', array('estado' => 1))->result_array();
-
-
-                // $data['content'] = $this->load->view('celmedia/index', $contenido);
-                // $data['footer'] = $this->load->view('celmedia/footer', array());
-
-
-
-    
-        $this->load->library('form_validation');
-
-        $this->form_validation->set_rules('nombreC', 'Nombre', 'required');
-        $this->form_validation->set_rules('emailC', 'E-mail', 'required');
-        $this->form_validation->set_rules('telefonoC', 'Telefono', 'required');
-        $this->form_validation->set_rules('mensajeC', 'Mensaje', 'required');        
-        $this->form_validation->set_rules('empresaC', 'Empresa', 'required');
-        $this->form_validation->set_rules('asuntoC', 'Asunto', 'required');
+        $this->load->library('Mobile_Detect');
+        $detect = new Mobile_Detect();
         
+        
+
+        // Exclude tablets.
+        if( $detect->isMobile() && !$detect->isTablet() ){
+            $data['header'] = $this->load->view('celmediaphone/header', array());
+
+            $contenido['queEs'] = "Mobile";
+
+            $data['content'] = $this->load->view('celmediaphone/index', $contenido);
+            $data['footer'] = $this->load->view('celmediaphone/footer', array());
+        }elseif($detect->isTablet() ){
+            //$data['header'] = $this->load->view('celmedia/header', array());
+            $contenido['queEs'] = "tablet";
+
+            $data['content'] = $this->load->view('celmediatablet/index', $contenido);
+            $data['footer'] = $this->load->view('celmedia/footer', array());
+        }else{
+
+            /////// mobil
+            $data['header'] = $this->load->view('celmediaphone/header', array());
+            $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
+
+            $data['content'] = $this->load->view('celmediaphone/index', $contenido);
+            $data['footer'] = $this->load->view('celmediaphone/footer', array());
+
+
+            // DESCOMENTAR ESTO AL FINAL
+            /////////////////////////////////////
+            /*
+
+            $data['header'] = $this->load->view('celmedia/header', array());
+            $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
+            $contenido['servicios'] = $this->db->get_where('servicio', array('estado' => 1))->result_array();
+            $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.estado' => 1, 'cl.estado' => 1 )  )->limit(3)->order_by("pr.fecha", "desc")->get()->result_array();
+            $contenido['noticias'] = $this->db->select('*')->from('noticia')->where( array('estado' => 1)  )->limit(3)->order_by("fecha", "desc")->get()->result_array();
+            $contenido['clientes'] = $this->db->get_where('cliente', array('estado' => 1))->result_array();
+        
+            $this->load->library('form_validation');
+
+            $this->form_validation->set_rules('nombreC', 'Nombre', 'required');
+            $this->form_validation->set_rules('emailC', 'E-mail', 'required');
+            $this->form_validation->set_rules('telefonoC', 'Telefono', 'required');
+            $this->form_validation->set_rules('mensajeC', 'Mensaje', 'required');        
+            $this->form_validation->set_rules('empresaC', 'Empresa', 'required');
+            $this->form_validation->set_rules('asuntoC', 'Asunto', 'required');
+            
             $this->form_validation->set_message('required', 'El campo es requerido');
             
-            if ($this->form_validation->run() == FALSE)
-            {
+            if ($this->form_validation->run() == FALSE){
                
                 //$this->load->view('categoria' , $data);
 
                 $data['content'] = $this->load->view('celmedia/index', $contenido);
                 $data['footer'] = $this->load->view('celmedia/footer', array());
-            }
-            else
-            {
-                
-            
+            }else{
 
                 $this->load->library('email');
-    
                 $this->email->initialize();
-    
+
                 $nombre = $data['nombreC']=$this->input->post('nombreC');
                 $email= $data['emailC']=$this->input->post('emailC');
                 $asunto= $data['asuntoC']=$this->input->post('asuntoC');
@@ -84,14 +99,13 @@ class Site extends CI_Controller {
                 $mensaje= $data['mensajeC']=$this->input->post('mensajeC');
                 $empresa= $data['empresaC']=$this->input->post('empresaC');
 
-    
                 $subject = 'Pedido de Informacion CELMEDIA';
-    
+
                 $message = ' 
                 Formulario de Contacto
                       
                     Pedido de información
-    
+
                     Se ha enviado un nuevo pedido de información,
                     y los datos ingresados son los siguientes:
                       
@@ -101,15 +115,12 @@ class Site extends CI_Controller {
                               Asunto: '.$asunto.'
                               Telefono: '.$telefono.'
                               Mensaje: '.$mensaje.'
-                              
                 ';
-    
-    
-    
+
                 $this->email->from($email);
                 //$this->email->to('aarteaga@salcedomotors.com, ventas@salcedomotors.com'); 
                 $this->email->to('yc@selnet.com.ec, lpincay@celmedia.com'); 
-    
+
                 $this->email->subject($subject);
                 $this->email->message($message);    
                 $this->email->send();
@@ -121,9 +132,17 @@ class Site extends CI_Controller {
 
                 $data['content'] = $this->load->view('celmedia/index', $contenido);
                 $data['footer'] = $this->load->view('celmedia/footer', array());
-             
-        
             }
+
+            */
+
+        }
+
+
+    
+
+
+		
         
 
 
@@ -297,7 +316,30 @@ class Site extends CI_Controller {
 
         $data['content'] = $this->load->view('celmedia/noticia', $contenido);
         $data['footer'] = $this->load->view('celmedia/footer', array());
-    }    
+    }
+
+
+
+
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    //    MOBILE
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    public function servicioM(){
+        $idservicio = $this->uri->segment(3); //idcontenido
+
+        $data['header'] = $this->load->view('celmediaphone/header', array());
+        if(!$idservicio){
+            $contenido['servicios'] = $this->db->get_where('servicio', array('estado' => 1))->result_array();
+        }else{
+            $contenido['servicio'] = $this->db->get_where('servicio', array('id' => $idservicio, 'estado' => 1))->row();
+            $contenido['proyecto'] = $this->db->get_where('proyecto', array('id_servicio' => $idservicio, 'estado' => 1))->limit(1)->row();
+        }
+        $data['content'] = $this->load->view('celmediaphone/servicios', $contenido);
+        $data['footer'] = $this->load->view('celmediaphone/footer', array());            
+
+    }
 }
 
 /* End of file welcome.php */
