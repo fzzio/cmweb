@@ -17,7 +17,7 @@
 	</div>
 	<div class="row espaciado-a">
 		<div class="col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 text-center page-scroll">
-			<a href="#contacto" class="btn btn-slh">¿Cómo hago esto parte de mi negocio?</a>
+			<a href="#contacto" class="btn btn-slh link-home">¿Cómo hago esto parte de mi negocio?</a>
 		</div>
 	</div>
 	<div class="row espaciado-a">&nbsp;</div>

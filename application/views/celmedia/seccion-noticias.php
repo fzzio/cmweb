@@ -47,6 +47,11 @@
 									<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 105)); ?> ...
 								</h4>
 							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="link-leer-mas"><strong>Leer m&aacute;s </strong><img class="ajustar-boton" width="15" height="15" alt="" src="<?php echo base_url('public/img/flecha-scroll_arrowblack3.png') ?>"/></p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -55,7 +60,7 @@
 	</div>
 	<div class="row espaciado-a">
 		<div class="col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 text-center page-scroll">
-			<a href="<?php echo site_url('site/noticia'); ?>" class="btn btn-slh">Ver todas las noticias</a>
+			<a href="<?php echo site_url('site/noticia'); ?>" class="btn btn-slh link-home">Ver todas las noticias</a>
 		</div>
 	</div>
 	<div class="row espaciado-a">&nbsp;</div>
