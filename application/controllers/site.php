@@ -328,6 +328,8 @@ class Site extends CI_Controller {
                    $arrayvacio['id_sector']=$sector;
                 }
               
+                $fecha_ini = "2000-01-01";
+                $fecha_final = "2200-12-31";
                 if (!$anio==0) {
                     $fecha_ini= $anio.'-01-01';
                     $fecha_final = $anio.'-12-31';
@@ -350,7 +352,12 @@ class Site extends CI_Controller {
 
                 }else{
                     $contenido['pagina'] = "0";
-                    $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.estado' => 1 )  )->where($arrayvacio)->order_by("n.fecha", "desc")->get()->result_array();
+                    $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')
+                    ->from('noticia as n')
+                    ->where( array('n.estado' => 1, "n.fecha >=" => $fecha_ini , "n.fecha <=" => $fecha_final  )  )
+                    ->where($arrayvacio)
+                    ->order_by("n.fecha", "desc")
+                    ->get()->result_array();
 
                     //$contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen, cl.imagenhover as climagenhover')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->where($arrayvacio)->order_by("pr.fecha", "desc")->get()->result_array();
 
