@@ -210,7 +210,7 @@ a{
 }
 
 .fondo-completo{
-	background-position: center top;
+	background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
     /*height: 100%;
@@ -319,19 +319,23 @@ a{
 .txt-mayus{
 	text-transform: uppercase;
 }
+
 .btn-slh{
 	background-color: #000000;
 	color: #FFFFFF;
 	width: 100%;
 	border-radius: 0px;
+	background-image: url("../img/right_white_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 97% ;
 }
-
 .btn-slh:hover,
 .btn-slh:active,
 .btn-slh:focus{
 	background-color: #2C2C2C;
 	color: #FFFFFF;
 }
+
 
 .btn-contacto-toggle,
 .btn-contacto-toggle:hover,

@@ -23,7 +23,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12 text-left">
+							<div class="col-md-12 text-left row-sinborde">
 								<h3 class="titulo-noticia">
 									<?php
 										if(strlen($noticia['titulo']) > 40){
@@ -37,20 +37,18 @@
 						</div>					
 						<div class="row ">
 							<?php $rutaImg = base_url('assets/celmediachile/noticias') . '/' . $noticia['imagen']; ?>
-							<div class="col-md-12 sombreado-imagen">
-								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
-							</div>
+							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
 						</div>
 						<div class="row">
-							<div class="col-md-12 bg-titular-noticia text-left">
+							<div class="col-md-12 bg-titular-noticia text-left  row-sinborde espaciado-a">
 								<h4 class="texto-noticia">
 									<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 105)); ?> ...
 								</h4>
 							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<p class="link-leer-mas"><strong>Leer m&aacute;s </strong><img class="ajustar-boton" width="15" height="15" alt="" src="<?php echo base_url('public/img/flecha-scroll_arrowblack3.png') ?>"/></p>
-								</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 row-sinborde pull-right">
+								<p class="link-leer-mas"><strong>Leer m&aacute;s </strong><img class="ajustar-boton" width="15" height="15" alt="" src="<?php echo base_url('public/img/flecha-scroll_arrowblack3.png') ?>"/></p>
 							</div>
 						</div>
 					</div>

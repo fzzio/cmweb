@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="row espaciado-a">
-			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center">
+			<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center">
 				<div class="ballon-titular">
 					<span class="txt-mayus">NUESTRAS ÁREAS DE SERVICIO</span>
 				</div>

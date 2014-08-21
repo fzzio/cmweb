@@ -18,7 +18,9 @@ a{
 .txt-normal{
 	font-family: 'open_sansregular';
 }
-
+.txt-negrita{
+	font-family: 'open_sansbold';
+}
 .fondoPlomo{
 	background-color: #91A5AD;
 	color: #FFFFFF;
