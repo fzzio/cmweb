@@ -57,7 +57,7 @@
 	<?php elseif ($pagina == '1'): ?>
 		<div class="row espaciado-a">
 			<div class="col-md-8" style="width:70%"><!-- <br/><br/> -->
-				<?php if (count( $sliderProyecto ) > 0){ ?>
+				<?php if (count( $sliderProyecto ) > 0): ?>
 
 					<!-- Jssor Slider Begin -->
 					    <!-- You can move inline styles to css file or css block. -->
@@ -75,23 +75,6 @@
 
 					        <!-- Slides Container -->
 					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 540px; overflow: hidden;">
-						        <div>
-
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/01.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-01.jpg') ?>" />
-					            </div>
-					            <div>
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/02.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-02.jpg') ?>" />
-					            </div>
-					            <div>
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/02.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-02.jpg') ?>" />
-					            </div>
-					            <div>
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/03.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-03.jpg') ?>" />
-					            </div>
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
@@ -131,10 +114,10 @@
 						    <!-- Jssor Slider End -->
 						 </div>
 
-				<?php }else{ ?>
-					<img u="image" src="<?php echo base_url('public/img/Imagen_ReferencialCasos.jpg') ?>" height="550px" width="800px" />	
-
-				<?php } ?>
+				
+				<?php else: ?>
+					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar" alt="" />
+				<?php endif ?>
 			</div>
 			<div class="col-md-4  fondoRosa" style="width:30%">
 				<div class="container-fluid">

@@ -284,6 +284,7 @@ class Admin extends CI_Controller {
         $crud->display_as('prioridad','Prioridad');
         $crud->display_as('estado','Estado');
 
+        $crud->columns('id_pais', 'id_servicio', 'id_sector', 'id_cliente', 'nombre', 'imagen', 'estado');
 
         $crud->set_relation('id_pais', 'pais', 'nombre');
         $crud->set_relation('id_servicio', 'servicio', 'titulo');
@@ -356,6 +357,8 @@ class Admin extends CI_Controller {
 
         $crud->set_table("imagen_proyecto");
         $crud->set_subject('Imagenes Slider Proyectos');
+
+        $crud->display_as('id_proyecto','Proyecto');
 
         $crud->set_relation('id_proyecto', 'proyecto', 'nombre');
 
