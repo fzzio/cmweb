@@ -5,7 +5,7 @@
         
     <?php endif ?>
 
-        <div id="footer">
+        <div id="footer" >
             <div class="container">
                 <div class="row expaciado-a">&nbsp;</div>
                 <div class="row">
@@ -41,12 +41,17 @@
                     </div>
 
                     <div class="col-md-4 col-md-offset-2"><br/>
-                        <form  class="form-horizontal" role="form">
+                        <form  class="form-horizontal formulario-contacto" role="form">
                             <div class="row">
                                 <div class="col-md-11 col-md-offset-1 form-group">
                                     <span class="help-block"><?php echo form_error('emailS'); ?></span>
                                     <input type="email" class="form-control" name="emailS"  id="emailC"  placeholder="Email">
-                                    <br/><button  class="btn btn-slh" >Enviar</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-5">
+                                    <button  class="btn btn-slh link-home" style="padding:5px;" >Enviar</button><br/><br/>
                                 </div>
                             </div>
                         </form>

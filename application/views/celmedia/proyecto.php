@@ -49,20 +49,20 @@
 						</select>
 					</div>
 					<div class="col-md-2" style="padding-left: 2px; padding-right: 2px; width: 19.667%; ">
-						<button type="submit" class="btn btn-primary" style="width: 103%;">Buscar</button>
+						<button type="submit" class="btn btn-primary boton-buscar" style="width: 103%;">Buscar</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	<?php elseif ($pagina == '1'): ?>
 		<div class="row espaciado-a">
-			<div class="col-md-8" style="width:70%"><!-- <br/><br/> -->
+			<div class="col-md-8" style="width:70%; padding-left: 0px;"><!-- <br/><br/> -->
 				<?php if (count( $sliderProyecto ) > 0): ?>
 
 					<!-- Jssor Slider Begin -->
 					    <!-- You can move inline styles to css file or css block. -->
 					    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
-					        height: 540px; overflow: hidden;">
+					        height: 575px; overflow: hidden;">
 
 					        <!-- Loading Screen -->
 					        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -74,7 +74,7 @@
 					        </div>
 
 					        <!-- Slides Container -->
-					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 540px; overflow: hidden;">
+					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 575px; overflow: hidden;">
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
@@ -116,7 +116,7 @@
 
 				
 				<?php else: ?>
-					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar" alt="" />
+					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar" alt="" style="width: 801px;height: 575px;" />
 				<?php endif ?>
 			</div>
 			<div class="col-md-4  fondoRosa" style="width:30%">
@@ -142,12 +142,12 @@
 									<?php echo utf8_encode($proyecto->descripcion); ?>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 fondoPlomo" >
-								<?php $rutaImg = base_url('assets/celmediachile/clientes') . '/' . $clienteCaso->imagenhover; ?>
-								<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="">
-							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12 fondoPlomo" >
+							<?php $rutaImg = base_url('assets/celmediachile/clientes') . '/' . $clienteCaso->imagenhover; ?>
+							<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="" style="width:85px; height:80px;">
 						</div>
 					</div>
 				</div>
@@ -167,13 +167,13 @@
 		<div class="container">
 			<div class="row espaciado-a">
 				<div class="col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 text-center page-scroll">
-					<a href="<?php echo site_url('site/proyecto'); ?>" class="btn btn-slh">Ver todos los casos</a>
+					<a href="<?php echo site_url('site/proyecto'); ?>" class="btn btn-slh link-home">Ver a todos los proyectos</a>
 				</div>
 			</div>
 			<div class="row espaciado-a">
-				<div class="col-md-12">
+				<div class="col-md-12" style="padding-left:0px;">
 					<h1 class="s-titular">
-						Otros casos
+						Otros proyectos
 					</h1>			
 				</div>
 			</div>
