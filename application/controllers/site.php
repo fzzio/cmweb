@@ -123,6 +123,8 @@ class Site extends CI_Controller {
                 $data['content'] = $this->load->view('celmedia/index', $contenido);
                 $data['footer'] = $this->load->view('celmedia/footer', array());
             }
+
+
         }
 
 	}
@@ -476,21 +478,27 @@ class Site extends CI_Controller {
 
         $data['header'] = $this->load->view('celmediatablet/header', array());
         if(!$idnoticia){
-            
+            $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.estado' => 1 )  )->order_by("n.fecha", "desc")->get()->result_array();
         }else{
-            
+            $contenido['noticia'] = $this->db->get_where('noticia', array('id' => $idnoticia, 'estado' => 1))->row();
+
+            $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_noticias as tn', 't.id = tn.id_tags')->join('noticia as n', 'tn.id_noticia = n.id')->where( array('n.id' => $idnoticia, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
+                
+            $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.id !=' => $idnoticia, 'n.estado' => 1 )  )->limit(2)->order_by("n.fecha", "desc")->get()->result_array();
         }
-        //$data['content'] = $this->load->view('celmediatablet/noticias', $contenido);
+        $data['content'] = $this->load->view('celmediatablet/noticias', $contenido);
         $data['footer'] = $this->load->view('celmediatablet/footer', array());            
 
     }
-     public function contactoT(){
+    
+    public function contactoT(){
         $data['header'] = $this->load->view('celmediatablet/header', array());
 
         
         $data['footer'] = $this->load->view('celmediatablet/footer', array());            
 
     }
+
 
 }
 

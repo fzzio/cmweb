@@ -440,14 +440,14 @@ a{
 	text-align: center;
 }
 
-.fondoproyecto{
+.fondoproyecto, .fondoproyectoT{
 	background-image: url('../img/bg_proyectos2750x646.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
 	background-attachment: fixed;
 }
-.fondonoticia{
+.fondonoticia, .fondonoticiaT{
 	background-image: url('../img/bg_noticias.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -461,14 +461,6 @@ a{
 	background-position: center top;
 	background-attachment: fixed;	
 }
-.fondoproyectoT{
-	background-image: url('../img/bg_proyectos2750x646.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
-	background-attachment: fixed;
-}
-
 .btn-servicio-m{
 	width: 100%;
 	border-radius: 0px;
@@ -535,4 +527,13 @@ span.glyphicon.white{
     line-height: 25px;
 	background-color: #91a5ad;
 	border-radius: 0px;
+}
+.titulo-noticia{
+	color: #000000;
+}
+.texto-noticia{
+	color: #000000;
+}
+.fondoCrema{
+	background-color: #F7EAEC;
 }
