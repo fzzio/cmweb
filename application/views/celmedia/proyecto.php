@@ -75,23 +75,6 @@
 
 					        <!-- Slides Container -->
 					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 540px; overflow: hidden;">
-						        <div>
-
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/01.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-01.jpg') ?>" />
-					            </div>
-					            <div>
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/02.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-02.jpg') ?>" />
-					            </div>
-					            <div>
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/02.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-02.jpg') ?>" />
-					            </div>
-					            <div>
-					                <img u="image" src="<?php echo base_url('public/img/img-slider/alila/03.jpg') ?>" />
-					                <img u="thumb" src="<?php echo base_url('public/img/img-slider/alila/thumb-03.jpg') ?>" />
-					            </div>
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
