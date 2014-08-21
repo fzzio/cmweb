@@ -507,3 +507,10 @@ span.glyphicon.white{
 	background-color: #91a5ad;
 	border-radius: 0px;
 }
+
+.link-titular,
+.link-titular:hover,
+.link-titular:focus,
+.link-titular:active{
+	color: #000000;
+}

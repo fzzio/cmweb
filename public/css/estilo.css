@@ -843,9 +843,12 @@ a{
 	display: block; 
 	background: url('../img/img-slider/loading.gif') no-repeat center center;
 	top: 0px; left: 0px;width: 100%;height:100%;
+<<<<<<< HEAD
 }
 .s-subtitular-home{
 	font-family: 'open_sanslight_italic';
 	font-size: 28px;
     line-height: 39px;
+=======
+>>>>>>> 32ad2eab7e6e938d9f3538ec744570637036493a
 }
