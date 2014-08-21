@@ -5,7 +5,7 @@
 			<h1 class="s-titular">
 				Noticias
 			</h1>
-			<h3 class="s-subtitular">
+			<h3 class="s-subtitular-home">
 				Tendencias en un mundo cada día más Móvil.
 			</h3>		
 		</div>

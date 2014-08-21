@@ -5,8 +5,8 @@
 			<h1 class="s-titular">
 				¿Por qué invertir en Celmedia?
 			</h1>
-			<h3 class="s-subtitular">
-				Maximizamos el cumplimiento de los objetivos, desarrollando estrategias especificas a cada necesidad y con un seguimiento exhaustivo desde la pre hasta la post venta.
+			<h3 class="s-subtitular-home">
+				Maximizamos el cumplimiento de los objetivos, desarrollando estrategias<br/> especificas a cada necesidad y con un seguimiento exhaustivo desde la<br/> pre hasta la post venta.
 			</h3>			
 		</div>
 	</div>

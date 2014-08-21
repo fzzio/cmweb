@@ -5,7 +5,7 @@
 			<h1 class="s-titular">
 				Clientes
 			</h1>
-			<h3 class="s-subtitular">
+			<h3 class="s-subtitular-home">
 				La confianza no se gana se construye. Más de 120 clientes en toda la Región.
 			</h3>		
 		</div>

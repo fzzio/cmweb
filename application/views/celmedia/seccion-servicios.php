@@ -5,7 +5,7 @@
 			<h1 class="s-titular">
 				Estratégia y desarrollo mobile
 			</h1>
-			<h3 class="s-subtitular">
+			<h3 class="s-subtitular-home">
 				Las marcas no crean necesidades, solo deseos.<br/>
 				Lo importante son las experiencias de nuestros usuarios.
 			</h3>			
