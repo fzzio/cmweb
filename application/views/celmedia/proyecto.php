@@ -132,7 +132,9 @@
 						    <!-- Jssor Slider End -->
 						 </div>
 
-
+				
+				<?php else: ?>
+					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar" alt="" />
 				<?php endif ?>
 			</div>
 			<div class="col-md-4  fondoRosa" style="width:30%">
