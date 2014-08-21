@@ -7,6 +7,12 @@
           <div class="v-center-contenido">
             <div class="container-fluid">
               <div class="row espaciado-a">
+                <br /><br />
+              </div>
+              <div class="row espaciado-a">
+                <br /><br />
+              </div>
+              <div class="row espaciado-a">
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-11">
                     <div class="titular-slider">
                       <?php echo $slide["descripcion"]; ?>
