@@ -35,7 +35,7 @@
              	</div>
              </a>
 		<?php endforeach ?>
-	</div>
+	</div><br/><br/>
 	<div class="row espaciado-a">
 		<div class="col-md-6 col-md-offset-3 text-center">
 			<div class="ballon-titular">

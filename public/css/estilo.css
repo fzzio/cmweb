@@ -386,12 +386,16 @@ a{
 	font-size: 18px;
 	padding-left: 5px;	
     font-family: 'open_sanslight';
+    background-image: url("../img/right_white_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 97% ;
    
 }
 .titular-ver-caso:hover{
 	color: #FFFFFF;
 	text-decoration: none;
-	font-family: 'open_sansregular';
+	background-color: red;
+	
 }
 
 .bg-cliente{
@@ -424,12 +428,12 @@ a{
 	font-size: 18px;
 	padding-left: 5px;
 }
-.titular-ver-casos:hover{
-	background-color: #2C2C2C;
-	color: #FFFFFF;
-	text-decoration: none;
-	outline: 0;
+.efecto-link a:hover{
+	background-color: black !important;
+	opacity: 0.9;
+	color: white;
 }
+
 
 .titulo-noticia{
 	font-size: 24px;
@@ -691,11 +695,7 @@ a{
     margin-bottom: -12px;
 }
 
-.colores-1{
-	background-color: #fff0f3;
-	height:570px;
-	/*padding-left: 240px;*/
-}
+
 
 .servicio-parrafo{
     color: #000000;
@@ -729,30 +729,48 @@ a{
     line-height: 17px;
     text-align: justify;
 }
+.colores-1{
+	background-color: #fff0f3;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
+}
 
 .colores-2{
 	background-color: #e2f8fd;
-	height:570px;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
 }
 .colores-3{
-	background-color: #fff0f3;
-	height:570px;
+	background-color: #fafff0;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
 }
 .colores-4{
-	background-color: #fff0f3;
-	height:570px;
+	background-color: #fff9e7;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
 }
 .colores-5{
-	background-color: #fff0f3;
-	height:570px;
+	background-color: #f8e8ff;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
 }
 .colores-6{
-	background-color: #fff0f3;
-	height:570px;
+	background-color: #edfff4;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
 }
 .colores-7{
-	background-color: #fff0f3;
-	height:570px;
+	background-color: #ebe8f8;
+	height:520px;
+	padding-left: 15%;
+	width: 38%;
 }
 
 .hover-noticias img:hover{
@@ -826,4 +844,8 @@ a{
 	display: block; 
 	background: url('../img/img-slider/loading.gif') no-repeat center center;
 	top: 0px; left: 0px;width: 100%;height:100%;
+}
+.navbar-nav > li {
+    float: left;
+    padding-right: 16px !important;
 }
