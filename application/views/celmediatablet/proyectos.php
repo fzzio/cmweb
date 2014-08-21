@@ -18,7 +18,7 @@
 				<div class="col-md-6 col-sm-6 col-xs-6">
 					<?php if ($proyecto): ?>
 						<a href="<?php echo site_url('site/proyectoT') . '/' . $proyecto['id'];?>" class="link-celmedia">
-							<div class="fondoNegro">
+							<div class="fondoNegro contenedor-pie">
 								<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto['imagen']; ?>
 								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
 								<h3 class="titulo-caso">
@@ -110,7 +110,7 @@
 		<div class="row espaciado-a">
 			<div class="col-md-12">
 				<h1 class="s-titular-2">
-					Otros de éxito
+					Otros casos de éxito
 				</h1>
 			</div>
 		</div>
@@ -125,9 +125,9 @@
 								<h3 class="titulo-caso">
 									<?php 
 										if(strlen($proyecto["nombre"]) > 40){
-											echo utf8_encode( substr( $proyecto["nombre"], 0, 40)) . "...";
+											echo ( substr( $proyecto["nombre"], 0, 40)) . "...";
 										}else{
-											echo utf8_encode( $proyecto["nombre"]);
+											echo ( $proyecto["nombre"]);
 										}
 									?>
 								</h3>

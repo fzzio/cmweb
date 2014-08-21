@@ -494,9 +494,11 @@ class Site extends CI_Controller {
     public function contactoT(){
         $data['header'] = $this->load->view('celmediatablet/header', array());
 
-        
-        $data['footer'] = $this->load->view('celmediatablet/footer', array());            
+        $contenido['paises'] = $this->db->get_where('pais', array('estado' => 1))->result_array();
 
+        $data['content'] = $this->load->view('celmediatablet/contacto', $contenido);
+        
+        $data['footer'] = $this->load->view('celmediatablet/footer', array());
     }
 
 

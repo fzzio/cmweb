@@ -42,13 +42,18 @@
 							</div>					
 							<div class="row ">
 								<?php $rutaImg = base_url('assets/celmediachile/noticias') . '/' . $noticia['imagen']; ?>
-								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />								
+								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar img-completo-x" />								
 							</div>
 							<div class="row espaciado-a">
 								<div class="col-md-12 bg-titular-noticia text-left row-sinborde">
 									<span class="texto-noticia">
 										<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 105)); ?> ...
 									</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 row-sinborde pull-right">
+									<p class="link-leer-mas"><strong>Leer m&aacute;s </strong><img class="ajustar-boton" width="15" height="15" alt="" src="<?php echo base_url('public/img/flecha-scroll_arrowblack3.png') ?>"/></p>
 								</div>
 							</div>
 						</div>
@@ -81,7 +86,7 @@
 						<?php $rutaImg = base_url('assets/celmediachile/noticias') . '/' . $noticia->imagen_detalle; ?>
 						<div class="col-md-12">
 							<br />
-							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
+							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar img-completo-x" />
 							<br />
 						</div>
 					</div>
@@ -147,6 +152,11 @@
 									<span class="texto-noticia">
 										<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 105)); ?> ...
 									</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 row-sinborde pull-right">
+									<p class="link-leer-mas"><strong>Leer m&aacute;s </strong><img class="ajustar-boton" width="15" height="15" alt="" src="<?php echo base_url('public/img/flecha-scroll_arrowblack3.png') ?>"/></p>
 								</div>
 							</div>
 						</div>
