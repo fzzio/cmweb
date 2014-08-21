@@ -36,7 +36,7 @@
 			<?php $rutaImg = base_url('assets/celmediachile/servicios') . '/' . $servicio->imagen; ?>
 			<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4" style="background-color:white">
 			<div class="container-fluid">
 				<div class="row espaciado-a">
 					<div class="col-md-12">

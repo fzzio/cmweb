@@ -42,7 +42,7 @@
 						</p>
 			  		</div>
 			  		<div class="col-md-6 col-md-offset-1">
-			  			<br/><br/><h4><strong>Cont&aacute;ctanos</strong></h4>
+			  			<br/><br/><h4 style=" margin-left: -15px;"><strong>Cont&aacute;ctanos</strong></h4>
 			  			<form method="post" class="form-horizontal" role="form"  >
 				  			<div class="row">
 				  				<div class="col-md-6 form-group">

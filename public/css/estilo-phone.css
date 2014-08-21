@@ -27,6 +27,9 @@ a{
 .fondoBlanco{
 	background-color: #FFFFFF;
 }
+.fondoNegro{
+	background-color: #000000;
+}
 .fondoAmarillo{
 	background-color: yellow;
 }
@@ -290,19 +293,21 @@ a{
 	margin-bottom: 0px;
 }
 
-.link-celmedia{
+.link-celmedia,
+.link-celmedia:hover,
+.link-celmedia:active{
 	display: inline-block;
 	outline: none;
 	text-decoration: none;
-	font-size: 22px;
-}
-.link-celmedia:after {
-    background: url("../img/right_white_arrow.png?1402654785") no-repeat scroll 92% center rgba(0, 0, 0, 0);
 }
 
 .espaciado-a{
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+.espaciado-titulo{
+	margin-top: 15px;
+	margin-bottom: 15px;	
 }
 .espaciado-b{
 	padding-bottom: 0px;
@@ -344,14 +349,14 @@ a{
 .btn-contacto-toggle.collapsed:hover,
 .btn-contacto-toggle.collapsed:active,
 .btn-contacto-toggle.collapsed:focus{
-	background-image: url("../img/bg_boton_contactos2.png");
+	background-image: url("../img/bg_boton_contactos2b.png");
 }
 
 .btn-contacto-toggle,
 .btn-contacto-toggle:hover,
 .btn-contacto-toggle:active,
 .btn-contacto-toggle:focus{
-	background-image: url("../img/bg_boton_contactos.png"); /*fzzio*/
+	background-image: url("../img/bg_boton_contactos2.png");
 }
 
 .link-scroll-sld{
@@ -377,9 +382,9 @@ a{
 	line-height: 42px;
 }
 .s-titular-2 {
-    font-size: 42px;
-    line-height: 44px;
-    /*font-family: open-sans,sans-serif;*/
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'open_sansregular';
 }
 .s-titular-3{
 	font-size: 30px;
@@ -399,6 +404,25 @@ a{
 	font-size: 18px;
     line-height: 20px;
     font-family: 'open_sansregular';
+}
+
+.titulo-caso{
+    color: #bc949c;
+    text-align: left;
+    font-family: 'open_sansregular';
+    font-size: 18px;
+    line-height: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.texto-caso{
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .titular-secc-caso{
@@ -431,6 +455,13 @@ a{
 	background-position: center top;
 	background-attachment: fixed;	
 }
+.fondoproyectoM{
+	background-image: url('../img/bg_proyectos2750x646.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+}
 
 .btn-servicio-m{
 	width: 100%;
@@ -449,4 +480,12 @@ a{
 
 span.glyphicon.white{
 	color: #FFFFFF;
+}
+
+.s-titular-sub{
+	font-size: 18px;
+	line-height: 25px;
+}
+.bullet-pq{
+	font-size: 18px;
 }
