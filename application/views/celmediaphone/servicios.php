@@ -23,7 +23,7 @@
 		<div class="row" style="background-color: <?php echo $servicio->color; ?> ;">
 			<div class="col-md-12 espaciado-titulo">
 				<h1 class="s-titular">
-					<a href="<?php echo site_url('site/servicioM'); ?>" class="">Servicios</a><span class="glyphicon glyphicon-chevron-right white bullet-pq"></span> <span class="s-titular-sub"><?php echo $servicio->titulo; ?></span>
+					<a href="<?php echo site_url('site/servicioM'); ?>" class="link-celmedia link-titular">Servicios</a><span class="glyphicon glyphicon-chevron-right white bullet-pq"></span> <span class="s-titular-sub"><?php echo $servicio->titulo; ?></span>
 				</h1>
 			</div>
 		</div>

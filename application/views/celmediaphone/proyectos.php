@@ -53,7 +53,7 @@
 		<div class="row">
 			<div class="col-md-12 espaciado-titulo">
 				<h1 class="s-titular">
-					Proyecto <span class="glyphicon glyphicon-chevron-right bullet-pq"></span> <span class="s-titular-sub"><?php echo $clienteCaso->nombre; ?></span>
+					<a href="<?php echo site_url('site/proyectoM'); ?>" class="link-celmedia link-titular">Proyecto</a><span class="glyphicon glyphicon-chevron-right bullet-pq"></span> <span class="s-titular-sub"><?php echo $clienteCaso->nombre; ?></span>
 				</h1>
 			</div>
 		</div>
@@ -77,12 +77,14 @@
 								</div>							
 							<?php endforeach ?>
 						</div>
-						<a class="left carousel-control" href="#carousel-proyecto" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-						</a>
-						<a class="right carousel-control" href="#carousel-proyecto" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
+						<?php if (count( $sliderProyecto ) > 1): ?>
+							<a class="left carousel-control" href="#carousel-proyecto" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-proyecto" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						<?php endif ?>
 					</div>
 				<?php else: ?>
 					<span>No hay imágenes asignadas</span>

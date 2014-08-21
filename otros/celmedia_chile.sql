@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-08-2014 a las 21:36:32
+-- Tiempo de generación: 21-08-2014 a las 22:12:52
 -- Versión del servidor: 5.6.12
 -- Versión de PHP: 5.5.3
 
@@ -174,7 +174,7 @@ CREATE TABLE IF NOT EXISTS `imagen_proyecto` (
   `estado` tinyint(1) NOT NULL,
   `fecha` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
 
 --
 -- Volcado de datos para la tabla `imagen_proyecto`
@@ -201,7 +201,16 @@ INSERT INTO `imagen_proyecto` (`id`, `imagen`, `id_proyecto`, `titulo`, `descrip
 (20, '6ef0d-culbbrindemos_big5.jpg', 16, '', '', 1, '2014-08-21 02:33:12'),
 (21, 'be8b9-culbbrindemos_big6.jpg', 16, '', '', 1, '2014-08-21 02:33:25'),
 (22, '20507-culbmaduracion_big.jpg', 26, '', '', 1, '2014-08-21 02:33:48'),
-(23, '17354-culbmaduracion_big2.jpg', 26, '', '', 1, '2014-08-21 02:34:09');
+(23, '17354-culbmaduracion_big2.jpg', 26, '', '', 1, '2014-08-21 02:34:09'),
+(24, '68a48-toyocostadeleytoyota_big.jpg', 14, '', '', 1, '2014-08-21 03:09:05'),
+(25, '22a6b-toyocostadeleytoyota_big2.jpg', 14, '', '', 0, '2014-08-21 03:09:19'),
+(26, '1715f-toyocostadeleytoyota_big3.jpg', 14, '', '', 1, '2014-08-21 03:09:36'),
+(27, '3ede7-toyocostadeleytoyota_big4.jpg', 14, '', '', 1, '2014-08-21 03:09:54'),
+(28, 'abda8-toyocostadeleytoyota_big5.jpg', 14, '', '', 1, '2014-08-21 03:10:09'),
+(29, '0a839-toyocostadeleytoyota_big6.jpg', 14, '', '', 1, '2014-08-21 03:10:51'),
+(30, '1719d-toyocostadeleytoyota_big7.jpg', 14, '', '', 1, '2014-08-21 03:11:08'),
+(31, '7ffb0-toyocostadeleytoyota_big8.jpg', 14, '', '', 1, '2014-08-21 03:11:30'),
+(32, '0171a-toyocostadeleytoyota_big9.jpg', 14, '', '', 1, '2014-08-21 03:11:43');
 
 -- --------------------------------------------------------
 
