@@ -563,3 +563,68 @@ span.glyphicon.white{
 	color: #FF0000;
 	border: 1px solid #FF0000;
 }
+
+.contenedor-formulario{
+	color: #FFFFFF;
+}
+
+
+.btn-verde-mail{
+	background-color: #aec50d;
+	color: #FFFFFF;
+	width: 100%;
+	border-radius: 0px;
+	line-height: 35px;
+	font-size: 17px;
+	background-image: url("../img/right_white_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% ;
+}
+.btn-verde-mail:hover,
+.btn-verde-mail:active,
+.btn-verde-mail:focus{
+	background-color: #aec50d;
+	color: #FFFFFF;
+}
+
+
+.btn-negro-llamar{
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 100%;
+	border-radius: 0px;
+	line-height: 35px;
+	font-size: 17px;
+	background-image: url("../img/right_white_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% ;
+}
+.btn-negro-llamar:hover,
+.btn-negro-llamar:active,
+.btn-negro-llamar:focus{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.btn-cerrar{
+	background-color: #1c272d;
+	color: #FFFFFF;
+	width: 100%;
+	border-radius: 0px;
+	line-height: 35px;
+	font-size: 17px;
+	background-image: url("../img/right_white_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% ;
+}
+.btn-cerrar:hover,
+.btn-cerrar:active,
+.btn-cerrar:focus{
+	background-color: #1c272d;
+	color: #FFFFFF;
+}
+
+.icono-left{
+	position: relative;
+	left: 10px;
+}
