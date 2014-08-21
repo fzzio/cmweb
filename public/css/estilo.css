@@ -686,6 +686,8 @@ a{
     border-width: 0px;
     color: white;
     cursor: default;
+    padding-bottom: 12px;
+    padding-top: 5px;
 }
 .form-control{
 	background: #000;
@@ -933,9 +935,52 @@ border: 1px solid #1e2b35;
 } 
 
 
-.formulario-contacto input[type="text"].error 
-.formulario-contacto input[type="email"].error, 
-.formulario-contacto textarea.error{ 
+.formulario-contacto-a input[type="text"].error 
+.formulario-contacto-a input[type="email"].error, 
+.formulario-contacto-a textarea.error{ 
+background-color: #bfc7c8; 
+color: #FF0000; 
+border: 1px solid #FF0000; 
+}
+
+
+.formulario-contacto-a input[type="text"], 
+.formulario-contacto-a input[type="email"], 
+.formulario-contacto-a textarea{ 
+background-color: #6a7d85; 
+font-family: 'open_sanslight_italic'; 
+min-height: 33px; 
+color: black; 
+font-size: 14px; 
+padding: 15px; 
+line-height: 34px; 
+border-radius: 10px; 
+border: 1px solid #1e2b35; 
+} 
+.formulario-contacto-a input[type="text"], 
+.formulario-contacto-a input[type="email"]{ 
+height: 50px; 
+} 
+
+
+.formulario-contacto-a input[type="text"]:hover, 
+.formulario-contacto-a input[type="text"]:focus, 
+.formulario-contacto-a input[type="text"]:active, 
+.formulario-contacto-a input[type="email"]:hover, 
+.formulario-contacto-a input[type="email"]:focus, 
+.formulario-contacto-a input[type="email"]:active, 
+.formulario-contacto-a textarea:hover, 
+.formulario-contacto-a textarea:active, 
+.formulario-contacto-a textarea:focus{ 
+background-color: #bfc7c8; 
+color: #1e2b35; 
+border: 1px solid #1e2b35; 
+} 
+
+
+.formulario-contacto-a input[type="text"].error 
+.formulario-contacto-a input[type="email"].error, 
+.formulario-contacto-a textarea.error{ 
 background-color: #bfc7c8; 
 color: #FF0000; 
 border: 1px solid #FF0000; 

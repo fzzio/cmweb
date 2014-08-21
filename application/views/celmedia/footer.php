@@ -41,11 +41,11 @@
                     </div>
 
                     <div class="col-md-4 col-md-offset-2"><br/>
-                        <form  class="form-horizontal formulario-contacto" role="form">
+                        <form  class="form-horizontal formulario-contacto-a" role="form">
                             <div class="row">
                                 <div class="col-md-11 col-md-offset-1 form-group">
                                     <span class="help-block"><?php echo form_error('emailS'); ?></span>
-                                    <input type="email" class="form-control" name="emailS"  id="emailC"  placeholder="Email" style="background-color: #6a7d85;">
+                                    <input type="email" class="form-control" name="emailS"  id="emailC"  placeholder="Email">
                                     
                                 </div>
                             </div>
