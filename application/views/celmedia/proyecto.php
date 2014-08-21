@@ -57,8 +57,7 @@
 	<?php elseif ($pagina == '1'): ?>
 		<div class="row espaciado-a">
 			<div class="col-md-8" style="width:70%"><!-- <br/><br/> -->
-				<?php if (count( $sliderProyecto ) > 0): ?>
-
+				<?php if (count( $sliderProyecto ) > 0){ ?>
 
 					<!-- Jssor Slider Begin -->
 					    <!-- You can move inline styles to css file or css block. -->
@@ -132,8 +131,10 @@
 						    <!-- Jssor Slider End -->
 						 </div>
 
+				<?php }else{ ?>
+					<img u="image" src="<?php echo base_url('public/img/Imagen_ReferencialCasos.jpg') ?>" height="550px" width="800px" />	
 
-				<?php endif ?>
+				<?php } ?>
 			</div>
 			<div class="col-md-4  fondoRosa" style="width:30%">
 				<div class="container-fluid">

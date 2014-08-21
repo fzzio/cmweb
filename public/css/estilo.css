@@ -307,6 +307,9 @@ a{
 	color: #FFFFFF;
 	width: 100%;
 	border-radius: 0px;
+	background-image: url("../img/right_white_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 97% ;
 }
 .btn-slh:hover,
 .btn-slh:active,
@@ -350,7 +353,7 @@ a{
 .s-subtitular{
     font-size: 18px;
     line-height: 25px;
- 	/*font-family: open-sans,sans-serif;*/
+ 	font-family: 'open_sanslight_italic';
 }
 .s-subtitular-2{
 	font-size: 18px;
@@ -707,22 +710,20 @@ a{
    
 }
 
-.proyecto-parrafo{
+.proyecto-parrafo {
     color: #000000;
     font-family: 'open_sanslight';
     font-size: 12px;
-   
+    height: 300px;
     line-height: 17px;
-    
-    padding-top: 10px;
-    
+    overflow: auto;
+    padding: 8px;
     text-align: justify;
-   
 }
 
 .s-subtitular-p{
 	color: #000000;
-    font-family: open-sans,sans-serif;
+    font-family: 'open_sanslight_italic';
     font-size: 12px;
     
     line-height: 17px;
