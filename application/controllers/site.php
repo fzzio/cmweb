@@ -37,12 +37,13 @@ class Site extends CI_Controller {
 
         // Exclude tablets.
         if( $detect->isMobile() && !$detect->isTablet() ){
+                        /////// mobil
             $data['header'] = $this->load->view('celmediaphone/header', array());
-
-            $contenido['queEs'] = "Mobile";
+            $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
 
             $data['content'] = $this->load->view('celmediaphone/index', $contenido);
             $data['footer'] = $this->load->view('celmediaphone/footer', array());
+            
         }elseif($detect->isTablet() ){
             //$data['header'] = $this->load->view('celmedia/header', array());
             $contenido['queEs'] = "tablet";
@@ -51,17 +52,10 @@ class Site extends CI_Controller {
             $data['footer'] = $this->load->view('celmedia/footer', array());
         }else{
 
-            /////// mobil
-            $data['header'] = $this->load->view('celmediaphone/header', array());
-            $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
-
-            $data['content'] = $this->load->view('celmediaphone/index', $contenido);
-            $data['footer'] = $this->load->view('celmediaphone/footer', array());
-
 
             // DESCOMENTAR ESTO AL FINAL
             /////////////////////////////////////
-            /*
+            
 
             $data['header'] = $this->load->view('celmedia/header', array());
             $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
@@ -134,7 +128,7 @@ class Site extends CI_Controller {
                 $data['footer'] = $this->load->view('celmedia/footer', array());
             }
 
-            */
+            
 
         }
 
