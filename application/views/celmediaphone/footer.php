@@ -13,23 +13,101 @@
                     </button>
                 </div>
                 <div class="navbar-collapse collapse" id="nav-foo-celmedia">
-                    <ul class="nav navbar-nav page-scroll">
-                        <li class="active">
-                            <a href="<?php echo site_url('site');?>">
-                                inicio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo site_url('serviciosM');?>">
-                                servicios
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo site_url('casosM');?>">
-                                Casos
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="container-fluid">
+                        
+                        <div class="row espaciado-a">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <select class="btn-slh form-control" name="spais" onchange="mostrarPaises(this)">
+                                    <option class="txt-negrita" value="">Seleccione un país</option>
+                                    <?php foreach ($paises as $pais): ?>
+                                        <option class="txt-negrita" value="<?php echo $pais["id"] ?>"><?php echo $pais["nombre"] ?></option>
+                                    <?php endforeach ?>
+                                </select>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row espaciado-a contenedor-formulario" id="contacto-chile">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <br/><br/><h4><strong>CHILE - CASA CENTRAL</strong></h4><br/><br/>
+                                <p><img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Barros Errázuriz N° 1960, piso 4° Providencia<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Santiago, Chile<br/>
+                                    <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>"> Tel: + 56 2 2585 8777<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax: +56 2 2223 1276<br/>
+                                    <img id="u54743_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_mail.png'); ?>"> contacto@celmedia.com
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="row espaciado-a contenedor-formulario" id="contacto-argentina" style="display: none;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <br/><br/><h4><strong>ARGENTINA</strong></h4><br/><br/>
+                                <p><img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Reconquista 336, piso 11, depto. “X” (C1003ABH)<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ciudad Autónoma de Buenos Aires - Argentina<br/>
+                                    <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>"> Tel:     +54 9 11 5514 8608<br/>
+                                    <img id="u54743_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_mail.png'); ?>"> contacto@celmedia.cl<br/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row espaciado-a contenedor-formulario" id="contacto-peru" style="display: none;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <br/><br/><h4><strong>PER&Uacute;</strong></h4><br/><br/>
+                                <p><img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Victor Andrés Belaúnde 147, vía principal 150<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edificio Real Seis - piso6 <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lima 27- Perú<br/>
+                                    <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>"> Tel: +511 211 2679<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax:    +511 211 2526<br/>
+                                    <img id="u54743_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_mail.png'); ?>"> contacto@celmedia.cl
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row espaciado-a contenedor-formulario" id="contacto-colombia" style="display: none;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <br/><br/><h4><strong>COLOMBIA</strong></h4><br/><br/>
+                                <p><img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Celmedia MKT S.A.<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cra 11b # 98-08 of 304<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bogotá - Colombia<br/>
+                                    <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>"> Tel: +571 6431002<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel:    +54 9 11 5514 8608<br/>
+                                    <img id="u54743_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_mail.png'); ?>"> contacto@celmedia.cl
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row espaciado-a contenedor-formulario" id="contacto-ecuador" style="display: none;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <br/><br/><h4><strong>ECUADOR</strong></h4><br/><br/>
+                                <p><img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Av. Rodrigo Chávez y Av. Juan Tanca Marengo s # 3 y 4<br/> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edificio Grafehi Piso 2 Guayaquil - Ecuador<br/>
+                                    <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>"> Tel: (+5934) 5019091<br/><br/>
+                                    <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Atahualpa 955 y Av. República Ed. Digicom 5to. piso<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quito - Ecuador<br/>
+                                    <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>"> Tel:  +593 2 2460284<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+593 2 2460285<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax: +593 2 2460284<br/>
+                                    <img id="u54743_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_mail.png'); ?>"> contacto@celmedia.cl
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row espaciado-a contenedor-formulario" id="contacto-mexico" style="display: none;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <br/><br/><h4><strong>M&Eacute;XICO</strong></h4><br/><br/>
+                                <p><img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Av. Paseo de las Palmas 215 Piso 5 Despacho 502 Col.<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lomas de Chapultepec. Del. Miguel Hidalgo C.P. 11000 México D.F<br/>
+                                    <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>"> Tel: +52 55 36202068<br/>
+                                    <img id="u54743_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_mail.png'); ?>"> xperez@celmedia.com
+
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div><!--/.nav-collapse -->
             </div>
         </div>

@@ -40,7 +40,7 @@ class Site extends CI_Controller {
             /////// mobil
             $data['header'] = $this->load->view('celmediaphone/header', array());
             $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
-
+            $contenido['paises'] = $this->db->get_where('pais', array('estado' => 1))->result_array();
             $data['content'] = $this->load->view('celmediaphone/index', $contenido);
             $data['footer'] = $this->load->view('celmediaphone/footer', array());
             
