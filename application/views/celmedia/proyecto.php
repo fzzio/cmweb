@@ -59,7 +59,6 @@
 			<div class="col-md-8" style="width:70%"><!-- <br/><br/> -->
 				<?php if (count( $sliderProyecto ) > 0): ?>
 
-
 					<!-- Jssor Slider Begin -->
 					    <!-- You can move inline styles to css file or css block. -->
 					    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
