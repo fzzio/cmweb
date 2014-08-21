@@ -316,6 +316,8 @@ class Site extends CI_Controller {
                 $pais = $data['spais']=$this->input->post('spais');
                 $sector= $data['ssector']=$this->input->post('ssector');
                 $anio= $data['sanio']=$this->input->post('sanio');
+
+               
                 /*$tag= $data['stags']=$this->input->post('stags');*/
 
                 if (!$pais==0) {
@@ -326,9 +328,12 @@ class Site extends CI_Controller {
                    $arrayvacio['id_sector']=$sector;
                 }
               
-              /*  if (!$sanio==0) {
-                   $arrayvacio['id_anio']=$anio;
-                }*/
+                if (!$anio==0) {
+                    $fecha_ini= $anio.'-01-01';
+                    $fecha_final = $anio.'-12-31';
+
+                   //$arrayvacio['id_anio']=$anio;
+                }
                 /*if (!$tag==0) {
                    $arrayvacio['id_pais']=$pais;
                 }*/
