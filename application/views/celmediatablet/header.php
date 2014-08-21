@@ -24,7 +24,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/js/lionbars/lionbars.css'); ?>" media="screen" />
         
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/fonts/fuentes.css'); ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/estilo.css'); ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/estilo-tablet.css'); ?>">
 
         <link href="<?php echo base_url('public/img/favicon.ico'); ?>" rel="shortcut icon">
     </head>
@@ -45,79 +45,32 @@
                 </div>
                 <div class="navbar-collapse collapse" id="nav-celmedia">
                     <ul class="nav navbar-nav page-scroll">
-                        <?php if ($is_home): ?>
-                            <li class="active">
-                                <a href="#inicio">
+                        
+                            <li class="<?php echo( ($paginaActual == 'index') ? 'active' : '') ; ?>">
+                                <a href="<?php echo site_url('site');?>">
                                     inicio
                                 </a>
                             </li>
-                            <li>
-                                <a href="#servicios">
+                            <li class="<?php echo( ($paginaActual == 'serviciosT') ? 'active' : '') ; ?>">
+                                <a href="<?php echo site_url('site/servicioT');?>">
                                     servicios
                                 </a>
                             </li>
-                            <li>
-                                <a href="#porquecelmedia">
-                                    ¿Por qué Celmedia?
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#casos">
+                            <li class="<?php echo( ($paginaActual == 'proyectoT') ? 'active' : '') ; ?>"><li>
+                                <a href="<?php echo site_url('site/proyectoT');?>">
                                     Casos
                                 </a>
                             </li>
-                            <li>
-                                <a href="#noticias">
+                            <li class="<?php echo( ($paginaActual == 'noticiaT') ? 'active' : '') ; ?>"><li>
+                                <a href="<?php echo site_url('site/noticiaT');?>">
                                     Noticias
                                 </a>
                             </li>
-                            <li>
-                                <a href="#clientes">
-                                    Clientes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#contacto">
+                            <li class="<?php echo( ($paginaActual == 'contactoT') ? 'active' : '') ; ?>"><li>
+                                <a href="<?php echo site_url('site/contactoT');?>">
                                     Contacto
                                 </a>
                             </li>
-                        <?php else: ?>
-                            <li class="active">
-                                <a href="<?php echo site_url('site');?>#inicio">
-                                    inicio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('site');?>#servicios">
-                                    servicios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('site');?>#porquecelmedia">
-                                    ¿Por qué Celmedia?
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('site');?>#casos">
-                                    Casos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('site');?>#noticias">
-                                    Noticias
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('site');?>#clientes">
-                                    Clientes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('site');?>#contacto">
-                                    Contacto
-                                </a>
-                            </li>
-                        <?php endif ?>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>

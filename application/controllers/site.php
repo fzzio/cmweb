@@ -37,7 +37,7 @@ class Site extends CI_Controller {
 
         // Exclude tablets.
         if( $detect->isMobile() && !$detect->isTablet() ){
-                        /////// mobil
+            /////// mobil
             $data['header'] = $this->load->view('celmediaphone/header', array());
             $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
 
@@ -45,17 +45,13 @@ class Site extends CI_Controller {
             $data['footer'] = $this->load->view('celmediaphone/footer', array());
             
         }elseif($detect->isTablet() ){
-            //$data['header'] = $this->load->view('celmedia/header', array());
-            $contenido['queEs'] = "tablet";
+            /////// tablet
+            $data['header'] = $this->load->view('celmediatablet/header', array());
+            $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
 
             $data['content'] = $this->load->view('celmediatablet/index', $contenido);
-            $data['footer'] = $this->load->view('celmedia/footer', array());
+            $data['footer'] = $this->load->view('celmediatablet/footer', array());
         }else{
-
-
-            // DESCOMENTAR ESTO AL FINAL
-            /////////////////////////////////////
-            
 
             $data['header'] = $this->load->view('celmedia/header', array());
             $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
@@ -127,18 +123,7 @@ class Site extends CI_Controller {
                 $data['content'] = $this->load->view('celmedia/index', $contenido);
                 $data['footer'] = $this->load->view('celmedia/footer', array());
             }
-
-            
-
         }
-
-
-    
-
-
-		
-        
-
 
 	}
 
@@ -426,11 +411,75 @@ class Site extends CI_Controller {
             $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
 
             $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_proyectos as tp', 't.id = tp.id_tags')->join('proyecto as p', 'tp.id_proyecto = p.id')->where( array('p.id' => $idproyecto, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
+            
         }
         $data['content'] = $this->load->view('celmediaphone/proyectos', $contenido);
         $data['footer'] = $this->load->view('celmediaphone/footer', array());            
 
     }
+
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    //    TABLET
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    public function servicioT(){
+        $idservicio = $this->uri->segment(3); //idcontenido
+
+        $data['header'] = $this->load->view('celmediatablet/header', array());
+        if(!$idservicio){
+            $contenido['servicios'] = $this->db->get_where('servicio', array('estado' => 1))->result_array();
+        }else{
+            $contenido['servicio'] = $this->db->get_where('servicio', array('id' => $idservicio, 'estado' => 1))->row();
+            $contenido['proyectos'] = $this->db->select('*')->from('proyecto')->where( array('id_servicio' => $idservicio, 'estado' => 1) )->limit(2)->order_by("fecha", "desc")->get()->result_array();
+        }
+        $data['content'] = $this->load->view('celmediatablet/servicios', $contenido);
+        $data['footer'] = $this->load->view('celmediatablet/footer', array());            
+
+    }
+
+    public function proyectoT(){
+        $idproyecto = $this->uri->segment(3); //idcontenido
+
+        $data['header'] = $this->load->view('celmediatablet/header', array());
+        if(!$idproyecto){
+            $contenido['proyectos'] = $this->db->get_where('proyecto', array('estado' => 1))->result_array();
+        }else{
+            $contenido['proyecto'] = $this->db->get_where('proyecto', array('id' => $idproyecto, 'estado' => 1))->row();
+            $contenido['clienteCaso'] = $this->db->get_where('cliente', array('id' => $contenido['proyecto']->id_cliente, 'estado' => 1))->row();
+            $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
+            $contenido['proyectos'] = $this->db->select('*')->from('proyecto')->where( array('id !=' => $idproyecto, 'estado' => 1) )->limit(2)->order_by("fecha", "desc")->get()->result_array();
+
+
+            $contenido['tags'] = $this->db->select('t.id, t.descripcion')->from('tags as t')->join('tags_proyectos as tp', 't.id = tp.id_tags')->join('proyecto as p', 'tp.id_proyecto = p.id')->where( array('p.id' => $idproyecto, 't.estado' => 1)  )->group_by('t.id')->get()->result_array();
+            
+        }
+        $data['content'] = $this->load->view('celmediatablet/proyectos', $contenido);
+        $data['footer'] = $this->load->view('celmediatablet/footer', array());            
+
+    }
+
+    public function noticiaT(){
+        $idnoticia = $this->uri->segment(3); //idcontenido
+
+        $data['header'] = $this->load->view('celmediatablet/header', array());
+        if(!$idnoticia){
+            
+        }else{
+            
+        }
+        //$data['content'] = $this->load->view('celmediatablet/noticias', $contenido);
+        $data['footer'] = $this->load->view('celmediatablet/footer', array());            
+
+    }
+     public function contactoT(){
+        $data['header'] = $this->load->view('celmediatablet/header', array());
+
+        
+        $data['footer'] = $this->load->view('celmediatablet/footer', array());            
+
+    }
+
 }
 
 /* End of file welcome.php */
