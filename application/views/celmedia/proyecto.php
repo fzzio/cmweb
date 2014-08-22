@@ -104,8 +104,9 @@
 						           
 						            <div u="slides" style="cursor: move;">
 						                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-						                    <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
-						                    
+						                    <div class="w">
+						                    	<thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate>
+						                    </div>
 						                </div>
 						            </div>
 						            <!-- Thumbnail Item Skin End -->
