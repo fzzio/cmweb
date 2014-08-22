@@ -34,7 +34,7 @@
   			<ul class="media-list">
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Barros Errázuriz N° 1960, piso 4° Providencia<br/>
@@ -43,7 +43,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Tel: + 56 2 2585 8777<br/>
@@ -64,7 +64,7 @@
 						<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 						<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 					</div>
-					<div class="col-md-6 form-group" style=" margin-right: -16px;">
+					<div class="col-md-6 form-group-b">
 						<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 						<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 						<span class="help-block"><?php echo form_error('emailC'); ?></span>
@@ -85,7 +85,7 @@
   			<ul class="media-list">
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Reconquista 336, piso 11, depto. “X” (C1003ABH)<br/>
@@ -94,7 +94,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Tel: +54 9 11 5514 8608<br/>
@@ -113,7 +113,7 @@
 						<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 						<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 					</div>
-					<div class="col-md-6 form-group" style=" margin-right: -16px;">
+					<div class="col-md-6 form-group-b" >
 						<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 						<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 						<span class="help-block"><?php echo form_error('emailC'); ?></span>
@@ -134,7 +134,7 @@
   			<ul class="media-list">
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Victor Andrés Belaúnde 147, vía principal 150<br/>
@@ -144,7 +144,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Fax: +511 211 2526<br/>
@@ -163,7 +163,7 @@
 						<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 						<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 					</div>
-					<div class="col-md-6 form-group" style=" margin-right: -16px;">
+					<div class="col-md-6 form-group-b">
 						<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 						<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 						<span class="help-block"><?php echo form_error('emailC'); ?></span>
@@ -184,7 +184,7 @@
   			<ul class="media-list">
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Celmedia MKT S.A.<br/>
@@ -194,7 +194,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Tel: +571 6431002<br/>
@@ -214,7 +214,7 @@
 						<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 						<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 					</div>
-					<div class="col-md-6 form-group" style=" margin-right: -16px;">
+					<div class="col-md-6 form-group-b">
 						<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 						<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 						<span class="help-block"><?php echo form_error('emailC'); ?></span>
@@ -235,7 +235,7 @@
   			 <ul class="media-list">
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Av. Rodrigo Chávez y Av. Juan Tanca Marengo s # 3 y 4<br/> 
@@ -244,7 +244,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Tel: (+5934) 5019091<br/>
@@ -253,7 +253,7 @@
 
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Atahualpa 955 y Av. República Ed. Digicom 5to. piso<br/>
@@ -262,7 +262,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Tel:  +593 2 2460284<br/>
@@ -283,7 +283,7 @@
 						<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 						<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 					</div>
-					<div class="col-md-6 form-group" style=" margin-right: -16px;">
+					<div class="col-md-6 form-group-b" >
 						<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 						<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 						<span class="help-block"><?php echo form_error('emailC'); ?></span>
@@ -304,7 +304,7 @@
   			<ul class="media-list">
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion.png'); ?>">
+                        <img id="u54741_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_direccion2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Av. Paseo de las Palmas 215 Piso 5 Despacho 502 Col.<br/>
@@ -314,7 +314,7 @@
                 </li>
                 <li class="media">
                     <div class="pull-left">
-                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos.png'); ?>">
+                        <img id="u54745_img" class="block" width="20" height="20" alt="" src="<?php echo base_url('public/img/icono_telefonos2.png'); ?>">
                     </div>
                     <div class="media-body">
                         Tel: +52 55 36202068<br/>
@@ -333,7 +333,7 @@
 						<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 						<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 					</div>
-					<div class="col-md-6 form-group" style=" margin-right: -16px;">
+					<div class="col-md-6 form-group-b">
 						<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 						<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 						<span class="help-block"><?php echo form_error('emailC'); ?></span>

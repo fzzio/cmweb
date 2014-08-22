@@ -624,3 +624,7 @@ span.glyphicon.white{
     color: #78adbc;
     opacity: 1;
 }
+.form-group-b {
+    /*margin-left: -15px;*/
+    margin-right: -16px;
+}
