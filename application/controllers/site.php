@@ -185,15 +185,6 @@ class Site extends CI_Controller {
 
         }else{
 
-            /////// mobil
-            $data['header'] = $this->load->view('celmediaphone/header', array());
-            $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
-            $contenido['paises'] = $this->db->get_where('pais', array('estado' => 1))->result_array();
-
-            $data['content'] = $this->load->view('celmediaphone/index', $contenido);
-                $data['footer'] = $this->load->view('celmediaphone/footer', array());
-
-/*
             $data['header'] = $this->load->view('celmedia/header', array());
             $contenido['slideshome'] = $this->db->get_where('slider_home', array('estado' => 1))->result_array();
             $contenido['servicios'] = $this->db->get_where('servicio', array('estado' => 1))->result_array();
@@ -263,7 +254,7 @@ class Site extends CI_Controller {
 
                 $data['content'] = $this->load->view('celmedia/index', $contenido);
                 $data['footer'] = $this->load->view('celmedia/footer', array());
-            }*/
+            }
 
 
         }
