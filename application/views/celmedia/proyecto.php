@@ -78,14 +78,17 @@
 					        </div>
 
 					        <!-- Slides Container -->
-					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: auto; overflow: hidden;">
+					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 585px; overflow: hidden;">
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
+<<<<<<< HEAD
 
 									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar"  alt=""/>  
+=======
+									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" style="height: auto !important; " alt=""/>  
+>>>>>>> 8ebb0ea1abda01fef067ecf0639a886712024666
 					                <img u="thumb" src="<?php echo $rutaImg; ?>" height="78px;" width="auto" />
-
 					            </div>
 		    
 					        <?php endforeach ?> 
@@ -106,8 +109,6 @@
 						           
 						            <div u="slides" style="cursor: move;">
 						                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-
-						                 
 						                    <div class="w">
 						                    	<thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate>
 						                    </div>
