@@ -291,7 +291,7 @@ a{
 	text-decoration: none;
 }
 .link-media{
-	display: inline-block;
+	/*display: inline-block;*/
 	outline: none;
 	text-decoration: none;	
 }
@@ -430,7 +430,8 @@ a{
 .texto-caso{
 	color: #FFFFFF;
 	font-size: 14px;
-	line-height: 16px;
+	/*line-height: 16px;*/
+	line-height: normal;
 }
 
 .titular-ver-casos{
