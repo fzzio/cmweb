@@ -78,7 +78,7 @@
 					        </div>
 
 					        <!-- Slides Container -->
-					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 585px; overflow: hidden;">
+					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: auto; overflow: hidden;">
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
