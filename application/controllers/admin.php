@@ -365,6 +365,8 @@ class Admin extends CI_Controller {
 
         $crud->set_field_upload('imagen', 'assets/celmediachile/sliderproyectos');
 
+        $crud->fields('imagen', 'id_proyecto', 'estado', 'fecha');
+
         $output = $crud->render();
         $this->showPage($output);
     }
