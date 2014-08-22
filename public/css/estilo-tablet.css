@@ -578,38 +578,39 @@ span.glyphicon.white{
 	margin-bottom: 10px;
 }
 
+.formulario-contacto input[type="text"], 
+.formulario-contacto input[type="email"], 
+.formulario-contacto textarea{ 
+	background-color: #31424f;
+    border-color: transparent;
+    border-radius: 8px;
+    border-style: none;
+    color: #78adbc;
+    font-family: 'open_sanslight_italic';
+    font-size: 14px;
+    line-height: 34px;
+    min-height: 33px;
+    padding: 15px;
+} 
+.formulario-contacto input[type="text"], 
+.formulario-contacto input[type="email"]{ 
+	height: 50px; 
+} 
 
-.formulario-contacto input[type="text"],
-.formulario-contacto input[type="email"],
-.formulario-contacto textarea{
-	background-color: #1e2b35;
-	font-family: 'open_sanslight_italic';
-	min-height: 33px;
-	color: #78ADBC;
-	font-size: 14px;
-	padding: 15px;
-	line-height: 34px;
-	border-radius: 10px;
-	border: 1px solid #bfc7c8;
-}
-.formulario-contacto input[type="text"],
-.formulario-contacto input[type="email"]{
-	height: 50px;
-}
 
-.formulario-contacto input[type="text"]:hover,
-.formulario-contacto input[type="text"]:focus,
-.formulario-contacto input[type="text"]:active,
-.formulario-contacto input[type="email"]:hover,
-.formulario-contacto input[type="email"]:focus,
-.formulario-contacto input[type="email"]:active,
-.formulario-contacto textarea:hover,
-.formulario-contacto textarea:active,
-.formulario-contacto textarea:focus{
-	background-color: #bfc7c8;
-	color: #1e2b35;
-	border: 1px solid #1e2b35;
-}
+.formulario-contacto input[type="text"]:hover, 
+.formulario-contacto input[type="text"]:focus, 
+.formulario-contacto input[type="text"]:active, 
+.formulario-contacto input[type="email"]:hover, 
+.formulario-contacto input[type="email"]:focus, 
+.formulario-contacto input[type="email"]:active, 
+.formulario-contacto textarea:hover, 
+.formulario-contacto textarea:active, 
+.formulario-contacto textarea:focus{ 
+	background-color: #bfc7c8; 
+	color: #6b6b6b !important; 
+	border: 1px solid #000; 
+} 
 
 .formulario-contacto input[type="text"].error
 .formulario-contacto input[type="email"].error,
@@ -617,4 +618,9 @@ span.glyphicon.white{
 	background-color: #bfc7c8;
 	color: #FF0000;
 	border: 1px solid #FF0000;
+}
+
+.form-control::-moz-placeholder {
+    color: #78adbc;
+    opacity: 1;
 }
