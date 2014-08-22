@@ -236,8 +236,8 @@
 								</h3>
 								<h4 class="texto-caso">
 									<?php
-										if(strlen($proyecto['prdescripcion']) > 60){
-											echo ( substr( strip_tags($proyecto['prdescripcion']) , 0, 60) . "..." );
+										if(strlen($proyecto['prdescripcion']) > 55){
+											echo ( substr( strip_tags($proyecto['prdescripcion']) , 0, 55) . "..." );
 										}else{
 											echo (  strip_tags($proyecto['prdescripcion']) );
 										}
