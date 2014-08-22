@@ -53,13 +53,13 @@
 				  					<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 				  					<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 				  				</div>
-				  				<div class="col-md-6 form-group">
+				  				<div class="col-md-6 form-group-b">
 				  					<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 				  					<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 				  					<span class="help-block"><?php echo form_error('emailC'); ?></span>
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
-				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
+				  					<textarea class="form-control"  name="mensajeC" id="mensajeC" placeholder="Comentario" rows="1"></textarea>
 				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
@@ -90,13 +90,13 @@
 				  					<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 				  					<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 				  				</div>
-				  				<div class="col-md-6 form-group">
+				  				<div class="col-md-6 form-group-b" >
 				  					<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 				  					<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 				  					<span class="help-block"><?php echo form_error('emailC'); ?></span>
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
-				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
+				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="1"></textarea>
 				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
@@ -130,13 +130,13 @@
 				  					<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 				  					<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 				  				</div>
-				  				<div class="col-md-6 form-group">
+				  				<div class="col-md-6 form-group-b">
 				  					<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 				  					<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 				  					<span class="help-block"><?php echo form_error('emailC'); ?></span>
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
-				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
+				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="1"></textarea>
 				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
@@ -169,13 +169,13 @@
 				  					<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 				  					<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 				  				</div>
-				  				<div class="col-md-6 form-group">
+				  				<div class="col-md-6 form-group-b">
 				  					<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 				  					<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 				  					<span class="help-block"><?php echo form_error('emailC'); ?></span>
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
-				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
+				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="1"></textarea>
 				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
@@ -211,13 +211,13 @@
 				  					<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 				  					<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 				  				</div>
-				  				<div class="col-md-6 form-group">
+				  				<div class="col-md-6 form-group-b">
 				  					<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 				  					<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 				  					<span class="help-block"><?php echo form_error('emailC'); ?></span>
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
-				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
+				  					<textarea  class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="1"></textarea>
 				  					<br/><button type="submit" class="btn btn-slh link-home"  >Enviar</button>
 				  				</div>
 				  			</div>
@@ -249,13 +249,13 @@
 				  					<span class="help-block"><?php echo form_error('asuntoC'); ?></span>
 				  					<input type="text" class="form-control" name="asuntoC" id="asuntoC" placeholder="Asunto">
 				  				</div>
-				  				<div class="col-md-6 form-group">
+				  				<div class="col-md-6 form-group-b">
 				  					<span class="help-block"><?php echo form_error('telefonoC'); ?></span>
 				  					<input type="text" class="form-control" name="telefonoC" id="telefonoC" placeholder="Tel&eacute;fono">
 				  					<span class="help-block"><?php echo form_error('emailC'); ?></span>
 				  					<input type="email" class="form-control" name="emailC"  id="emailC"  placeholder="Email">
 				  					<span class="help-block"><?php echo form_error('mensajeC'); ?></span>
-				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="3"></textarea>
+				  					<textarea class="form-control" name="mensajeC" id="mensajeC" placeholder="Comentario" rows="1"></textarea>
 				  					<br/><button type="submit" class="btn btn-slh link-home" >Enviar</button>
 				  				</div>
 				  			</div>
