@@ -1,6 +1,6 @@
 $(window).resize(function(){
     
-    jQuery(".proyecto-parrafo").lionbars();
+   // jQuery(".proyecto-parrafo").lionbars();
     jQuery(".servicio-parrafo").lionbars();
 });
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
         $(this).find(".img-c-hover").stop(true, true).hide();
     });
 
-    jQuery(".proyecto-parrafo").lionbars();
+   // jQuery(".proyecto-parrafo").lionbars();
     jQuery(".servicio-parrafo").lionbars();
 
             var _SlideshowTransitions = [
