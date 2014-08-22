@@ -1,3 +1,7 @@
+<?php
+    $is_home = ($this->router->fetch_class() === 'site' && $this->router->fetch_method() === 'index') ? true : false;
+    $paginaActual = $this->router->fetch_method();
+?>
 <div class="container">
 	<div class="row espaciado-top"></div>
 	<div class="row espaciado-a">
@@ -9,7 +13,7 @@
 	</div>
 	
 
-	<?php if ($pagina == '0'): ?>
+	<?php if (!$this->uri->segment(3)): ?>
 
 		<div class="row espaciado-a">
 			
@@ -54,9 +58,9 @@
 				</form>
 			</div>
 		</div>
-	<?php elseif ($pagina == '1'): ?>
+	<?php else: ?>
 		<div class="row espaciado-a">
-			<div class="col-md-8" style="width:70%; padding-left: 0px;"><!-- <br/><br/> -->
+			<div class="col-md-8 row-sinborde" style="width:70%;"><!-- <br/><br/> -->
 				<?php if (count( $sliderProyecto ) > 0): ?>
 
 					<!-- Jssor Slider Begin -->
@@ -74,7 +78,7 @@
 					        </div>
 
 					        <!-- Slides Container -->
-					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 575px; overflow: hidden;">
+					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 500px; overflow: hidden;">
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
@@ -116,10 +120,10 @@
 
 				
 				<?php else: ?>
-					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar" alt="" style="width: 801px;height: 575px;" />
+					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar img-w" alt="" />
 				<?php endif ?>
 			</div>
-			<div class="col-md-4  fondoRosa" style="width:30%">
+			<div class="col-md-4  fondoRosa row-sinborde" style="width:30%">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
@@ -136,20 +140,22 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="proyecto-parrafo">
-									<?php echo utf8_encode($proyecto->descripcion); ?>
-								</div>
+						<div class="col-md-12">
+							<div class="proyecto-parrafo">
+								<?php echo utf8_encode($proyecto->descripcion); ?>
 							</div>
-						</div>						
+						</div>				
 					</div>
+					<?php
+					/*
 					<div class="row">
 						<div class="col-md-12 fondoPlomo" >
 							<?php $rutaImg = base_url('assets/celmediachile/clientes') . '/' . $clienteCaso->imagenhover; ?>
 							<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="" style="width:85px; height:80px;">
 						</div>
 					</div>
+					*/
+					?>
 				</div>
 
 			</div>
@@ -183,6 +189,15 @@
 
 <div class="container">
 	<div class="row espaciado-a">
+		<?php if (count($proyectos) == 0 ): ?>
+			<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-center">
+				<br /><br /><br /><br /><br />
+				<img src="<?php echo base_url('public/img/icono_busqueda.png') ?>" alt="" class="img-responsive obj-centrar" />	
+				<h1 class="titular-error">¡Lo sentimos!</h1>
+				<h3 class="subtitular-error">No encontramos lo que estabas buscando</h3>
+				<br /><br /><br /><br /><br />
+			</div>
+		<?php endif ?>
 		<?php foreach ($proyectos as $proyecto): ?>
 			<a href="<?php echo site_url('site/proyecto') . '/' . $proyecto['prid'];?>" class="">
 				<div class="col-md-4 text-center espaciado-a">

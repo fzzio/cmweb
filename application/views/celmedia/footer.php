@@ -12,7 +12,7 @@
                     <div class="col-md-8">
                         <span class="copy-footer" style="font-family: open-sans,sans-serif; font-size: 14px;">&copy; 2014 CELMEDIA, Todos los derechos reservados</span>
                     </div>
-                    <div class="col-md-4" style="padding-left:0px;">
+                    <div class="col-md-4">
                         <span class="copy-footer" style="font-family: open-sans,sans-serif; font-size: 14px;">Suscríbete</span>
                     </div>
                 </div>

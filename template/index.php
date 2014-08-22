@@ -2,17 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>  <?php isset($titulo)? $titulo: 'Admin' ;  ?></title>
+	<title>  Celmedia :: <?php echo isset($titulo)? $titulo: 'Administrador' ;  ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link id="bs-css" href="<?php echo base_url() ?>template/css/bootstrap-cerulean.css" rel="stylesheet">
+	<link href="<?php echo base_url('public/img/favicon.ico'); ?>" rel="shortcut icon">
 	<style type="text/css">
-	  body {
-		padding-bottom: 40px;
-	  }
-	  .sidebar-nav {
-		padding: 9px 0;
-	  }
+		body {
+			padding-bottom: 40px;
+		}
+		.sidebar-nav {
+			padding: 9px 0;
+		}
+		.brand img{
+			width: inherit !important;
+			height: inherit !important;
+		}
+		.navbar .navbar-inner{
+			background-color: #FFFFFF;
+			background-image: none;
+		}
 	</style>
 
 	<link href="<?php echo base_url() ?>template/css/bootstrap-responsive.css" rel="stylesheet">
@@ -53,8 +62,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"> <img alt="Charisma Logo" src="<?php echo base_url() ?>template/img/logo20.png" /> <span>Admin</span></a>
+				<a class="brand" href="index.html">
+					<img alt="Charisma Logo" src="<?php echo base_url() ?>public/img/celmedia_logo_Menu.png" class="img-responsive" />
+				</a>
 				
+
+				<?php 
+				/*
+
 				<!-- theme selector starts -->
 				<div class="btn-group pull-right theme-container" >
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -75,6 +90,8 @@
 				</div>
 				<!-- theme selector ends -->
 				
+				*/
+				?>
 				<!-- user dropdown starts -->
 				<div class="btn-group pull-right" >
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -84,7 +101,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="#">Profile</a></li>
 						<li class="divider"></li>
-                                                <li><a href="<?php echo base_url("index.php/admin/logout"); ?>">Logout</a></li>
+                        <li><a href="<?php echo base_url("index.php/admin/logout"); ?>">Logout</a></li>
 					</ul>
 				</div>
 				<!-- user dropdown ends -->
@@ -104,26 +121,31 @@
 						<li class="nav-header hidden-tablet">Main</li>
                                                 
                                                 
-                                                <?php foreach ($data["menu"] as $link  ): ?>                                                
-                                                <li>
-                                                    <a class="ajax-link" href="<?php echo site_url($link['url'])?>">
-                                                         <i class="<?php echo site_url($link['icon'])?>"></i>
-                                                        <span class="hidden-tablet">  <?php echo  $link['label'] ;  ?> </span>
-                                                    </a>
-                                                </li>                                                
-                                                <?php endforeach;?>
-                                                     
-                                                 <li class="nav-header hidden-tablet">Configuracion</li>
-						 <?php foreach ($data["menuAdmin"] as $link  ): ?>                                                
-                                                <li>
-                                                    <a class="ajax-link" href="<?php echo site_url($link['url'])?>">
-                                                        <i class="<?php echo site_url($link['icon'])?>"></i>
-                                                        <span class="hidden-tablet">  <?php echo  $link['label'] ;  ?> </span>
-                                                    </a>
-                                                </li>                                                
-                                                <?php endforeach;?>
+                        <?php foreach ($data["menu"] as $link  ): ?>                                                
+                        <li>
+                            <a class="ajax-link" href="<?php echo site_url($link['url'])?>">
+                                 <i class="<?php echo site_url($link['icon'])?>"></i>
+                                <span class="hidden-tablet">  <?php echo  $link['label'] ;  ?> </span>
+                            </a>
+                        </li>                                                
+                        <?php endforeach;?>
+                             
+                        <li class="nav-header hidden-tablet">Configuracion</li>
+						<?php foreach ($data["menuAdmin"] as $link  ): ?>                                                
+                        <li>
+                            <a class="ajax-link" href="<?php echo site_url($link['url'])?>">
+                                <i class="<?php echo site_url($link['icon'])?>"></i>
+                                <span class="hidden-tablet">  <?php echo  $link['label'] ;  ?> </span>
+                            </a>
+                        </li>
+                        <?php endforeach;?>
 					</ul>
-                                    <label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"  checked="checked" > Ajax on menu</label>
+
+                    <?php /*
+                    <label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"  checked="checked" > Ajax on menu</label>
+                    */ ?>                
+
+
 				</div><!--/.well -->
 			</div><!--/span-->
 			<!-- left menu ends -->

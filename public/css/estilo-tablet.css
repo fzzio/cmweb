@@ -421,18 +421,21 @@ a{
     text-align: left;
     font-family: 'open_sansregular';
     font-size: 18px;
-    line-height: 15px;
+    line-height: normal;
     padding-left: 15px;
     padding-right: 15px;
+    height: 40px;
 }
+
 .texto-caso{
 	color: #FFFFFF;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: normal;
 	padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    height: 60px;
 }
 
 .titular-secc-caso{
@@ -570,7 +573,8 @@ span.glyphicon.white{
 }
 
 .contenedor-pie{
-	height: 320px;
+	min-height: 380px;
+	min-height: 380px;
 	margin-bottom: 10px;
 }
 

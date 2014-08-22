@@ -304,7 +304,7 @@ class Site extends CI_Controller {
                 
                 if($idproyecto){
 
-                    $contenido['pagina'] = "1";
+                    //$contenido['pagina'] = "1";
 
                     $contenido['proyecto'] = $this->db->get_where('proyecto', array('id' => $idproyecto, 'estado' => 1))->row();
                     $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
@@ -320,7 +320,7 @@ class Site extends CI_Controller {
                     $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen, cl.imagenhover as climagenhover')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->limit(3)->order_by("pr.fecha", "desc")->get()->result_array();
 
                 }else{
-                    $contenido['pagina'] = "0";
+                    //$contenido['pagina'] = "0";
 
                     $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen, cl.imagenhover as climagenhover')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.estado' => 1, 'cl.estado' => 1 )  )->order_by("pr.fecha", "desc")->get()->result_array();
                 }
@@ -357,7 +357,7 @@ class Site extends CI_Controller {
 
                 if($idproyecto){
 
-                    $contenido['pagina'] = "1";
+                    //$contenido['pagina'] = "1";
 
                     $contenido['proyecto'] = $this->db->get_where('proyecto', array('id' => $idproyecto, 'estado' => 1))->row();
                     $contenido['sliderProyecto'] = $this->db->get_where('imagen_proyecto', array('id_proyecto' => $idproyecto, 'estado' => 1))->result_array();
@@ -373,7 +373,7 @@ class Site extends CI_Controller {
                     $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen, cl.imagenhover as climagenhover')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->limit(3)->order_by("pr.fecha", "desc")->get()->result_array();
 
                 }else{
-                    $contenido['pagina'] = "0";
+                    //$contenido['pagina'] = "0";
 
 
                     $contenido['proyectos'] = $this->db->select('pr.id as prid, pr.nombre as prnombre, pr.descripcion as prdescripcion, pr.imagen as primagen, pr.imagen_detalle as primagen_detalle, pr.fecha as prfecha, cl.imagen as climagen, cl.imagenhover as climagenhover')->from('proyecto as pr')->join('cliente as cl', 'cl.id = pr.id_cliente')->where( array('pr.id !=' => $idproyecto, 'pr.estado' => 1, 'cl.estado' => 1 )  )->where($arrayvacio)->order_by("pr.fecha", "desc")->get()->result_array();
@@ -421,7 +421,7 @@ class Site extends CI_Controller {
                 
                if($idnoticia){
 
-                    $contenido['pagina'] = "1";
+                    //$contenido['pagina'] = "1";
 
                     $contenido['noticia'] = $this->db->get_where('noticia', array('id' => $idnoticia, 'estado' => 1))->row();
 
@@ -432,7 +432,7 @@ class Site extends CI_Controller {
 
 
                 }else{
-                    $contenido['pagina'] = "0";
+                    //$contenido['pagina'] = "0";
                     $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.estado' => 1 )  )->order_by("n.fecha", "desc")->get()->result_array();
                 }
 
@@ -476,7 +476,7 @@ class Site extends CI_Controller {
 
                 if($idnoticia){
 
-                    $contenido['pagina'] = "1";
+                    //$contenido['pagina'] = "1";
 
                     $contenido['noticia'] = $this->db->get_where('noticia', array('id' => $idnoticia, 'estado' => 1))->row();
 
@@ -485,7 +485,7 @@ class Site extends CI_Controller {
                     $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')->from('noticia as n')->where( array('n.id !=' => $idnoticia, 'n.estado' => 1 )  )->limit(3)->order_by("n.fecha", "desc")->get()->result_array();
 
                 }else{
-                    $contenido['pagina'] = "0";
+                    //$contenido['pagina'] = "0";
                     $contenido['noticias'] = $this->db->select('n.id as id, n.titulo as titulo, n.subtitulo as subtitulo, n.descripcion as descripcion, n.imagen as imagen, n.imagen_detalle as imagen_detalle, n.fecha as fecha')
                     ->from('noticia as n')
                     ->where( array('n.estado' => 1, "n.fecha >=" => $fecha_ini , "n.fecha <=" => $fecha_final  )  )

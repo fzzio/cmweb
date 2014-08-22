@@ -1,8 +1,12 @@
+<?php
+    $is_home = ($this->router->fetch_class() === 'site' && $this->router->fetch_method() === 'index') ? true : false;
+    $paginaActual = $this->router->fetch_method();
+?>
 <div class="container">
 	<div class="row espaciado-top"></div>
 	<!-- <div class="row espaciado-a">
 		<div class="col-md-12">
-			<a href="<?php echo site_url('site/index#noticias');?>" class="texto-gris"> &lt; Regresar</a>
+			<a href="<?php //echo site_url('site/index#noticias');?>" class="texto-gris"> &lt; Regresar</a>
 		</div>
 	</div> -->
 	<div class="row espaciado-a">
@@ -14,7 +18,7 @@
 	</div>
 	
 
-	<?php if ($pagina == '0'): ?>
+	<?php if (!$this->uri->segment(3)): ?>
 		<div class="row espaciado-a">
 			
 				<form method="post" accept-charset="utf-8" action=""  class="form-horizontal" >
@@ -52,7 +56,7 @@
 			</div>
 		</div>
 
-	<?php elseif ($pagina == '1'): ?>
+	<?php else: ?>
 		<div class="row espaciado-a">
 			<div class="col-md-12">
 				<h3 class="titulo-noticia-principal">
@@ -123,6 +127,15 @@
 
 <div class="container">
 	<div class="row espaciado-a">
+		<?php if (count($noticias) == 0 ): ?>
+			<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-center">
+				<br /><br /><br /><br /><br />
+				<img src="<?php echo base_url('public/img/icono_busqueda.png') ?>" alt="" class="img-responsive obj-centrar" />	
+				<h1 class="titular-error">¡Lo sentimos!</h1>
+				<h3 class="subtitular-error">No encontramos lo que estabas buscando</h3>
+				<br /><br /><br /><br /><br />
+			</div>
+		<?php endif ?>
 		<?php foreach ($noticias as $noticia): ?>
 			<a href="<?php echo site_url('site/noticia') . '/' . $noticia['id'];?>" class="">
 				<div class="col-md-4 text-center espaciado-a">

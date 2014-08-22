@@ -349,7 +349,8 @@ a{
 	border-radius: 0px;
 	height: 60px;
 	padding-top: 30px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	background-color: #1c272d;
 }
 
 .btn-contacto-toggle.collapsed,

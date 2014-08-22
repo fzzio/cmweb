@@ -240,6 +240,7 @@ a{
 
 #footer{
 	background-color: #1E2B35;
+	margin-top: 10px;
 }
 .copy-footer{
 	color: #e0eae2;
@@ -282,6 +283,17 @@ a{
 .navbar-toggle{
 	border: 1px solid #A6C736;
 	margin-top: 25px;
+}
+
+.link-cliente{
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+}
+.link-media{
+	display: inline-block;
+	outline: none;
+	text-decoration: none;	
 }
 
 .link-celmedia{
@@ -715,15 +727,13 @@ a{
 
 .servicio-parrafo{
     color: #000000;
-    font-family: open-sans,sans-serif;
-    font-size: 12px;
-   
-    line-height: 17px;
-    
-    padding-top: 10px;
-    
+    font-family: 'open_sanslight';
+    font-size: 12px;   
+    line-height: 17px;    
+    /*padding-top: 10px;*/
     text-align: justify;
-   
+	/*overflow-y: auto;*/
+	height: 300px;
 }
 
 .proyecto-parrafo {
@@ -732,9 +742,9 @@ a{
     font-size: 12px;
     height: 300px;
     line-height: 17px;
-    padding: 8px;
+    /*padding: 8px;*/
     text-align: justify;
-    overflow-y: auto; 
+    /*overflow-y: auto;*/ 
 }
 
 .s-subtitular-p{
@@ -745,48 +755,47 @@ a{
     line-height: 17px;
     text-align: justify;
 }
+
+.alto-seccion-servicio{
+	position: relative;
+	height: 620px;
+}
+
 .colores-1{
 	background-color: #fff0f3;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 
 .colores-2{
 	background-color: #e2f8fd;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 .colores-3{
 	background-color: #fafff0;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 .colores-4{
 	background-color: #fff9e7;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 .colores-5{
 	background-color: #f8e8ff;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 .colores-6{
 	background-color: #edfff4;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 .colores-7{
 	background-color: #ebe8f8;
-	height:520px;
-	padding-left: 15%;
-	width: 38%;
+	padding-left: 10%;
+	width: 35%;
 }
 
 .hover-noticias img:hover{
@@ -904,19 +913,20 @@ a{
 .formulario-contacto input[type="text"], 
 .formulario-contacto input[type="email"], 
 .formulario-contacto textarea{ 
-background-color: #1e2b35; 
-font-family: 'open_sanslight_italic'; 
-min-height: 33px; 
-color: #78ADBC; 
-font-size: 14px; 
-padding: 15px; 
-line-height: 34px; 
-border-radius: 10px; 
-border: 1px solid #bfc7c8; 
+	background-color: #31424f; 
+	font-family: 'open_sanslight_italic'; 
+	min-height: 33px; 
+	color: #78ADBC; 
+	font-size: 14px; 
+	padding: 15px; 
+	line-height: 34px; 
+	border-radius: 8px; 
+	border: 0.5px solid #bfc7c8; 
+	/*border: none;*/
 } 
 .formulario-contacto input[type="text"], 
 .formulario-contacto input[type="email"]{ 
-height: 50px; 
+	height: 50px; 
 } 
 
 
@@ -929,37 +939,37 @@ height: 50px;
 .formulario-contacto textarea:hover, 
 .formulario-contacto textarea:active, 
 .formulario-contacto textarea:focus{ 
-background-color: #bfc7c8; 
-color: #1e2b35; 
-border: 1px solid #1e2b35; 
+	background-color: #bfc7c8; 
+	color: #1e2b35; 
+	border: 1px solid #1e2b35; 
 } 
 
 
 .formulario-contacto-a input[type="text"].error 
 .formulario-contacto-a input[type="email"].error, 
 .formulario-contacto-a textarea.error{ 
-background-color: #bfc7c8; 
-color: #FF0000; 
-border: 1px solid #FF0000; 
+	background-color: #bfc7c8; 
+	color: #FF0000; 
+	border: 1px solid #FF0000; 
 }
 
 
 .formulario-contacto-a input[type="text"], 
 .formulario-contacto-a input[type="email"], 
 .formulario-contacto-a textarea{ 
-background-color: #6a7d85; 
-font-family: 'open_sanslight_italic'; 
-min-height: 33px; 
-color: black; 
-font-size: 14px; 
-padding: 15px; 
-line-height: 34px; 
-border-radius: 10px; 
-border: 1px solid #1e2b35; 
+	background-color: #31424f; 
+	font-family: 'open_sanslight_italic'; 
+	min-height: 33px; 
+	color: black; 
+	font-size: 14px; 
+	padding: 15px; 
+	line-height: 34px; 
+	border-radius: 10px; 
+	border: 1px solid #1e2b35; 
 } 
 .formulario-contacto-a input[type="text"], 
 .formulario-contacto-a input[type="email"]{ 
-height: 50px; 
+	height: 50px; 
 } 
 
 
@@ -972,16 +982,23 @@ height: 50px;
 .formulario-contacto-a textarea:hover, 
 .formulario-contacto-a textarea:active, 
 .formulario-contacto-a textarea:focus{ 
-background-color: #bfc7c8; 
-color: #1e2b35; 
-border: 1px solid #1e2b35; 
+	background-color: #bfc7c8; 
+	color: #1e2b35; 
+	border: 1px solid #1e2b35; 
 } 
 
 
 .formulario-contacto-a input[type="text"].error 
 .formulario-contacto-a input[type="email"].error, 
 .formulario-contacto-a textarea.error{ 
-background-color: #bfc7c8; 
-color: #FF0000; 
-border: 1px solid #FF0000; 
+	background-color: #bfc7c8; 
+	color: #FF0000; 
+	border: 1px solid #FF0000; 
+}
+
+.titular-error{
+	font-size: 46px;
+}
+.subtitular-error{
+	font-size: 28px;
 }

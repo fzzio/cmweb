@@ -20,7 +20,7 @@
 						<a href="<?php echo site_url('site/proyectoT') . '/' . $proyecto['id'];?>" class="link-celmedia">
 							<div class="fondoNegro contenedor-pie">
 								<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto['imagen']; ?>
-								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
+								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar img-w" />
 								<h3 class="titulo-caso">
 									<?php 
 										if(strlen($proyecto['nombre']) > 40){
@@ -76,15 +76,18 @@
 								</div>							
 							<?php endforeach ?>
 						</div>
-						<a class="left carousel-control" href="#carousel-proyecto" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-						</a>
-						<a class="right carousel-control" href="#carousel-proyecto" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
+
+						<?php if ( count( $sliderProyecto ) > 1): ?>
+							<a class="left carousel-control" href="#carousel-proyecto" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-proyecto" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						<?php endif ?>
 					</div>
 				<?php else: ?>
-					<span>No hay imágenes asignadas</span>
+					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar img-w" alt="" />
 				<?php endif ?>
 			</div>
 		</div>
@@ -121,7 +124,7 @@
 						<a href="<?php echo site_url('site/proyectoT') . '/' . $proyecto['id'];?>" class="link-celmedia">
 							<div class="fondoNegro">
 								<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto['imagen']; ?>
-								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />
+								<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar img-w" />
 								<h3 class="titulo-caso">
 									<?php 
 										if(strlen($proyecto["nombre"]) > 40){

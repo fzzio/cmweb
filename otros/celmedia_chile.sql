@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.1
+-- version 4.0.4
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 22-08-2014 a las 01:46:33
--- Versión del servidor: 5.6.12
--- Versión de PHP: 5.5.3
+-- Tiempo de generación: 22-08-2014 a las 14:13:14
+-- Versión del servidor: 5.5.31
+-- Versión de PHP: 5.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -121,19 +121,18 @@ INSERT INTO `cliente` (`id`, `nombre`, `imagen`, `imagenhover`, `imagenbg`, `est
 (56, 'Yo me llamo', '32865-yomellamo_85gris.png', '3b434-yomellamo_85.png', '824fb-yomellamo_400.png', 1),
 (57, 'Descuenta', '9fd83-descuenta_normal.png', 'b1741-descuenta_hover.png', '36e32-descuenta_lb.png', 1),
 (58, 'Procesar', '3098a-procesar_normal.png', 'c3080-procesar_hover.png', '80e7f-procesar_lb.png', 1),
-(59, 'Club Premium (Sabmiller)', '6d9f7-logos_eluniversal.png', 'b089b-logos_eluniversal_hover.png', '497fa-logos_eluniversal_lb.jpg', 1),
-(60, 'Sumbawa', '42acb-logos_eluniversal.png', 'eccc1-logos_eluniversal_hover.png', 'a3d86-logos_eluniversal_lb.jpg', 1),
-(61, '220V', '52521-logos_eluniversal.png', '08e9a-logos_eluniversal_hover.png', '15d7b-logos_eluniversal_lb.jpg', 1),
-(62, 'Toyocosta', '021a8-eluniversal_85gris.png', '3edd3-eluniversal_85.png', 'b082f-eluniversal.png', 1),
-(63, 'Telintel LTD', 'f30b6-logos_eluniversal.png', '4de34-logos_eluniversal_hover.png', 'a4651-logos_eluniversal_lb.jpg', 1),
-(64, 'Los Héroes', 'd5355-logos_eluniversal.png', 'c068c-logos_eluniversal_hover.png', '7fc3c-logos_eluniversal_lb.jpg', 1),
-(65, 'Canal Mega T.V.', '161d1-logos_eluniversal.png', 'a725a-logos_eluniversal_hover.png', '8614e-logos_eluniversal_lb.jpg', 1),
-(66, 'Metro de Santiago de Chile', 'ea7ea-logos_eluniversal.png', 'e27f5-logos_eluniversal_hover.png', '280ec-logos_eluniversal_lb.jpg', 1),
-(67, 'World Visión', 'a6b3e-logos_eluniversal.png', '91d62-logos_eluniversal_hover.png', '628cb-logos_eluniversal_lb.jpg', 1),
-(68, 'Indura', '163af-logos_eluniversal.png', 'e7f79-logos_eluniversal_hover.png', '70ed8-logos_eluniversal_lb.jpg', 1),
-(69, 'Alsacia', '5f3c7-logos_eluniversal.png', 'c3a94-logos_eluniversal_hover.png', 'f4208-logos_eluniversal_lb.jpg', 1),
-(70, 'Deemelo', '43576-logos_eluniversal.png', 'db4fa-logos_eluniversal_hover.png', 'a5884-logos_eluniversal_lb.jpg', 1),
-(71, 'Banco Coorpbanca', '966ef-logos_eluniversal.png', 'a969b-logos_eluniversal_hover.png', '6a60e-logos_eluniversal_lb.jpg', 1);
+(59, 'Club Premium (Sabmiller)', '0489b-club_85gris.png', '7038d-club_85.png', '023d1-club_400.png', 1),
+(60, 'Sumbawa', '1adfd-sumbawa_85gris.png', '06540-sumbawa_85.png', '0e3b8-sumbawa_400.png', 1),
+(61, '220V', 'e6d14-220v_85gris.png', '6ac62-220v_85.png', '466d7-220v_400.png', 1),
+(62, 'Toyocosta', '7b51b-toyocosta_85gris.png', '1173f-toyocosta_85.png', '81102-toyocosta_400.png', 1),
+(63, 'Telintel LTD', '351fd-telintel_85gris.png', '4f3bf-telintel_85.png', 'a9cca-telintel_400.png', 1),
+(64, 'Los Héroes', 'ea1d7-losheroes_85gris.png', 'e5a6e-losheroes_85.png', '4f00f-losheroes_400.png', 1),
+(65, 'Canal Mega T.V.', '60743-megatv_85gris.png', 'ae573-megatv_85.png', 'a975a-megatv_400.png', 1),
+(66, 'Metro de Santiago de Chile', '9a09a-metro_santiago_85gris.png', '55b95-metro_santiago_85.png', '89974-metro_santiago400.png', 1),
+(67, 'World Visión', '37063-worldvision_85gris.png', 'a6308-worldvision_85.png', 'ca6ff-worldvision_400.png', 1),
+(68, 'Indura', 'a402b-indura_85gris.png', 'd559c-indura_85.png', '7a598-indura_400.png', 1),
+(69, 'Alsacia', '9e5ee-alsacia_85gris.png', 'e2560-alsacia_85.png', '82b87-alsacia_400.png', 1),
+(71, 'Banco Coorpbanca', 'eb0d1-logos_eluniversal.png', 'a969b-logos_eluniversal_hover.png', '6a60e-logos_eluniversal_lb.jpg', 1);
 
 -- --------------------------------------------------------
 
