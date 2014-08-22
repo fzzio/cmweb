@@ -66,7 +66,7 @@
 					<!-- Jssor Slider Begin -->
 					    <!-- You can move inline styles to css file or css block. -->
 					    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
-					        height: 575px; overflow: hidden;">
+					        height: 585px; overflow: hidden;">
 
 					        <!-- Loading Screen -->
 					        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -78,7 +78,7 @@
 					        </div>
 
 					        <!-- Slides Container -->
-					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 500px; overflow: hidden;">
+					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 585px; overflow: hidden;">
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
@@ -91,10 +91,10 @@
 							<!-- Arrow Navigator Skin Begin -->
 						     
 						        <!-- Arrow Left -->
-						        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 8px;">
+						        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 230px; left: 8px;">
 						        </span>
 						        <!-- Arrow Right -->
-						        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px">
+						        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 230px; right: 8px">
 						        </span>
 						        <!-- Arrow Navigator Skin End -->
 						        
@@ -104,9 +104,8 @@
 						           
 						            <div u="slides" style="cursor: move;">
 						                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-						                    <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
-						                    <div class=c>
-						                    </div>
+						                    <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
+						                    
 						                </div>
 						            </div>
 						            <!-- Thumbnail Item Skin End -->
@@ -120,16 +119,23 @@
 
 				
 				<?php else: ?>
-					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar img-w" alt="" />
+					<img src="<?php echo base_url('public/img/Imagen_ReferencialCasosDetalle.jpg') ?>" class="img-responsive obj-centrar img-w" style="height: 585px;" alt="" />
 				<?php endif ?>
 			</div>
 			<div class="col-md-4  fondoRosa row-sinborde" style="width:30%">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="s-titular-3">
-								<?php echo $proyecto->nombre; ?>
-							</h1>
+							<?php if(strlen($proyecto->nombre)>=15){ ?>
+								<h1 class="s-titular-3">
+									<?php echo $proyecto->nombre; ?>
+								</h1>
+							<?php }else{ ?>
+								<h1 class="s-titular-3" style="min-height: 45px;">
+									<?php echo $proyecto->nombre; ?>
+								</h1>
+							<?php } ?>
+							
 						</div>
 					</div>
 					<div class="row fondoPlomo">
@@ -141,21 +147,27 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="proyecto-parrafo">
-								<?php echo utf8_encode($proyecto->descripcion); ?>
-							</div>
+							<?php if(strlen($proyecto->nombre)>=15){ ?>
+								<div class="proyecto-parrafo">
+									<?php echo utf8_encode($proyecto->descripcion); ?>
+								</div>
+							<?php }else{ ?>
+								<div class="proyecto-parrafo" style="height: 370px;">
+									<?php echo utf8_encode($proyecto->descripcion); ?>
+								</div>
+							<?php } ?>
+							
 						</div>				
 					</div>
-					<?php
-					/*
+					
 					<div class="row">
 						<div class="col-md-12 fondoPlomo" >
 							<?php $rutaImg = base_url('assets/celmediachile/clientes') . '/' . $clienteCaso->imagenhover; ?>
 							<img src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" alt="" style="width:85px; height:80px;">
 						</div>
 					</div>
-					*/
-					?>
+					
+					
 				</div>
 
 			</div>
