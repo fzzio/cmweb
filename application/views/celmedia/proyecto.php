@@ -82,8 +82,13 @@
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
+<<<<<<< HEAD
 									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar"  height="356px !important;" alt=""/>  
 					                <img u="thumb" src="<?php echo $rutaImg; ?>" height="75px;" width="auto" />
+=======
+									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" style="height: auto !important; " alt=""/>  
+					                <img u="thumb" src="<?php echo $rutaImg; ?>" height="78px;" width="auto" />
+>>>>>>> c3fdf764713312425baa818fa96bee97bb507996
 					            </div>
 		    
 					        <?php endforeach ?> 
@@ -104,8 +109,14 @@
 						           
 						            <div u="slides" style="cursor: move;">
 						                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
+<<<<<<< HEAD
 						                    <div class="w"><thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
 						                    
+=======
+						                    <div class="w">
+						                    	<thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate>
+						                    </div>
+>>>>>>> c3fdf764713312425baa818fa96bee97bb507996
 						                </div>
 						            </div>
 						            <!-- Thumbnail Item Skin End -->

@@ -1016,3 +1016,7 @@ a{
     color: #1e2b35;
     opacity: 1;
 }
+
+.jssort01 .w:hover{
+	border: 1px solid #ffffff;
+}

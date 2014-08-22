@@ -17,7 +17,7 @@
                 <br /><br />
               </div>
               <div class="row espaciado-a">
-                <div class="col-md-2 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
+                <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                     <br/><a href="<?php echo $slide['link']; ?>" class="btn btn-lg btn-slh link-celmedia"><?php echo $slide["textoboton"]; ?></a>
                 </div>
               </div>
