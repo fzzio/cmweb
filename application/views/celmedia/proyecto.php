@@ -82,12 +82,9 @@
 					        <?php foreach ($sliderProyecto as $slide): ?>
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
-<<<<<<< HEAD
 
-									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar"  alt=""/>  
-=======
 									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar" style="height: auto !important; " alt=""/>  
->>>>>>> 8ebb0ea1abda01fef067ecf0639a886712024666
+
 					                <img u="thumb" src="<?php echo $rutaImg; ?>" height="78px;" width="auto" />
 					            </div>
 		    
