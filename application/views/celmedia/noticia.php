@@ -169,7 +169,13 @@
 						<div class="row">
 							<div class="col-md-12 bg-titular-noticia text-left">
 								<h4 class="texto-noticia">
-									<?php echo utf8_encode( substr( strip_tags($noticia['descripcion']) , 0, 105)); ?> ...
+									<?php
+										if(strlen($noticia['descripcion']) > 100){
+											echo ( substr( strip_tags($noticia['descripcion']) , 0, 100) . "..." );
+										}else{
+											echo utf8_encode(  strip_tags($noticia['descripcion']) );
+										}
+									?>
 								</h4>
 							</div>
 							<div class="row">

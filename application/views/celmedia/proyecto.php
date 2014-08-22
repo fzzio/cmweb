@@ -203,8 +203,8 @@
 				<div class="col-md-4 text-center espaciado-a">
 					<div class="container-fluid">
 						<div class="row hover-noticias">
-							<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto['primagen_detalle']; ?>
-							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar" />							
+							<?php $rutaImg = base_url('assets/celmediachile/proyectos') . '/' . $proyecto['primagen']; ?>
+							<img src="<?php echo $rutaImg; ?>" alt="" class="img-responsive obj-centrar img-w" />							
 						</div>
 						<div class="row bg-cliente">
 							<?php $rutaImgC = base_url('assets/celmediachile/clientes') . '/' . $proyecto['climagenhover'];	?>
@@ -213,10 +213,23 @@
 							</div>
 							<div class="col-md-8 bg-titular-caso text-left">
 								<h3 class="titulo-caso">
-									<?php echo ( substr( $proyecto['prnombre'], 0, 20)) ;?>...
+									<?php
+										if(strlen($proyecto['prnombre']) > 20){
+											echo ( substr( strip_tags($proyecto['prnombre']) , 0, 20) . "..." );
+										}else{
+											echo (  strip_tags($proyecto['prnombre']) );
+										}
+									?>
+
 								</h3>
 								<h4 class="texto-caso">
-									<?php echo utf8_encode( substr( strip_tags($proyecto['prdescripcion']) , 0, 61)); ?> ...
+									<?php
+										if(strlen($proyecto['prdescripcion']) > 60){
+											echo ( substr( strip_tags($proyecto['prdescripcion']) , 0, 60) . "..." );
+										}else{
+											echo (  strip_tags($proyecto['prdescripcion']) );
+										}
+									?>
 								</h4>
 							</div>
 						</div>
