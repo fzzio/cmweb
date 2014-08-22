@@ -341,7 +341,6 @@ a{
 .btn-contacto-toggle:hover,
 .btn-contacto-toggle:active,
 .btn-contacto-toggle:focus{
-	background-color: transparent;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #FFFFFF;
