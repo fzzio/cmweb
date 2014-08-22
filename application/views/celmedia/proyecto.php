@@ -83,7 +83,7 @@
 					            <div>
 					            	<?php $rutaImg = base_url('assets/celmediachile/sliderproyectos') . '/' . $slide['imagen']; ?>
 									<img  u="image" src="<?php echo $rutaImg; ?>" class="img-responsive obj-centrar"  height="356px !important;" alt=""/>  
-					                <img u="thumb" src="<?php echo $rutaImg; ?>" height="78px;" width="auto" />
+					                <img u="thumb" src="<?php echo $rutaImg; ?>" height="75px;" width="auto" />
 					            </div>
 		    
 					        <?php endforeach ?> 
@@ -104,7 +104,7 @@
 						           
 						            <div u="slides" style="cursor: move;">
 						                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-						                    <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
+						                    <div class="w"><thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
 						                    
 						                </div>
 						            </div>
